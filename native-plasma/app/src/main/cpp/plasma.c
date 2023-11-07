@@ -221,10 +221,11 @@ static void show_stats(uint16_t *pixels, int stride) {
   pixels += STATS_OFFY*stride + STATS_OFFX;
   sprintf(buf, "frame/s (avg,min,max) = (%.1f,%.1f,%.1f)",
     ds.avgFrame, ds.minFrame, ds.maxFrame);
-  bitmap_print(pixels, 0, stride, 0xffff, buf, FONT_8x8);
+  bitmap_print(pixels, 0, stride, 0x000f, buf, FONT_8x8);
   sprintf(buf, "render time ms (avg,min,max) = (%.2f,%.2f,%.2f)",
     ds.avgRender, ds.minRender, ds.maxRender);
-  bitmap_print(pixels, 1, stride, 0xffff, buf, FONT_8x8);
+  bitmap_print(pixels, 2, stride, 0x000f, buf, FONT_8x8);
+  bitmap_print(pixels, 4, stride, 0x000f, "WASM", FONT_8x8);
 }
 #endif
 
