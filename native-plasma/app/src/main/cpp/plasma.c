@@ -27,9 +27,9 @@
 #include <time.h>
 
 #define LOG_TAG "libplasma"
-#define LOGI(...)
-#define LOGW(...)
-#define LOGE(...)
+#define LOGI(...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
+#define LOGW(...) __android_log_print(ANDROID_LOG_WARN, LOG_TAG, __VA_ARGS__)
+#define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__)
 
 /* Set to 1 to enable debug log traces. */
 #define DEBUG 0
@@ -188,7 +188,7 @@ typedef struct {
 } DisplayStats;
 
 /* negge: apologies for the global static struct */
-static DisplayStats ds = { 0 };
+static DisplayStats ds = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
 #define FONT_SCALE (2)
 
