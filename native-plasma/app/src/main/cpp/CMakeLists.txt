@@ -16,7 +16,6 @@
 
 cmake_minimum_required(VERSION 3.4.1)
 
-
 if (ANDROID_WASM)
 
 add_compile_options(-O3)
@@ -27,25 +26,19 @@ add_compile_options(-fno-unroll-loops)
 add_link_options(-Wl,--export=ANativeActivity_onCreate)
 add_link_options(-Wl,--strip-debug)
 
-# build native_app_glue as a static lib
-# Note that this is a cloned version with logging disabled.
-add_library(native_app_glue STATIC android_native_app_glue.c)
-
-# now build app's shared lib
 add_executable(native-plasma
     plasma.c
-    ${WASM_LIBRARY_PATH}/standalone-printf.c)
-
+    ${ANDROID_NDK}/sources/android/native_app_glue/android_native_app_glue.c)
 
 target_include_directories(native-plasma PRIVATE
     ${ANDROID_NDK}/sources/android/native_app_glue)
 
-# add lib dependencies
-target_link_libraries(native-plasma
-    native_app_glue
-    )
-
 else()
+
+# Export ANativeActivity_onCreate(), 
+# Refer to: https://github.com/android-ndk/ndk/issues/381.
+set(CMAKE_SHARED_LINKER_FLAGS
+    "${CMAKE_SHARED_LINKER_FLAGS} -u ANativeActivity_onCreate")
 
 # build native_app_glue as a static lib
 add_library(native_app_glue STATIC
@@ -54,11 +47,6 @@ add_library(native_app_glue STATIC
 # now build app's shared lib
 add_library(native-plasma SHARED
     plasma.c)
-
-# Export ANativeActivity_onCreate(), 
-# Refer to: https://github.com/android-ndk/ndk/issues/381.
-set(CMAKE_SHARED_LINKER_FLAGS
-    "${CMAKE_SHARED_LINKER_FLAGS} -u ANativeActivity_onCreate")
 
 target_include_directories(native-plasma PRIVATE
     ${ANDROID_NDK}/sources/android/native_app_glue)

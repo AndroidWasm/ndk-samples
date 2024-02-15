@@ -4,45 +4,45 @@
 
 #include "wasm-rt-no-sandbox-declarations.h"
 
-static void w2c_native0x2Dplasma_android_main0x2E1(u64);
-static u32 w2c_native0x2Dplasma_engine_handle_input0x2E1(u64, u64);
-static void w2c_native0x2Dplasma_engine_handle_cmd0x2E1(u64, u32);
-static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64);
-static void w2c_native0x2Dplasma_dtoa0x2E1(f64, u32, u64);
-static u32 w2c_native0x2Dplasma_vsprintf0x2E1(u64, u64, u64);
-static u32 w2c_native0x2Dplasma_sprintf0x2E1(u64, u64, u64);
-static void w2c_native0x2Dplasma_android_app_pre_exec_cmd0x2E1(u64, u32);
-static void w2c_native0x2Dplasma_android_app_post_exec_cmd0x2E1(u64, u32);
-static void w2c_native0x2Dplasma_ANativeActivity_onCreate0x2E1(u64, u64, u64);
-static void w2c_native0x2Dplasma_onConfigurationChanged0x2E1(u64);
-static void w2c_native0x2Dplasma_onContentRectChanged0x2E1(u64, u64);
-static void w2c_native0x2Dplasma_onLowMemory0x2E1(u64);
-static void w2c_native0x2Dplasma_onInputQueueDestroyed0x2E1(u64, u64);
-static void w2c_native0x2Dplasma_onInputQueueCreated0x2E1(u64, u64);
-static void w2c_native0x2Dplasma_onDestroy0x2E1(u64);
-static void w2c_native0x2Dplasma_onNativeWindowDestroyed0x2E1(u64, u64);
-static void w2c_native0x2Dplasma_onNativeWindowCreated0x2E1(u64, u64);
-static void w2c_native0x2Dplasma_onNativeWindowRedrawNeeded0x2E1(u64, u64);
-static void w2c_native0x2Dplasma_onNativeWindowResized0x2E1(u64, u64);
-static void w2c_native0x2Dplasma_onPause0x2E1(u64);
-static u64 w2c_native0x2Dplasma_onSaveInstanceState0x2E1(u64, u64);
-static void w2c_native0x2Dplasma_onResume0x2E1(u64);
-static void w2c_native0x2Dplasma_onWindowFocusChanged0x2E1(u64, u32);
-static void w2c_native0x2Dplasma_onStop0x2E1(u64);
-static void w2c_native0x2Dplasma_onStart0x2E1(u64);
-static u64 w2c_native0x2Dplasma_android_app_entry0x2E1(u64);
-static void w2c_native0x2Dplasma_process_input0x2E1(u64, u64);
-static void w2c_native0x2Dplasma_process_cmd0x2E1(u64, u64);
+static void w2c_0x24native0x2Dplasma_android_main0x2E1(u64);
+static u32 w2c_0x24native0x2Dplasma_engine_handle_input0x2E1(u64, u64);
+static void w2c_0x24native0x2Dplasma_engine_handle_cmd0x2E1(u64, u32);
+static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64);
+static void w2c_0x24native0x2Dplasma_android_app_pre_exec_cmd0x2E1(u64, u32);
+static void w2c_0x24native0x2Dplasma_print_cur_config0x2E1(u64);
+static void w2c_0x24native0x2Dplasma_android_app_post_exec_cmd0x2E1(u64, u32);
+static void w2c_0x24native0x2Dplasma_ANativeActivity_onCreate0x2E1(u64, u64, u64);
+static void w2c_0x24native0x2Dplasma_onConfigurationChanged0x2E1(u64);
+static void w2c_0x24native0x2Dplasma_onContentRectChanged0x2E1(u64, u64);
+static void w2c_0x24native0x2Dplasma_onLowMemory0x2E1(u64);
+static void w2c_0x24native0x2Dplasma_onInputQueueDestroyed0x2E1(u64, u64);
+static void w2c_0x24native0x2Dplasma_onInputQueueCreated0x2E1(u64, u64);
+static void w2c_0x24native0x2Dplasma_onDestroy0x2E1(u64);
+static void w2c_0x24native0x2Dplasma_onNativeWindowDestroyed0x2E1(u64, u64);
+static void w2c_0x24native0x2Dplasma_onNativeWindowCreated0x2E1(u64, u64);
+static void w2c_0x24native0x2Dplasma_onNativeWindowRedrawNeeded0x2E1(u64, u64);
+static void w2c_0x24native0x2Dplasma_onNativeWindowResized0x2E1(u64, u64);
+static void w2c_0x24native0x2Dplasma_onPause0x2E1(u64);
+static u64 w2c_0x24native0x2Dplasma_onSaveInstanceState0x2E1(u64, u64);
+static void w2c_0x24native0x2Dplasma_onResume0x2E1(u64);
+static void w2c_0x24native0x2Dplasma_onWindowFocusChanged0x2E1(u64, u32);
+static void w2c_0x24native0x2Dplasma_onStop0x2E1(u64);
+static void w2c_0x24native0x2Dplasma_onStart0x2E1(u64);
+static u64 w2c_0x24native0x2Dplasma_android_app_entry0x2E1(u64);
+static void w2c_0x24native0x2Dplasma_android_app_set_input0x2E1(u64, u64);
+static void w2c_0x24native0x2Dplasma_android_app_set_window0x2E1(u64, u64);
+static void w2c_0x24native0x2Dplasma_process_input0x2E1(u64, u64);
+static void w2c_0x24native0x2Dplasma_process_cmd0x2E1(u64, u64);
 WASM_RT_THREAD_LOCAL uint8_t __attribute__((aligned(16))) g_w2c_stack_array[65536 + 4096];
 WASM_RT_THREAD_LOCAL uintptr_t g_w2c_stack_offset = sizeof(g_w2c_stack_array);
 
-extern struct data_struct_w2c_native0x2Dplasma_0x2Erodata data_segment_data_w2c_native0x2Dplasma_0x2Erodata;
-extern struct data_struct_w2c_native0x2Dplasma_0x2Edata data_segment_data_w2c_native0x2Dplasma_0x2Edata;
-extern struct data_struct_w2c_native0x2Dplasma_0x2Ebss data_segment_data_w2c_native0x2Dplasma_0x2Ebss;
+extern struct data_struct_w2c_0x24native0x2Dplasma_0x2Erodata data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata;
+extern struct data_struct_w2c_0x24native0x2Dplasma_0x2Edata data_segment_data_w2c_0x24native0x2Dplasma_0x2Edata;
+extern struct data_struct_w2c_0x24native0x2Dplasma_0x2Ebss data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss;
 
-struct __attribute__((__packed__)) data_struct_w2c_native0x2Dplasma_0x2Erodata {
-  u8 plain_data_at_0[1150];
-} data_segment_data_w2c_native0x2Dplasma_0x2Erodata = {
+struct __attribute__((__packed__)) data_struct_w2c_0x24native0x2Dplasma_0x2Erodata {
+  u8 plain_data_at_0[1118];
+} data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata = {
   {
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x7e, 0x81, 0xa5, 0x81,
     0xbd, 0x99, 0x81, 0x7e, 0x7e, 0xff, 0xdb, 0xff, 0xc3, 0xe7, 0xff, 0x7e,
@@ -129,37 +129,35 @@ struct __attribute__((__packed__)) data_struct_w2c_native0x2Dplasma_0x2Erodata {
     0x1c, 0x30, 0x30, 0xe0, 0x30, 0x30, 0x1c, 0x00, 0x18, 0x18, 0x18, 0x00,
     0x18, 0x18, 0x18, 0x00, 0xe0, 0x30, 0x30, 0x1c, 0x30, 0x30, 0xe0, 0x00,
     0x76, 0xdc, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x10, 0x38, 0x6c,
-    0xc6, 0xc6, 0xfe, 0x00, 0x57, 0x41, 0x53, 0x4d, 0x00, 0x28, 0x6e, 0x75,
-    0x6c, 0x6c, 0x29, 0x00, 0x72, 0x65, 0x6e, 0x64, 0x65, 0x72, 0x20, 0x74,
-    0x69, 0x6d, 0x65, 0x20, 0x6d, 0x73, 0x20, 0x28, 0x61, 0x76, 0x67, 0x2c,
-    0x6d, 0x69, 0x6e, 0x2c, 0x6d, 0x61, 0x78, 0x29, 0x20, 0x3d, 0x20, 0x28,
-    0x25, 0x2e, 0x32, 0x66, 0x2c, 0x25, 0x2e, 0x32, 0x66, 0x2c, 0x25, 0x2e,
-    0x32, 0x66, 0x29, 0x00, 0x66, 0x72, 0x61, 0x6d, 0x65, 0x2f, 0x73, 0x20,
+    0xc6, 0xc6, 0xfe, 0x00, 0x57, 0x41, 0x53, 0x4d, 0x00, 0x72, 0x65, 0x6e,
+    0x64, 0x65, 0x72, 0x20, 0x74, 0x69, 0x6d, 0x65, 0x20, 0x6d, 0x73, 0x20,
     0x28, 0x61, 0x76, 0x67, 0x2c, 0x6d, 0x69, 0x6e, 0x2c, 0x6d, 0x61, 0x78,
-    0x29, 0x20, 0x3d, 0x20, 0x28, 0x25, 0x2e, 0x31, 0x66, 0x2c, 0x25, 0x2e,
-    0x31, 0x66, 0x2c, 0x25, 0x2e, 0x31, 0x66, 0x29, 0x00, 0x25, 0x57, 0x52,
-    0x4f, 0x4e, 0x47, 0x20, 0x46, 0x4f, 0x52, 0x4d, 0x41, 0x54, 0x20, 0x43,
-    0x48, 0x41, 0x52, 0x41, 0x43, 0x54, 0x45, 0x52, 0x25, 0x00,
+    0x29, 0x20, 0x3d, 0x20, 0x28, 0x25, 0x2e, 0x32, 0x66, 0x2c, 0x25, 0x2e,
+    0x32, 0x66, 0x2c, 0x25, 0x2e, 0x32, 0x66, 0x29, 0x00, 0x66, 0x72, 0x61,
+    0x6d, 0x65, 0x2f, 0x73, 0x20, 0x28, 0x61, 0x76, 0x67, 0x2c, 0x6d, 0x69,
+    0x6e, 0x2c, 0x6d, 0x61, 0x78, 0x29, 0x20, 0x3d, 0x20, 0x28, 0x25, 0x2e,
+    0x31, 0x66, 0x2c, 0x25, 0x2e, 0x31, 0x66, 0x2c, 0x25, 0x2e, 0x31, 0x66,
+    0x29, 0x00,
   },
 };
 
-struct __attribute__((__packed__)) data_struct_w2c_native0x2Dplasma_0x2Edata {
+struct __attribute__((__packed__)) data_struct_w2c_0x24native0x2Dplasma_0x2Edata {
   u8 plain_data_at_0[4];
-} data_segment_data_w2c_native0x2Dplasma_0x2Edata = {
+} data_segment_data_w2c_0x24native0x2Dplasma_0x2Edata = {
   {
     0x04, 0x00, 0x00, 0x00,
   },
 };
 
-struct __attribute__((__packed__)) data_struct_w2c_native0x2Dplasma_0x2Ebss {
+struct __attribute__((__packed__)) data_struct_w2c_0x24native0x2Dplasma_0x2Ebss {
   u8 plain_data_at_0[2632];
-} data_segment_data_w2c_native0x2Dplasma_0x2Ebss = {
+} data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss = {
   {
     /* all zero */
   },
 };
 
-static void w2c_native0x2Dplasma_android_main0x2E1(u64 w2c_p0) {
+static void w2c_0x24native0x2Dplasma_android_main0x2E1(u64 w2c_p0) {
   u32 w2c_l2 = 0, w2c_l6 = 0;
   u64 w2c_l1 = 0, w2c_l3 = 0, w2c_l4 = 0;
   f64 w2c_l5 = 0;
@@ -183,10 +181,10 @@ static void w2c_native0x2Dplasma_android_main0x2E1(u64 w2c_p0) {
   w2c_j2 = 3240ull;
   w2c_j0 = memset(w2c_j0, w2c_i1, w2c_j2);
   w2c_j0 = w2c_p0;
-  w2c_j1 = (u64)(&w2c_native0x2Dplasma_engine_handle_input0x2E1);
+  w2c_j1 = (u64)(&w2c_0x24native0x2Dplasma_engine_handle_input0x2E1);
   i64_store((u64)(w2c_j0) + 16u, w2c_j1);
   w2c_j0 = w2c_p0;
-  w2c_j1 = (u64)(&w2c_native0x2Dplasma_engine_handle_cmd0x2E1);
+  w2c_j1 = (u64)(&w2c_0x24native0x2Dplasma_engine_handle_cmd0x2E1);
   i64_store((u64)(w2c_j0) + 8u, w2c_j1);
   w2c_j0 = w2c_p0;
   w2c_j1 = w2c_l1;
@@ -197,13 +195,13 @@ static void w2c_native0x2Dplasma_android_main0x2E1(u64 w2c_p0) {
   w2c_j1 = w2c_p0;
   i64_store((u64)(w2c_j0) + 32u, w2c_j1);
   w2c_j0 = 0ull;
-  w2c_i0 = i32_load8_u((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss));
+  w2c_i0 = i32_load8_u((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss));
   if (w2c_i0) {goto w2c_B0;}
   w2c_j0 = 18446744073709551488ull;
   w2c_l3 = w2c_j0;
   w2c_L1: 
     w2c_j0 = w2c_l3;
-    w2c_j1 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 144u;
+    w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 144u;
     w2c_j0 += w2c_j1;
     w2c_i1 = w2c_l2;
     w2c_i2 = 5u;
@@ -238,7 +236,7 @@ static void w2c_native0x2Dplasma_android_main0x2E1(u64 w2c_p0) {
   w2c_l2 = w2c_i0;
   w2c_L2: 
     w2c_j0 = w2c_l3;
-    w2c_j1 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 16u;
+    w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 16u;
     w2c_j0 += w2c_j1;
     w2c_i1 = w2c_l2;
     w2c_i2 = 11u;
@@ -271,7 +269,7 @@ static void w2c_native0x2Dplasma_android_main0x2E1(u64 w2c_p0) {
   w2c_l2 = w2c_i0;
   w2c_L3: 
     w2c_j0 = w2c_l3;
-    w2c_j1 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 16u;
+    w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 16u;
     w2c_j0 += w2c_j1;
     w2c_i1 = w2c_l2;
     w2c_i2 = 4294967040u;
@@ -298,7 +296,7 @@ static void w2c_native0x2Dplasma_android_main0x2E1(u64 w2c_p0) {
     if (w2c_i0) {goto w2c_L3;}
   w2c_j0 = 192ull;
   w2c_l3 = w2c_j0;
-  w2c_j0 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 400u;
+  w2c_j0 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 400u;
   w2c_l4 = w2c_j0;
   w2c_L4: 
     w2c_j0 = w2c_l4;
@@ -329,10 +327,6 @@ static void w2c_native0x2Dplasma_android_main0x2E1(u64 w2c_p0) {
   w2c_i0 = 0u;
   w2c_l2 = w2c_i0;
   w2c_L5: 
-    w2c_j0 = w2c_l3;
-    w2c_j1 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 2580u;
-    w2c_j0 += w2c_j1;
-    w2c_l4 = w2c_j0;
     w2c_i0 = w2c_l2;
     w2c_d0 = (f64)(s32)(w2c_i0);
     w2c_d1 = 3.1415926535897931;
@@ -356,7 +350,9 @@ static void w2c_native0x2Dplasma_android_main0x2E1(u64 w2c_p0) {
     w2c_i0 = 2147483648u;
     w2c_l6 = w2c_i0;
     w2c_B6:;
-    w2c_j0 = w2c_l4;
+    w2c_j0 = w2c_l3;
+    w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 2580u;
+    w2c_j0 += w2c_j1;
     w2c_i1 = w2c_l6;
     i32_store((u64)(w2c_j0), w2c_i1);
     w2c_i0 = w2c_l2;
@@ -372,7 +368,7 @@ static void w2c_native0x2Dplasma_android_main0x2E1(u64 w2c_p0) {
     if (w2c_i0) {goto w2c_L5;}
   w2c_j0 = 0ull;
   w2c_i1 = 1u;
-  i32_store8((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss), w2c_i1);
+  i32_store8((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss), w2c_i1);
   w2c_B0:;
   w2c_i0 = 1u;
   w2c_j1 = w2c_l1;
@@ -389,7 +385,7 @@ static void w2c_native0x2Dplasma_android_main0x2E1(u64 w2c_p0) {
   w2c_j1 += w2c_j2;
   w2c_j2 = 1000000ull;
   w2c_j1 = I64_DIV_S(w2c_j1, w2c_j2);
-  i64_store((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 8u, w2c_j1);
+  i64_store((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 8u, w2c_j1);
   w2c_j0 = w2c_l1;
   w2c_j1 = 3280ull;
   w2c_j0 += w2c_j1;
@@ -465,13 +461,13 @@ static void w2c_native0x2Dplasma_android_main0x2E1(u64 w2c_p0) {
     w2c_j0 = w2c_l1;
     w2c_j1 = 32ull;
     w2c_j0 += w2c_j1;
-    w2c_native0x2Dplasma_engine_draw_frame0x2E1(w2c_j0);
+    w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(w2c_j0);
     goto w2c_L8;
   w2c_Bfunc:;
   FUNC_EPILOGUE;
 }
 
-static u32 w2c_native0x2Dplasma_engine_handle_input0x2E1(u64 w2c_p0, u64 w2c_p1) {
+static u32 w2c_0x24native0x2Dplasma_engine_handle_input0x2E1(u64 w2c_p0, u64 w2c_p1) {
   FUNC_PROLOGUE;
   u32 w2c_i0, w2c_i1;
   u64 w2c_j0;
@@ -491,13 +487,23 @@ static u32 w2c_native0x2Dplasma_engine_handle_input0x2E1(u64 w2c_p0, u64 w2c_p1)
   w2c_B0:;
   w2c_j0 = w2c_p1;
   w2c_i0 = AInputEvent_getType(w2c_j0);
+  w2c_i1 = 1u;
+  w2c_i0 = w2c_i0 != w2c_i1;
+  if (w2c_i0) {goto w2c_B1;}
+  w2c_j0 = w2c_p1;
+  w2c_i0 = AKeyEvent_getAction(w2c_j0);
+  w2c_j0 = w2c_p1;
+  w2c_i0 = AKeyEvent_getKeyCode(w2c_j0);
+  w2c_j0 = w2c_p1;
+  w2c_i0 = AKeyEvent_getMetaState(w2c_j0);
+  w2c_B1:;
   w2c_i0 = 0u;
   w2c_Bfunc:;
   FUNC_EPILOGUE;
   return w2c_i0;
 }
 
-static void w2c_native0x2Dplasma_engine_handle_cmd0x2E1(u64 w2c_p0, u32 w2c_p1) {
+static void w2c_0x24native0x2Dplasma_engine_handle_cmd0x2E1(u64 w2c_p0, u32 w2c_p1) {
   u64 w2c_l2 = 0, w2c_l3 = 0;
   FUNC_PROLOGUE;
   u32 w2c_i0, w2c_i1, w2c_i2, w2c_i3;
@@ -528,7 +534,7 @@ static void w2c_native0x2Dplasma_engine_handle_cmd0x2E1(u64 w2c_p0, u32 w2c_p1) 
   w2c_j1 = w2c_p0;
   w2c_j1 = i64_load((u64)(w2c_j1) + 72u);
   w2c_i1 = ANativeWindow_getFormat(w2c_j1);
-  i32_store((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Edata), w2c_i1);
+  i32_store((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Edata), w2c_i1);
   w2c_j0 = w2c_p0;
   w2c_j0 = i64_load((u64)(w2c_j0) + 72u);
   w2c_l3 = w2c_j0;
@@ -555,7 +561,7 @@ static void w2c_native0x2Dplasma_engine_handle_cmd0x2E1(u64 w2c_p0, u32 w2c_p1) 
   w2c_j2 = i64_load((u64)(w2c_j2) + 72u);
   w2c_i2 = ANativeWindow_getHeight(w2c_j2);
   w2c_j3 = 0ull;
-  w2c_i3 = i32_load((u64)(w2c_j3) + (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Edata));
+  w2c_i3 = i32_load((u64)(w2c_j3) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Edata));
   w2c_i0 = ANativeWindow_setBuffersGeometry(w2c_j0, w2c_i1, w2c_i2, w2c_i3);
   goto w2c_Bfunc;
   w2c_B2:;
@@ -564,13 +570,13 @@ static void w2c_native0x2Dplasma_engine_handle_cmd0x2E1(u64 w2c_p0, u32 w2c_p1) 
   i32_store((u64)(w2c_j0) + 3240u, w2c_i1);
   w2c_B1:;
   w2c_j0 = w2c_l2;
-  w2c_native0x2Dplasma_engine_draw_frame0x2E1(w2c_j0);
+  w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(w2c_j0);
   w2c_B0:;
   w2c_Bfunc:;
   FUNC_EPILOGUE;
 }
 
-static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
+static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   u32 w2c_l3 = 0, w2c_l6 = 0, w2c_l8 = 0, w2c_l9 = 0, w2c_l10 = 0, w2c_l12 = 0, w2c_l13 = 0, w2c_l15 = 0, 
       w2c_l17 = 0, w2c_l19 = 0;
   u64 w2c_l1 = 0, w2c_l2 = 0, w2c_l7 = 0, w2c_l11 = 0, w2c_l14 = 0, w2c_l16 = 0, w2c_l18 = 0, w2c_l20 = 0, 
@@ -580,9 +586,9 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   FUNC_PROLOGUE;
   u32 w2c_i0, w2c_i1, w2c_i2, w2c_i3, w2c_i4, w2c_i5;
   u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3, w2c_j4;
-  f64 w2c_d0, w2c_d1, w2c_d2, w2c_d3;
+  f64 w2c_d0, w2c_d1, w2c_d2, w2c_d3, w2c_d4;
   w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
-  w2c_j1 = 336ull;
+  w2c_j1 = 272ull;
   w2c_j0 -= w2c_j1;
   w2c_l1 = w2c_j0;
   if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
@@ -596,7 +602,7 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   if (w2c_i0) {goto w2c_B0;}
   w2c_j0 = w2c_l2;
   w2c_j1 = w2c_l1;
-  w2c_j2 = 80ull;
+  w2c_j2 = 16ull;
   w2c_j1 += w2c_j2;
   w2c_j2 = 0ull;
   w2c_i0 = ANativeWindow_lock(w2c_j0, w2c_j1, w2c_j2);
@@ -604,7 +610,7 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_i0 = (u32)((s32)w2c_i0 < (s32)w2c_i1);
   if (w2c_i0) {goto w2c_B0;}
   w2c_j0 = w2c_l1;
-  w2c_j1 = 128ull;
+  w2c_j1 = 64ull;
   w2c_j0 += w2c_j1;
   w2c_j1 = 0ull;
   w2c_i0 = gettimeofday(w2c_j0, w2c_j1);
@@ -612,12 +618,12 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_j1 = 24ull;
   w2c_j0 += w2c_j1;
   w2c_j1 = w2c_l1;
-  w2c_j1 = i64_load((u64)(w2c_j1) + 128u);
+  w2c_j1 = i64_load((u64)(w2c_j1) + 64u);
   w2c_d1 = (f64)(s64)(w2c_j1);
   w2c_d2 = 1000;
   w2c_d1 *= w2c_d2;
   w2c_j2 = w2c_l1;
-  w2c_j2 = i64_load((u64)(w2c_j2) + 136u);
+  w2c_j2 = i64_load((u64)(w2c_j2) + 72u);
   w2c_d2 = (f64)(s64)(w2c_j2);
   w2c_d3 = 1000;
   w2c_d2 /= w2c_d3;
@@ -625,25 +631,23 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   f64_store((u64)(w2c_j0), w2c_d1);
   w2c_i0 = 1u;
   w2c_j1 = w2c_l1;
-  w2c_j2 = 64ull;
-  w2c_j1 += w2c_j2;
   w2c_i0 = clock_gettime(w2c_i0, w2c_j1);
   w2c_j0 = w2c_l1;
-  w2c_i0 = i32_load((u64)(w2c_j0) + 84u);
+  w2c_i0 = i32_load((u64)(w2c_j0) + 20u);
   w2c_i1 = 1u;
   w2c_i0 = (u32)((s32)w2c_i0 < (s32)w2c_i1);
   w2c_l3 = w2c_i0;
   w2c_j0 = w2c_l1;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 64u);
+  w2c_j0 = i64_load((u64)(w2c_j0));
   w2c_j1 = 1000000000ull;
   w2c_j0 *= w2c_j1;
   w2c_j1 = w2c_l1;
-  w2c_j1 = i64_load((u64)(w2c_j1) + 72u);
+  w2c_j1 = i64_load((u64)(w2c_j1) + 8u);
   w2c_j0 += w2c_j1;
   w2c_j1 = 1000000ull;
   w2c_j0 = I64_DIV_S(w2c_j0, w2c_j1);
   w2c_j1 = 0ull;
-  w2c_j1 = i64_load((u64)(w2c_j1) + (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 8u);
+  w2c_j1 = i64_load((u64)(w2c_j1) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 8u);
   w2c_j0 -= w2c_j1;
   w2c_d0 = (f64)(s64)(w2c_j0);
   w2c_l4 = w2c_d0;
@@ -666,12 +670,12 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_l6 = w2c_i0;
   w2c_B1:;
   w2c_j0 = w2c_l1;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 96u);
+  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
   w2c_l7 = w2c_j0;
   w2c_i0 = w2c_l3;
   if (w2c_i0) {goto w2c_B3;}
   w2c_j0 = w2c_l1;
-  w2c_i0 = i32_load((u64)(w2c_j0) + 80u);
+  w2c_i0 = i32_load((u64)(w2c_j0) + 16u);
   w2c_i1 = 1u;
   w2c_i0 = (u32)((s32)w2c_i0 < (s32)w2c_i1);
   if (w2c_i0) {goto w2c_B3;}
@@ -712,7 +716,7 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_i0 += w2c_i1;
   w2c_l10 = w2c_i0;
   w2c_j0 = w2c_l2;
-  w2c_j1 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 528u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 528u;
   w2c_j0 += w2c_j1;
   w2c_l11 = w2c_j0;
   w2c_i0 = 0u;
@@ -723,7 +727,7 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_l14 = w2c_j0;
   w2c_L6: 
     w2c_j0 = w2c_l1;
-    w2c_j0 = i64_load32_s((u64)(w2c_j0) + 80u);
+    w2c_j0 = i64_load32_s((u64)(w2c_j0) + 16u);
     w2c_l2 = w2c_j0;
     w2c_j1 = 1ull;
     w2c_i0 = (u64)((s64)w2c_j0 < (s64)w2c_j1);
@@ -736,7 +740,7 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
     w2c_j0 = (u64)(w2c_i0);
     w2c_j1 = 2ull;
     w2c_j0 <<= (w2c_j1 & 63);
-    w2c_j1 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 528u;
+    w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 528u;
     w2c_j0 += w2c_j1;
     w2c_i0 = i32_load((u64)(w2c_j0));
     w2c_i1 = w2c_l8;
@@ -747,7 +751,7 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
     w2c_j1 = (u64)(w2c_i1);
     w2c_j2 = 2ull;
     w2c_j1 <<= (w2c_j2 & 63);
-    w2c_j2 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 528u;
+    w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 528u;
     w2c_j1 += w2c_j2;
     w2c_i1 = i32_load((u64)(w2c_j1));
     w2c_i0 += w2c_i1;
@@ -797,7 +801,7 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
     w2c_j1 = (u64)(w2c_i1);
     w2c_j2 = 1ull;
     w2c_j1 <<= (w2c_j2 & 63);
-    w2c_j2 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 16u;
+    w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 16u;
     w2c_j1 += w2c_j2;
     w2c_i1 = i32_load16_u((u64)(w2c_j1));
     i32_store16((u64)(w2c_j0), w2c_i1);
@@ -830,7 +834,7 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
       w2c_j1 = (u64)(w2c_i1);
       w2c_j2 = 2ull;
       w2c_j1 <<= (w2c_j2 & 63);
-      w2c_j2 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 528u;
+      w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 528u;
       w2c_j1 += w2c_j2;
       w2c_i1 = i32_load((u64)(w2c_j1));
       w2c_i2 = w2c_l15;
@@ -843,7 +847,7 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
       w2c_j2 = (u64)(w2c_i2);
       w2c_j3 = 2ull;
       w2c_j2 <<= (w2c_j3 & 63);
-      w2c_j3 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 528u;
+      w2c_j3 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 528u;
       w2c_j2 += w2c_j3;
       w2c_i2 = i32_load((u64)(w2c_j2));
       w2c_i1 += w2c_i2;
@@ -868,7 +872,7 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
       w2c_j1 = (u64)(w2c_i1);
       w2c_j2 = 1ull;
       w2c_j1 <<= (w2c_j2 & 63);
-      w2c_j2 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 16u;
+      w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 16u;
       w2c_j1 += w2c_j2;
       w2c_i1 = i32_load16_u((u64)(w2c_j1));
       w2c_i2 = 16u;
@@ -883,7 +887,7 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
       w2c_j2 = (u64)(w2c_i2);
       w2c_j3 = 2ull;
       w2c_j2 <<= (w2c_j3 & 63);
-      w2c_j3 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 528u;
+      w2c_j3 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 528u;
       w2c_j2 += w2c_j3;
       w2c_i2 = i32_load((u64)(w2c_j2));
       w2c_i3 = w2c_l15;
@@ -898,7 +902,7 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
       w2c_j3 = (u64)(w2c_i3);
       w2c_j4 = 2ull;
       w2c_j3 <<= (w2c_j4 & 63);
-      w2c_j4 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 528u;
+      w2c_j4 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 528u;
       w2c_j3 += w2c_j4;
       w2c_i3 = i32_load((u64)(w2c_j3));
       w2c_i2 += w2c_i3;
@@ -923,7 +927,7 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
       w2c_j2 = (u64)(w2c_i2);
       w2c_j3 = 1ull;
       w2c_j2 <<= (w2c_j3 & 63);
-      w2c_j3 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 16u;
+      w2c_j3 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 16u;
       w2c_j2 += w2c_j3;
       w2c_i2 = i32_load16_u((u64)(w2c_j2));
       w2c_i1 |= w2c_i2;
@@ -963,7 +967,7 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
     w2c_j1 = (u64)(w2c_i1);
     w2c_j2 = 2ull;
     w2c_j1 <<= (w2c_j2 & 63);
-    w2c_j2 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 528u;
+    w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 528u;
     w2c_j1 += w2c_j2;
     w2c_i1 = i32_load((u64)(w2c_j1));
     w2c_i2 = w2c_l15;
@@ -976,7 +980,7 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
     w2c_j2 = (u64)(w2c_i2);
     w2c_j3 = 2ull;
     w2c_j2 <<= (w2c_j3 & 63);
-    w2c_j3 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 528u;
+    w2c_j3 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 528u;
     w2c_j2 += w2c_j3;
     w2c_i2 = i32_load((u64)(w2c_j2));
     w2c_i1 += w2c_i2;
@@ -1001,7 +1005,7 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
     w2c_j1 = (u64)(w2c_i1);
     w2c_j2 = 1ull;
     w2c_j1 <<= (w2c_j2 & 63);
-    w2c_j2 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 16u;
+    w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 16u;
     w2c_j1 += w2c_j2;
     w2c_i1 = i32_load16_u((u64)(w2c_j1));
     i32_store16((u64)(w2c_j0), w2c_i1);
@@ -1016,7 +1020,7 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
     w2c_l8 = w2c_i0;
     w2c_j0 = w2c_l14;
     w2c_j1 = w2c_l1;
-    w2c_j1 = i64_load32_s((u64)(w2c_j1) + 88u);
+    w2c_j1 = i64_load32_s((u64)(w2c_j1) + 24u);
     w2c_j2 = 1ull;
     w2c_j1 <<= (w2c_j2 & 63);
     w2c_j0 += w2c_j1;
@@ -1026,37 +1030,29 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
     w2c_i0 += w2c_i1;
     w2c_l12 = w2c_i0;
     w2c_j1 = w2c_l1;
-    w2c_i1 = i32_load((u64)(w2c_j1) + 84u);
+    w2c_i1 = i32_load((u64)(w2c_j1) + 20u);
     w2c_i0 = (u32)((s32)w2c_i0 < (s32)w2c_i1);
     if (w2c_i0) {goto w2c_L6;}
   w2c_B3:;
   w2c_j0 = w2c_l1;
-  w2c_j1 = 32ull;
-  w2c_j0 += w2c_j1;
-  w2c_j1 = 16ull;
-  w2c_j0 += w2c_j1;
-  w2c_j1 = 0ull;
-  w2c_d1 = f64_load((u64)(w2c_j1) + (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 2616u);
-  f64_store((u64)(w2c_j0), w2c_d1);
-  w2c_j0 = w2c_l1;
-  w2c_j1 = 0ull;
-  w2c_d1 = f64_load((u64)(w2c_j1) + (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 2624u);
-  f64_store((u64)(w2c_j0) + 32u, w2c_d1);
-  w2c_j0 = w2c_l1;
-  w2c_j1 = 0ull;
-  w2c_d1 = f64_load((u64)(w2c_j1) + (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 2608u);
-  f64_store((u64)(w2c_j0) + 40u, w2c_d1);
-  w2c_j0 = w2c_l1;
-  w2c_i0 = i32_load((u64)(w2c_j0) + 88u);
+  w2c_i0 = i32_load((u64)(w2c_j0) + 24u);
   w2c_l8 = w2c_i0;
   w2c_j0 = w2c_l1;
-  w2c_j1 = 128ull;
+  w2c_j1 = 64ull;
   w2c_j0 += w2c_j1;
-  w2c_j1 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Erodata) + 1084u;
-  w2c_j2 = w2c_l1;
-  w2c_j3 = 32ull;
-  w2c_j2 += w2c_j3;
-  w2c_i0 = w2c_native0x2Dplasma_sprintf0x2E1(w2c_j0, w2c_j1, w2c_j2);
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1077u;
+  w2c_j2 = 0ull;
+  w2c_d2 = f64_load((u64)(w2c_j2) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 2624u);
+  w2c_j3 = 0ull;
+  w2c_d3 = f64_load((u64)(w2c_j3) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 2608u);
+  w2c_j4 = 0ull;
+  w2c_d4 = f64_load((u64)(w2c_j4) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 2616u);
+  {
+    f64 w2c_va_0 = w2c_d2;
+    f64 w2c_va_1 = w2c_d3;
+    f64 w2c_va_2 = w2c_d4;
+    w2c_i0 = sprintf(w2c_j0, w2c_j1, w2c_va_0, w2c_va_1, w2c_va_2);
+  }
   w2c_j0 = w2c_l7;
   w2c_i1 = w2c_l8;
   w2c_i2 = 150u;
@@ -1067,11 +1063,11 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_j0 += w2c_j1;
   w2c_l21 = w2c_j0;
   w2c_j0 = w2c_l1;
-  w2c_i0 = i32_load8_u((u64)(w2c_j0) + 128u);
+  w2c_i0 = i32_load8_u((u64)(w2c_j0) + 64u);
   w2c_i0 = !(w2c_i0);
   if (w2c_i0) {goto w2c_B12;}
   w2c_j0 = w2c_l1;
-  w2c_j1 = 128ull;
+  w2c_j1 = 64ull;
   w2c_j0 += w2c_j1;
   w2c_l16 = w2c_j0;
   w2c_i0 = w2c_l8;
@@ -1117,7 +1113,7 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
           w2c_l2 = w2c_j0;
           w2c_L17: 
             w2c_i0 = w2c_l15;
-            w2c_j1 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Erodata);
+            w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata);
             w2c_j2 = w2c_l16;
             w2c_j2 = i64_load8_u((u64)(w2c_j2));
             w2c_j3 = 3ull;
@@ -1190,27 +1186,23 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
     if (w2c_i0) {goto w2c_L13;}
   w2c_B12:;
   w2c_j0 = w2c_l1;
-  w2c_j1 = 16ull;
+  w2c_j1 = 64ull;
   w2c_j0 += w2c_j1;
-  w2c_j1 = 0ull;
-  w2c_d1 = f64_load((u64)(w2c_j1) + (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 2592u);
-  f64_store((u64)(w2c_j0), w2c_d1);
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1029u;
+  w2c_j2 = 0ull;
+  w2c_d2 = f64_load((u64)(w2c_j2) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 2600u);
+  w2c_j3 = 0ull;
+  w2c_d3 = f64_load((u64)(w2c_j3) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 2584u);
+  w2c_j4 = 0ull;
+  w2c_d4 = f64_load((u64)(w2c_j4) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 2592u);
+  {
+    f64 w2c_va_0 = w2c_d2;
+    f64 w2c_va_1 = w2c_d3;
+    f64 w2c_va_2 = w2c_d4;
+    w2c_i0 = sprintf(w2c_j0, w2c_j1, w2c_va_0, w2c_va_1, w2c_va_2);
+  }
   w2c_j0 = w2c_l1;
-  w2c_j1 = 0ull;
-  w2c_d1 = f64_load((u64)(w2c_j1) + (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 2600u);
-  f64_store((u64)(w2c_j0), w2c_d1);
-  w2c_j0 = w2c_l1;
-  w2c_j1 = 0ull;
-  w2c_d1 = f64_load((u64)(w2c_j1) + (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 2584u);
-  f64_store((u64)(w2c_j0) + 8u, w2c_d1);
-  w2c_j0 = w2c_l1;
-  w2c_j1 = 128ull;
-  w2c_j0 += w2c_j1;
-  w2c_j1 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Erodata) + 1036u;
-  w2c_j2 = w2c_l1;
-  w2c_i0 = w2c_native0x2Dplasma_sprintf0x2E1(w2c_j0, w2c_j1, w2c_j2);
-  w2c_j0 = w2c_l1;
-  w2c_i0 = i32_load8_u((u64)(w2c_j0) + 128u);
+  w2c_i0 = i32_load8_u((u64)(w2c_j0) + 64u);
   if (w2c_i0) {goto w2c_B20;}
   w2c_i0 = 16u;
   w2c_i1 = w2c_l8;
@@ -1244,7 +1236,7 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_j0 = (u64)(s64)(s32)(w2c_i0);
   w2c_l7 = w2c_j0;
   w2c_j0 = w2c_l1;
-  w2c_j1 = 128ull;
+  w2c_j1 = 64ull;
   w2c_j0 += w2c_j1;
   w2c_l16 = w2c_j0;
   w2c_L21: 
@@ -1274,7 +1266,7 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
           w2c_l2 = w2c_j0;
           w2c_L25: 
             w2c_i0 = w2c_l15;
-            w2c_j1 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Erodata);
+            w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata);
             w2c_j2 = w2c_l16;
             w2c_j2 = i64_load8_u((u64)(w2c_j2));
             w2c_j3 = 3ull;
@@ -1350,6 +1342,10 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
     w2c_i0 = w2c_l3;
     if (w2c_i0) {goto w2c_L21;}
   w2c_B19:;
+  w2c_j0 = w2c_l7;
+  w2c_j1 = 1ull;
+  w2c_j0 <<= (w2c_j1 & 63);
+  w2c_l16 = w2c_j0;
   w2c_j0 = w2c_l21;
   w2c_i1 = w2c_l8;
   w2c_i2 = 6u;
@@ -1359,12 +1355,8 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_j1 <<= (w2c_j2 & 63);
   w2c_j0 += w2c_j1;
   w2c_l20 = w2c_j0;
-  w2c_j0 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Erodata) + 1024u;
+  w2c_j0 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1024u;
   w2c_l11 = w2c_j0;
-  w2c_j0 = w2c_l7;
-  w2c_j1 = 1ull;
-  w2c_j0 <<= (w2c_j1 & 63);
-  w2c_l16 = w2c_j0;
   w2c_j0 = w2c_l22;
   w2c_j1 = 1ull;
   w2c_j0 <<= (w2c_j1 & 63);
@@ -1376,7 +1368,7 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
     w2c_j0 = 0ull;
     w2c_l18 = w2c_j0;
     w2c_L28: 
-      w2c_j0 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Erodata);
+      w2c_j0 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata);
       w2c_j1 = w2c_l14;
       w2c_j2 = 3ull;
       w2c_j1 <<= (w2c_j2 & 63);
@@ -1444,7 +1436,7 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
     w2c_j1 = 1ull;
     w2c_j0 += w2c_j1;
     w2c_l11 = w2c_j0;
-    w2c_j1 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Erodata) + 1028u;
+    w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1028u;
     w2c_i0 = w2c_j0 != w2c_j1;
     if (w2c_i0) {goto w2c_L27;}
   w2c_j0 = w2c_p0;
@@ -1452,17 +1444,17 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_j0 = i64_load((u64)(w2c_j0) + 72u);
   w2c_i0 = ANativeWindow_unlockAndPost(w2c_j0);
   w2c_j0 = w2c_l1;
-  w2c_j1 = 128ull;
+  w2c_j1 = 64ull;
   w2c_j0 += w2c_j1;
   w2c_j1 = 0ull;
   w2c_i0 = gettimeofday(w2c_j0, w2c_j1);
   w2c_j0 = w2c_l1;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 128u);
+  w2c_j0 = i64_load((u64)(w2c_j0) + 64u);
   w2c_d0 = (f64)(s64)(w2c_j0);
   w2c_d1 = 1000;
   w2c_d0 *= w2c_d1;
   w2c_j1 = w2c_l1;
-  w2c_j1 = i64_load((u64)(w2c_j1) + 136u);
+  w2c_j1 = i64_load((u64)(w2c_j1) + 72u);
   w2c_d1 = (f64)(s64)(w2c_j1);
   w2c_d2 = 1000;
   w2c_d1 /= w2c_d2;
@@ -1604,34 +1596,34 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
     if (w2c_i0) {goto w2c_L35;}
   w2c_j0 = 0ull;
   w2c_d1 = w2c_l31;
-  f64_store((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 2592u, w2c_d1);
+  f64_store((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 2592u, w2c_d1);
   w2c_j0 = 0ull;
   w2c_d1 = w2c_l29;
-  f64_store((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 2584u, w2c_d1);
+  f64_store((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 2584u, w2c_d1);
   w2c_j0 = 0ull;
   w2c_d1 = 1000;
   w2c_d2 = w2c_l28;
   w2c_d1 /= w2c_d2;
-  f64_store((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 2608u, w2c_d1);
+  f64_store((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 2608u, w2c_d1);
   w2c_j0 = 0ull;
   w2c_d1 = 1000;
   w2c_d2 = w2c_l27;
   w2c_d1 /= w2c_d2;
-  f64_store((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 2616u, w2c_d1);
+  f64_store((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 2616u, w2c_d1);
   w2c_j0 = 0ull;
   w2c_d1 = w2c_l30;
   w2c_i2 = w2c_l15;
   w2c_d2 = (f64)(s32)(w2c_i2);
   w2c_l5 = w2c_d2;
   w2c_d1 /= w2c_d2;
-  f64_store((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 2600u, w2c_d1);
+  f64_store((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 2600u, w2c_d1);
   w2c_j0 = 0ull;
   w2c_d1 = 1000;
   w2c_d2 = w2c_l26;
   w2c_d3 = w2c_l5;
   w2c_d2 /= w2c_d3;
   w2c_d1 /= w2c_d2;
-  f64_store((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Ebss) + 2624u, w2c_d1);
+  f64_store((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 2624u, w2c_d1);
   w2c_B34:;
   w2c_j0 = w2c_p0;
   w2c_d1 = w2c_l23;
@@ -1705,7 +1697,7 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   f64_store((u64)(w2c_j0) + 16u, w2c_d1);
   w2c_B0:;
   w2c_j0 = w2c_l1;
-  w2c_j1 = 336ull;
+  w2c_j1 = 272ull;
   w2c_j0 += w2c_j1;
   if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
   if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
@@ -1713,2058 +1705,11 @@ static void w2c_native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   FUNC_EPILOGUE;
 }
 
-static void w2c_native0x2Dplasma_dtoa0x2E1(f64 w2c_p0, u32 w2c_p1, u64 w2c_p2) {
-  u32 w2c_l8 = 0;
-  u64 w2c_l3 = 0, w2c_l5 = 0, w2c_l6 = 0, w2c_l7 = 0, w2c_l9 = 0;
-  f64 w2c_l4 = 0;
+static void w2c_0x24native0x2Dplasma_android_app_pre_exec_cmd0x2E1(u64 w2c_p0, u32 w2c_p1) {
+  u64 w2c_l2 = 0, w2c_l3 = 0;
   FUNC_PROLOGUE;
   u32 w2c_i0, w2c_i1, w2c_i2;
-  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3;
-  f64 w2c_d0, w2c_d1;
-  w2c_d0 = w2c_p0;
-  w2c_d1 = 0;
-  w2c_i0 = w2c_d0 < w2c_d1;
-  w2c_i0 = !(w2c_i0);
-  if (w2c_i0) {goto w2c_B0;}
-  w2c_j0 = w2c_p2;
-  w2c_i1 = 45u;
-  i32_store8((u64)(w2c_j0), w2c_i1);
-  w2c_j0 = w2c_p2;
-  w2c_j1 = 1ull;
-  w2c_j0 += w2c_j1;
-  w2c_p2 = w2c_j0;
-  w2c_d0 = w2c_p0;
-  w2c_d0 = -(w2c_d0);
-  w2c_p0 = w2c_d0;
-  w2c_B0:;
-  w2c_d0 = w2c_p0;
-  w2c_d1 = 2147483647;
-  w2c_i0 = w2c_d0 > w2c_d1;
-  w2c_i0 = !(w2c_i0);
-  if (w2c_i0) {goto w2c_B2;}
-  w2c_j0 = w2c_p2;
-  w2c_i1 = 71u;
-  i32_store8((u64)(w2c_j0) + 2u, w2c_i1);
-  w2c_j0 = w2c_p2;
-  w2c_i1 = 18754u;
-  i32_store16((u64)(w2c_j0), w2c_i1);
-  w2c_j0 = w2c_p2;
-  w2c_j1 = 3ull;
-  w2c_j0 += w2c_j1;
-  w2c_l3 = w2c_j0;
-  goto w2c_B1;
-  w2c_B2:;
-  w2c_d0 = w2c_p0;
-  w2c_d0 = wasm_trunc(w2c_d0);
-  w2c_l4 = w2c_d0;
-  w2c_d0 = wasm_fabs(w2c_d0);
-  w2c_d1 = 9.2233720368547758e+18;
-  w2c_i0 = w2c_d0 < w2c_d1;
-  w2c_i0 = !(w2c_i0);
-  if (w2c_i0) {goto w2c_B4;}
-  w2c_d0 = w2c_l4;
-  w2c_j0 = I64_TRUNC_S_F64(w2c_d0);
-  w2c_l3 = w2c_j0;
-  goto w2c_B3;
-  w2c_B4:;
-  w2c_j0 = 9223372036854775808ull;
-  w2c_l3 = w2c_j0;
-  w2c_B3:;
-  w2c_j0 = w2c_l3;
-  w2c_l5 = w2c_j0;
-  w2c_j0 = w2c_p2;
-  w2c_l6 = w2c_j0;
-  w2c_j0 = w2c_l3;
-  w2c_j1 = 18446744073709551615ull;
-  w2c_i0 = (u64)((s64)w2c_j0 > (s64)w2c_j1);
-  if (w2c_i0) {goto w2c_B5;}
-  w2c_j0 = w2c_p2;
-  w2c_i1 = 45u;
-  i32_store8((u64)(w2c_j0), w2c_i1);
-  w2c_j0 = w2c_p2;
-  w2c_j1 = 1ull;
-  w2c_j0 += w2c_j1;
-  w2c_l6 = w2c_j0;
-  w2c_j0 = 0ull;
-  w2c_j1 = w2c_l3;
-  w2c_j0 -= w2c_j1;
-  w2c_l5 = w2c_j0;
-  w2c_B5:;
-  w2c_j0 = w2c_l3;
-  w2c_d0 = (f64)(s64)(w2c_j0);
-  w2c_l4 = w2c_d0;
-  w2c_j0 = 0ull;
-  w2c_l3 = w2c_j0;
-  w2c_L6: 
-    w2c_j0 = w2c_l6;
-    w2c_j1 = w2c_l3;
-    w2c_j0 += w2c_j1;
-    w2c_j1 = w2c_l5;
-    w2c_j2 = w2c_l5;
-    w2c_j3 = 10ull;
-    w2c_j2 = DIV_U(w2c_j2, w2c_j3);
-    w2c_l7 = w2c_j2;
-    w2c_j3 = 10ull;
-    w2c_j2 *= w2c_j3;
-    w2c_j1 -= w2c_j2;
-    w2c_i1 = (u32)(w2c_j1);
-    w2c_i2 = 48u;
-    w2c_i1 |= w2c_i2;
-    i32_store8((u64)(w2c_j0), w2c_i1);
-    w2c_j0 = w2c_l3;
-    w2c_j1 = 1ull;
-    w2c_j0 += w2c_j1;
-    w2c_l3 = w2c_j0;
-    w2c_j0 = w2c_l5;
-    w2c_j1 = 9ull;
-    w2c_i0 = w2c_j0 > w2c_j1;
-    w2c_l8 = w2c_i0;
-    w2c_j0 = w2c_l7;
-    w2c_l5 = w2c_j0;
-    w2c_i0 = w2c_l8;
-    if (w2c_i0) {goto w2c_L6;}
-  w2c_j0 = w2c_l6;
-  w2c_j1 = w2c_l3;
-  w2c_j2 = 4294967295ull;
-  w2c_j1 &= w2c_j2;
-  w2c_j0 += w2c_j1;
-  w2c_i1 = 0u;
-  i32_store8((u64)(w2c_j0), w2c_i1);
-  w2c_j0 = w2c_l6;
-  w2c_j0 = strlen(w2c_j0);
-  w2c_i0 = (u32)(w2c_j0);
-  w2c_i1 = 4294967295u;
-  w2c_i0 += w2c_i1;
-  w2c_l8 = w2c_i0;
-  w2c_i1 = 1u;
-  w2c_i0 = (u32)((s32)w2c_i0 < (s32)w2c_i1);
-  if (w2c_i0) {goto w2c_B7;}
-  w2c_i0 = w2c_l8;
-  w2c_j0 = (u64)(w2c_i0);
-  w2c_l5 = w2c_j0;
-  w2c_j0 = 0ull;
-  w2c_l3 = w2c_j0;
-  w2c_L8: 
-    w2c_j0 = w2c_l6;
-    w2c_j1 = w2c_l3;
-    w2c_j0 += w2c_j1;
-    w2c_l7 = w2c_j0;
-    w2c_i0 = i32_load8_u((u64)(w2c_j0));
-    w2c_l8 = w2c_i0;
-    w2c_j0 = w2c_l7;
-    w2c_j1 = w2c_l6;
-    w2c_j2 = w2c_l5;
-    w2c_j1 += w2c_j2;
-    w2c_l9 = w2c_j1;
-    w2c_i1 = i32_load8_u((u64)(w2c_j1));
-    i32_store8((u64)(w2c_j0), w2c_i1);
-    w2c_j0 = w2c_l9;
-    w2c_i1 = w2c_l8;
-    i32_store8((u64)(w2c_j0), w2c_i1);
-    w2c_j0 = w2c_l3;
-    w2c_j1 = 1ull;
-    w2c_j0 += w2c_j1;
-    w2c_l3 = w2c_j0;
-    w2c_j1 = w2c_l5;
-    w2c_j2 = 18446744073709551615ull;
-    w2c_j1 += w2c_j2;
-    w2c_l5 = w2c_j1;
-    w2c_i0 = (u64)((s64)w2c_j0 < (s64)w2c_j1);
-    if (w2c_i0) {goto w2c_L8;}
-  w2c_B7:;
-  w2c_j0 = w2c_p2;
-  w2c_j1 = 18446744073709551615ull;
-  w2c_j0 += w2c_j1;
-  w2c_l5 = w2c_j0;
-  w2c_L9: 
-    w2c_j0 = w2c_l5;
-    w2c_j1 = 1ull;
-    w2c_j0 += w2c_j1;
-    w2c_l5 = w2c_j0;
-    w2c_i0 = i32_load8_u((u64)(w2c_j0));
-    if (w2c_i0) {goto w2c_L9;}
-  w2c_i0 = w2c_p1;
-  w2c_i1 = 1u;
-  w2c_i0 = (u32)((s32)w2c_i0 >= (s32)w2c_i1);
-  if (w2c_i0) {goto w2c_B10;}
-  w2c_j0 = w2c_l5;
-  w2c_l3 = w2c_j0;
-  goto w2c_B1;
-  w2c_B10:;
-  w2c_j0 = w2c_l5;
-  w2c_j1 = 1ull;
-  w2c_j0 += w2c_j1;
-  w2c_l3 = w2c_j0;
-  w2c_j0 = w2c_l5;
-  w2c_i1 = 46u;
-  i32_store8((u64)(w2c_j0), w2c_i1);
-  w2c_i0 = w2c_p1;
-  w2c_i1 = 1u;
-  w2c_i0 += w2c_i1;
-  w2c_l8 = w2c_i0;
-  w2c_d0 = w2c_p0;
-  w2c_d1 = w2c_l4;
-  w2c_d0 -= w2c_d1;
-  w2c_p0 = w2c_d0;
-  w2c_L11: 
-    w2c_d0 = w2c_p0;
-    w2c_d1 = 10;
-    w2c_d0 *= w2c_d1;
-    w2c_l4 = w2c_d0;
-    w2c_d0 = wasm_trunc(w2c_d0);
-    w2c_p0 = w2c_d0;
-    w2c_d0 = wasm_fabs(w2c_d0);
-    w2c_d1 = 9.2233720368547758e+18;
-    w2c_i0 = w2c_d0 < w2c_d1;
-    w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_B13;}
-    w2c_d0 = w2c_p0;
-    w2c_j0 = I64_TRUNC_S_F64(w2c_d0);
-    w2c_l5 = w2c_j0;
-    goto w2c_B12;
-    w2c_B13:;
-    w2c_j0 = 9223372036854775808ull;
-    w2c_l5 = w2c_j0;
-    w2c_B12:;
-    w2c_j0 = w2c_l3;
-    w2c_j1 = w2c_l5;
-    w2c_i1 = (u32)(w2c_j1);
-    w2c_i2 = 48u;
-    w2c_i1 += w2c_i2;
-    i32_store8((u64)(w2c_j0), w2c_i1);
-    w2c_d0 = w2c_l4;
-    w2c_d1 = w2c_p0;
-    w2c_d0 -= w2c_d1;
-    w2c_p0 = w2c_d0;
-    w2c_j0 = w2c_l3;
-    w2c_j1 = 1ull;
-    w2c_j0 += w2c_j1;
-    w2c_l3 = w2c_j0;
-    w2c_i0 = w2c_l8;
-    w2c_i1 = 4294967295u;
-    w2c_i0 += w2c_i1;
-    w2c_l8 = w2c_i0;
-    w2c_i1 = 1u;
-    w2c_i0 = w2c_i0 > w2c_i1;
-    if (w2c_i0) {goto w2c_L11;}
-  w2c_B1:;
-  w2c_j0 = w2c_l3;
-  w2c_i1 = 0u;
-  i32_store8((u64)(w2c_j0), w2c_i1);
-  FUNC_EPILOGUE;
-}
-
-static u32 w2c_native0x2Dplasma_vsprintf0x2E1(u64 w2c_p0, u64 w2c_p1, u64 w2c_p2) {
-  u32 w2c_l5 = 0, w2c_l7 = 0, w2c_l8 = 0, w2c_l9 = 0, w2c_l11 = 0, w2c_l12 = 0, w2c_l13 = 0, w2c_l15 = 0;
-  u64 w2c_l3 = 0, w2c_l4 = 0, w2c_l6 = 0, w2c_l10 = 0, w2c_l14 = 0, w2c_l16 = 0, w2c_l17 = 0, w2c_l18 = 0;
-  FUNC_PROLOGUE;
-  u32 w2c_i0, w2c_i1, w2c_i2, w2c_i3, w2c_i4, w2c_i5;
-  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3, w2c_j4;
-  f64 w2c_d0;
-  w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
-  w2c_j1 = 80ull;
-  w2c_j0 -= w2c_j1;
-  w2c_l3 = w2c_j0;
-  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
-  w2c_j0 = w2c_l3;
-  w2c_j1 = 1ull;
-  w2c_j0 |= w2c_j1;
-  w2c_l4 = w2c_j0;
-  w2c_i0 = 0u;
-  w2c_l5 = w2c_i0;
-  w2c_L1: 
-    w2c_j0 = w2c_p1;
-    w2c_j1 = 1ull;
-    w2c_j0 += w2c_j1;
-    w2c_l6 = w2c_j0;
-    w2c_j0 = w2c_p1;
-    w2c_i0 = i32_load8_u((u64)(w2c_j0));
-    w2c_l7 = w2c_i0;
-    w2c_i1 = 37u;
-    w2c_i0 = w2c_i0 == w2c_i1;
-    if (w2c_i0) {goto w2c_B2;}
-    w2c_i0 = w2c_l7;
-    w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_B0;}
-    w2c_j0 = w2c_p0;
-    w2c_i1 = w2c_l7;
-    i32_store8((u64)(w2c_j0), w2c_i1);
-    w2c_j0 = w2c_p0;
-    w2c_j1 = 1ull;
-    w2c_j0 += w2c_j1;
-    w2c_p0 = w2c_j0;
-    w2c_i0 = w2c_l5;
-    w2c_i1 = 1u;
-    w2c_i0 += w2c_i1;
-    w2c_l5 = w2c_i0;
-    w2c_j0 = w2c_l6;
-    w2c_p1 = w2c_j0;
-    goto w2c_L1;
-    w2c_B2:;
-    w2c_i0 = 0u;
-    w2c_l8 = w2c_i0;
-    w2c_L4: 
-      w2c_i0 = 1u;
-      w2c_l7 = w2c_i0;
-      w2c_j0 = w2c_l6;
-      w2c_i0 = i32_load8_s((u64)(w2c_j0));
-      w2c_l9 = w2c_i0;
-      w2c_i1 = 4294967264u;
-      w2c_i0 += w2c_i1;
-      switch (w2c_i0) {
-        case 0: goto w2c_B6;
-        case 1: goto w2c_B3;
-        case 2: goto w2c_B3;
-        case 3: goto w2c_B3;
-        case 4: goto w2c_B3;
-        case 5: goto w2c_B3;
-        case 6: goto w2c_B3;
-        case 7: goto w2c_B3;
-        case 8: goto w2c_B3;
-        case 9: goto w2c_B3;
-        case 10: goto w2c_B3;
-        case 11: goto w2c_B3;
-        case 12: goto w2c_B3;
-        case 13: goto w2c_B7;
-        case 14: goto w2c_B3;
-        case 15: goto w2c_B3;
-        case 16: goto w2c_B5;
-        default: goto w2c_B3;
-      }
-      w2c_B7:;
-      w2c_i0 = 2u;
-      w2c_l7 = w2c_i0;
-      goto w2c_B5;
-      w2c_B6:;
-      w2c_i0 = 4u;
-      w2c_l7 = w2c_i0;
-      w2c_B5:;
-      w2c_j0 = w2c_l6;
-      w2c_j1 = 1ull;
-      w2c_j0 += w2c_j1;
-      w2c_l6 = w2c_j0;
-      w2c_i0 = w2c_l7;
-      w2c_i1 = w2c_l8;
-      w2c_i0 |= w2c_i1;
-      w2c_l8 = w2c_i0;
-      goto w2c_L4;
-    w2c_B3:;
-    w2c_i0 = 0u;
-    w2c_l7 = w2c_i0;
-    w2c_i0 = w2c_l9;
-    w2c_i1 = 4294967248u;
-    w2c_i0 += w2c_i1;
-    w2c_i1 = 255u;
-    w2c_i0 &= w2c_i1;
-    w2c_i1 = 9u;
-    w2c_i0 = w2c_i0 <= w2c_i1;
-    if (w2c_i0) {goto w2c_B9;}
-    w2c_j0 = w2c_l6;
-    w2c_l10 = w2c_j0;
-    goto w2c_B8;
-    w2c_B9:;
-    w2c_i0 = 0u;
-    w2c_l7 = w2c_i0;
-    w2c_L10: 
-      w2c_i0 = w2c_l9;
-      w2c_i1 = 255u;
-      w2c_i0 &= w2c_i1;
-      w2c_i1 = w2c_l7;
-      w2c_i2 = 10u;
-      w2c_i1 *= w2c_i2;
-      w2c_i0 += w2c_i1;
-      w2c_i1 = 4294967248u;
-      w2c_i0 += w2c_i1;
-      w2c_l7 = w2c_i0;
-      w2c_j0 = w2c_l6;
-      w2c_i0 = i32_load8_u((u64)(w2c_j0) + 1u);
-      w2c_l9 = w2c_i0;
-      w2c_j0 = w2c_l6;
-      w2c_j1 = 1ull;
-      w2c_j0 += w2c_j1;
-      w2c_l10 = w2c_j0;
-      w2c_l6 = w2c_j0;
-      w2c_i0 = w2c_l9;
-      w2c_i1 = 4294967248u;
-      w2c_i0 += w2c_i1;
-      w2c_i1 = 255u;
-      w2c_i0 &= w2c_i1;
-      w2c_i1 = 10u;
-      w2c_i0 = w2c_i0 < w2c_i1;
-      if (w2c_i0) {goto w2c_L10;}
-    w2c_B8:;
-    w2c_i0 = w2c_l8;
-    w2c_i1 = 2u;
-    w2c_i0 &= w2c_i1;
-    w2c_l11 = w2c_i0;
-    w2c_i0 = w2c_l8;
-    w2c_i1 = 4294967294u;
-    w2c_i0 &= w2c_i1;
-    w2c_l12 = w2c_i0;
-    w2c_i0 = 6u;
-    w2c_l13 = w2c_i0;
-    w2c_i0 = w2c_l9;
-    w2c_i1 = 255u;
-    w2c_i0 &= w2c_i1;
-    w2c_i1 = 46u;
-    w2c_i0 = w2c_i0 != w2c_i1;
-    if (w2c_i0) {goto w2c_B11;}
-    w2c_j0 = w2c_l10;
-    w2c_j1 = 1ull;
-    w2c_j0 += w2c_j1;
-    w2c_l6 = w2c_j0;
-    w2c_i0 = 0u;
-    w2c_l13 = w2c_i0;
-    w2c_j0 = w2c_l10;
-    w2c_i0 = i32_load8_u((u64)(w2c_j0) + 1u);
-    w2c_l9 = w2c_i0;
-    w2c_i1 = 4294967248u;
-    w2c_i0 += w2c_i1;
-    w2c_i1 = 255u;
-    w2c_i0 &= w2c_i1;
-    w2c_i1 = 9u;
-    w2c_i0 = w2c_i0 <= w2c_i1;
-    if (w2c_i0) {goto w2c_B12;}
-    w2c_j0 = w2c_l6;
-    w2c_l10 = w2c_j0;
-    goto w2c_B11;
-    w2c_B12:;
-    w2c_i0 = 0u;
-    w2c_l13 = w2c_i0;
-    w2c_L13: 
-      w2c_i0 = w2c_l9;
-      w2c_i1 = 255u;
-      w2c_i0 &= w2c_i1;
-      w2c_i1 = w2c_l13;
-      w2c_i2 = 10u;
-      w2c_i1 *= w2c_i2;
-      w2c_i0 += w2c_i1;
-      w2c_i1 = 4294967248u;
-      w2c_i0 += w2c_i1;
-      w2c_l13 = w2c_i0;
-      w2c_j0 = w2c_l6;
-      w2c_i0 = i32_load8_u((u64)(w2c_j0) + 1u);
-      w2c_l9 = w2c_i0;
-      w2c_j0 = w2c_l6;
-      w2c_j1 = 1ull;
-      w2c_j0 += w2c_j1;
-      w2c_l10 = w2c_j0;
-      w2c_l6 = w2c_j0;
-      w2c_i0 = w2c_l9;
-      w2c_i1 = 4294967248u;
-      w2c_i0 += w2c_i1;
-      w2c_i1 = 255u;
-      w2c_i0 &= w2c_i1;
-      w2c_i1 = 10u;
-      w2c_i0 = w2c_i0 < w2c_i1;
-      if (w2c_i0) {goto w2c_L13;}
-    w2c_B11:;
-    w2c_i0 = w2c_l12;
-    w2c_i1 = w2c_l8;
-    w2c_i2 = w2c_l11;
-    w2c_i0 = w2c_i2 ? w2c_i0 : w2c_i1;
-    w2c_l11 = w2c_i0;
-    w2c_i0 = w2c_l9;
-    w2c_i1 = 255u;
-    w2c_i0 &= w2c_i1;
-    w2c_i1 = 108u;
-    w2c_i0 = w2c_i0 == w2c_i1;
-    if (w2c_i0) {goto w2c_B15;}
-    w2c_j0 = w2c_l10;
-    w2c_l6 = w2c_j0;
-    goto w2c_B14;
-    w2c_B15:;
-    w2c_j0 = w2c_l10;
-    w2c_j1 = 2ull;
-    w2c_j0 += w2c_j1;
-    w2c_j1 = w2c_l10;
-    w2c_j2 = 1ull;
-    w2c_j1 += w2c_j2;
-    w2c_j2 = w2c_l10;
-    w2c_i2 = i32_load8_u((u64)(w2c_j2) + 1u);
-    w2c_i3 = 108u;
-    w2c_i2 = w2c_i2 == w2c_i3;
-    w2c_l8 = w2c_i2;
-    w2c_j0 = w2c_i2 ? w2c_j0 : w2c_j1;
-    w2c_l6 = w2c_j0;
-    w2c_i0 = w2c_l11;
-    w2c_i1 = 16u;
-    w2c_i0 |= w2c_i1;
-    w2c_l11 = w2c_i0;
-    w2c_j0 = w2c_l10;
-    w2c_j1 = 2ull;
-    w2c_j2 = 1ull;
-    w2c_i3 = w2c_l8;
-    w2c_j1 = w2c_i3 ? w2c_j1 : w2c_j2;
-    w2c_j0 += w2c_j1;
-    w2c_i0 = i32_load8_u((u64)(w2c_j0));
-    w2c_l9 = w2c_i0;
-    w2c_B14:;
-    w2c_j0 = w2c_l6;
-    w2c_j1 = 1ull;
-    w2c_j0 += w2c_j1;
-    w2c_p1 = w2c_j0;
-    w2c_i0 = w2c_l9;
-    w2c_i0 = (u32)(s32)(s8)(u8)(w2c_i0);
-    w2c_i1 = 4294967259u;
-    w2c_i0 += w2c_i1;
-    switch (w2c_i0) {
-      case 0: goto w2c_B17;
-      case 1: goto w2c_B16;
-      case 2: goto w2c_B16;
-      case 3: goto w2c_B16;
-      case 4: goto w2c_B16;
-      case 5: goto w2c_B16;
-      case 6: goto w2c_B16;
-      case 7: goto w2c_B16;
-      case 8: goto w2c_B16;
-      case 9: goto w2c_B16;
-      case 10: goto w2c_B16;
-      case 11: goto w2c_B16;
-      case 12: goto w2c_B16;
-      case 13: goto w2c_B16;
-      case 14: goto w2c_B16;
-      case 15: goto w2c_B16;
-      case 16: goto w2c_B16;
-      case 17: goto w2c_B16;
-      case 18: goto w2c_B16;
-      case 19: goto w2c_B16;
-      case 20: goto w2c_B16;
-      case 21: goto w2c_B16;
-      case 22: goto w2c_B16;
-      case 23: goto w2c_B16;
-      case 24: goto w2c_B16;
-      case 25: goto w2c_B16;
-      case 26: goto w2c_B16;
-      case 27: goto w2c_B16;
-      case 28: goto w2c_B16;
-      case 29: goto w2c_B16;
-      case 30: goto w2c_B16;
-      case 31: goto w2c_B16;
-      case 32: goto w2c_B16;
-      case 33: goto w2c_B18;
-      case 34: goto w2c_B16;
-      case 35: goto w2c_B16;
-      case 36: goto w2c_B16;
-      case 37: goto w2c_B16;
-      case 38: goto w2c_B16;
-      case 39: goto w2c_B16;
-      case 40: goto w2c_B16;
-      case 41: goto w2c_B16;
-      case 42: goto w2c_B16;
-      case 43: goto w2c_B16;
-      case 44: goto w2c_B16;
-      case 45: goto w2c_B16;
-      case 46: goto w2c_B16;
-      case 47: goto w2c_B16;
-      case 48: goto w2c_B16;
-      case 49: goto w2c_B16;
-      case 50: goto w2c_B16;
-      case 51: goto w2c_B20;
-      case 52: goto w2c_B16;
-      case 53: goto w2c_B16;
-      case 54: goto w2c_B16;
-      case 55: goto w2c_B16;
-      case 56: goto w2c_B16;
-      case 57: goto w2c_B16;
-      case 58: goto w2c_B16;
-      case 59: goto w2c_B16;
-      case 60: goto w2c_B16;
-      case 61: goto w2c_B16;
-      case 62: goto w2c_B24;
-      case 63: goto w2c_B22;
-      case 64: goto w2c_B16;
-      case 65: goto w2c_B18;
-      case 66: goto w2c_B16;
-      case 67: goto w2c_B16;
-      case 68: goto w2c_B22;
-      case 69: goto w2c_B16;
-      case 70: goto w2c_B16;
-      case 71: goto w2c_B16;
-      case 72: goto w2c_B16;
-      case 73: goto w2c_B16;
-      case 74: goto w2c_B16;
-      case 75: goto w2c_B16;
-      case 76: goto w2c_B16;
-      case 77: goto w2c_B16;
-      case 78: goto w2c_B23;
-      case 79: goto w2c_B16;
-      case 80: goto w2c_B21;
-      case 81: goto w2c_B16;
-      case 82: goto w2c_B16;
-      case 83: goto w2c_B19;
-      default: goto w2c_B16;
-    }
-    w2c_B24:;
-    w2c_j0 = w2c_p0;
-    w2c_j1 = w2c_p2;
-    w2c_i1 = i32_load((u64)(w2c_j1));
-    i32_store8((u64)(w2c_j0), w2c_i1);
-    w2c_j0 = w2c_p0;
-    w2c_j1 = 1ull;
-    w2c_j0 += w2c_j1;
-    w2c_p0 = w2c_j0;
-    w2c_j0 = w2c_p2;
-    w2c_j1 = 4ull;
-    w2c_j0 += w2c_j1;
-    w2c_p2 = w2c_j0;
-    w2c_i0 = w2c_l5;
-    w2c_i1 = 1u;
-    w2c_i0 += w2c_i1;
-    w2c_l5 = w2c_i0;
-    goto w2c_L1;
-    w2c_B23:;
-    w2c_j0 = w2c_p2;
-    w2c_j1 = 7ull;
-    w2c_j0 += w2c_j1;
-    w2c_j1 = 18446744073709551608ull;
-    w2c_j0 &= w2c_j1;
-    w2c_l14 = w2c_j0;
-    w2c_j0 = i64_load((u64)(w2c_j0));
-    w2c_l6 = w2c_j0;
-    w2c_j1 = 0ull;
-    w2c_i0 = w2c_j0 != w2c_j1;
-    if (w2c_i0) {goto w2c_B26;}
-    w2c_i0 = 6u;
-    w2c_l9 = w2c_i0;
-    w2c_i0 = w2c_l11;
-    w2c_i1 = 2u;
-    w2c_i0 &= w2c_i1;
-    w2c_l12 = w2c_i0;
-    if (w2c_i0) {goto w2c_B27;}
-    w2c_i0 = w2c_l7;
-    w2c_i1 = 7u;
-    w2c_i0 = (u32)((s32)w2c_i0 < (s32)w2c_i1);
-    if (w2c_i0) {goto w2c_B27;}
-    w2c_j0 = w2c_p0;
-    w2c_i1 = 48u;
-    w2c_i2 = 32u;
-    w2c_i3 = w2c_l11;
-    w2c_i4 = 1u;
-    w2c_i3 &= w2c_i4;
-    w2c_i1 = w2c_i3 ? w2c_i1 : w2c_i2;
-    w2c_i2 = w2c_l7;
-    w2c_i3 = 4294967290u;
-    w2c_i2 += w2c_i3;
-    w2c_j2 = (u64)(w2c_i2);
-    w2c_j0 = memset(w2c_j0, w2c_i1, w2c_j2);
-    w2c_i1 = w2c_l7;
-    w2c_i2 = 4294967289u;
-    w2c_i1 += w2c_i2;
-    w2c_j1 = (u64)(w2c_i1);
-    w2c_j0 += w2c_j1;
-    w2c_j1 = 1ull;
-    w2c_j0 += w2c_j1;
-    w2c_p0 = w2c_j0;
-    w2c_i0 = w2c_l7;
-    w2c_l9 = w2c_i0;
-    w2c_B27:;
-    w2c_i0 = w2c_l11;
-    w2c_i1 = 8u;
-    w2c_i0 &= w2c_i1;
-    w2c_l13 = w2c_i0;
-    w2c_i0 = 40u;
-    w2c_l8 = w2c_i0;
-    w2c_j0 = 0ull;
-    w2c_l6 = w2c_j0;
-    w2c_L28: 
-      w2c_j0 = w2c_p0;
-      w2c_j1 = w2c_l6;
-      w2c_j0 += w2c_j1;
-      w2c_i1 = w2c_l8;
-      w2c_i2 = 32u;
-      w2c_i1 ^= w2c_i2;
-      w2c_i2 = w2c_l8;
-      w2c_i3 = w2c_l8;
-      w2c_i3 = (u32)(s32)(s8)(u8)(w2c_i3);
-      w2c_i4 = 4294967199u;
-      w2c_i3 += w2c_i4;
-      w2c_i4 = 26u;
-      w2c_i3 = w2c_i3 < w2c_i4;
-      w2c_i1 = w2c_i3 ? w2c_i1 : w2c_i2;
-      w2c_i2 = w2c_l8;
-      w2c_i3 = w2c_l13;
-      w2c_i1 = w2c_i3 ? w2c_i1 : w2c_i2;
-      i32_store8((u64)(w2c_j0), w2c_i1);
-      w2c_j0 = w2c_l6;
-      w2c_j1 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Erodata) + 1030u;
-      w2c_j0 += w2c_j1;
-      w2c_i0 = i32_load8_u((u64)(w2c_j0));
-      w2c_l8 = w2c_i0;
-      w2c_j0 = w2c_l6;
-      w2c_j1 = 1ull;
-      w2c_j0 += w2c_j1;
-      w2c_l10 = w2c_j0;
-      w2c_l6 = w2c_j0;
-      w2c_j0 = w2c_l10;
-      w2c_j1 = 6ull;
-      w2c_i0 = w2c_j0 != w2c_j1;
-      if (w2c_i0) {goto w2c_L28;}
-    w2c_j0 = w2c_p0;
-    w2c_j1 = w2c_l10;
-    w2c_j0 += w2c_j1;
-    w2c_l6 = w2c_j0;
-    w2c_i0 = w2c_l12;
-    if (w2c_i0) {goto w2c_B29;}
-    w2c_j0 = w2c_l6;
-    w2c_p0 = w2c_j0;
-    goto w2c_B25;
-    w2c_B29:;
-    w2c_i0 = w2c_l7;
-    w2c_i1 = 7u;
-    w2c_i0 = (u32)((s32)w2c_i0 >= (s32)w2c_i1);
-    if (w2c_i0) {goto w2c_B30;}
-    w2c_j0 = w2c_l6;
-    w2c_p0 = w2c_j0;
-    goto w2c_B25;
-    w2c_B30:;
-    w2c_j0 = w2c_l6;
-    w2c_i1 = 32u;
-    w2c_i2 = w2c_l7;
-    w2c_i3 = 4294967290u;
-    w2c_i2 += w2c_i3;
-    w2c_l8 = w2c_i2;
-    w2c_j2 = (u64)(w2c_i2);
-    w2c_j0 = memset(w2c_j0, w2c_i1, w2c_j2);
-    w2c_i0 = w2c_l9;
-    w2c_i1 = w2c_l8;
-    w2c_i0 += w2c_i1;
-    w2c_l9 = w2c_i0;
-    w2c_j0 = w2c_p0;
-    w2c_i1 = w2c_l7;
-    w2c_i2 = 4294967289u;
-    w2c_i1 += w2c_i2;
-    w2c_j1 = (u64)(w2c_i1);
-    w2c_j0 += w2c_j1;
-    w2c_j1 = 7ull;
-    w2c_j0 += w2c_j1;
-    w2c_p0 = w2c_j0;
-    goto w2c_B25;
-    w2c_B26:;
-    w2c_j0 = w2c_l6;
-    w2c_j0 = strlen(w2c_j0);
-    w2c_i0 = (u32)(w2c_j0);
-    w2c_l12 = w2c_i0;
-    w2c_i0 = w2c_l11;
-    w2c_i1 = 2u;
-    w2c_i0 &= w2c_i1;
-    w2c_l15 = w2c_i0;
-    w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_B32;}
-    w2c_i0 = 0u;
-    w2c_l9 = w2c_i0;
-    goto w2c_B31;
-    w2c_B32:;
-    w2c_i0 = w2c_l7;
-    w2c_i1 = w2c_l12;
-    w2c_i0 -= w2c_i1;
-    w2c_l9 = w2c_i0;
-    w2c_i1 = 1u;
-    w2c_i0 = (u32)((s32)w2c_i0 >= (s32)w2c_i1);
-    if (w2c_i0) {goto w2c_B33;}
-    w2c_i0 = 0u;
-    w2c_l9 = w2c_i0;
-    goto w2c_B31;
-    w2c_B33:;
-    w2c_i0 = w2c_l7;
-    w2c_i1 = w2c_l12;
-    w2c_i2 = 4294967295u;
-    w2c_i1 ^= w2c_i2;
-    w2c_i0 += w2c_i1;
-    w2c_j0 = (u64)(w2c_i0);
-    w2c_j1 = 1ull;
-    w2c_j0 += w2c_j1;
-    w2c_l10 = w2c_j0;
-    w2c_j0 = w2c_l10;
-    w2c_j1 = w2c_p0;
-    w2c_i2 = 48u;
-    w2c_i3 = 32u;
-    w2c_i4 = w2c_l11;
-    w2c_i5 = 1u;
-    w2c_i4 &= w2c_i5;
-    w2c_i2 = w2c_i4 ? w2c_i2 : w2c_i3;
-    w2c_j3 = w2c_l10;
-    w2c_j1 = memset(w2c_j1, w2c_i2, w2c_j3);
-    w2c_j0 += w2c_j1;
-    w2c_p0 = w2c_j0;
-    w2c_B31:;
-    w2c_j0 = w2c_l6;
-    w2c_i0 = i32_load8_u((u64)(w2c_j0));
-    w2c_l8 = w2c_i0;
-    w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_B34;}
-    w2c_j0 = w2c_l6;
-    w2c_j1 = 1ull;
-    w2c_j0 += w2c_j1;
-    w2c_l6 = w2c_j0;
-    w2c_i0 = w2c_l11;
-    w2c_i1 = 8u;
-    w2c_i0 &= w2c_i1;
-    w2c_l13 = w2c_i0;
-    w2c_L35: 
-      w2c_j0 = w2c_p0;
-      w2c_i1 = w2c_l8;
-      w2c_i2 = 32u;
-      w2c_i1 ^= w2c_i2;
-      w2c_i2 = w2c_l8;
-      w2c_i3 = w2c_l8;
-      w2c_i3 = (u32)(s32)(s8)(u8)(w2c_i3);
-      w2c_i4 = 4294967199u;
-      w2c_i3 += w2c_i4;
-      w2c_i4 = 26u;
-      w2c_i3 = w2c_i3 < w2c_i4;
-      w2c_i1 = w2c_i3 ? w2c_i1 : w2c_i2;
-      w2c_i2 = w2c_l8;
-      w2c_i3 = w2c_l13;
-      w2c_i1 = w2c_i3 ? w2c_i1 : w2c_i2;
-      i32_store8((u64)(w2c_j0), w2c_i1);
-      w2c_j0 = w2c_p0;
-      w2c_j1 = 1ull;
-      w2c_j0 += w2c_j1;
-      w2c_p0 = w2c_j0;
-      w2c_i0 = w2c_l9;
-      w2c_i1 = 1u;
-      w2c_i0 += w2c_i1;
-      w2c_l9 = w2c_i0;
-      w2c_j0 = w2c_l6;
-      w2c_i0 = i32_load8_u((u64)(w2c_j0));
-      w2c_l8 = w2c_i0;
-      w2c_j0 = w2c_l6;
-      w2c_j1 = 1ull;
-      w2c_j0 += w2c_j1;
-      w2c_l6 = w2c_j0;
-      w2c_i0 = w2c_l8;
-      if (w2c_i0) {goto w2c_L35;}
-    w2c_B34:;
-    w2c_i0 = w2c_l15;
-    w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_B25;}
-    w2c_i0 = w2c_l7;
-    w2c_i1 = w2c_l12;
-    w2c_i0 -= w2c_i1;
-    w2c_l8 = w2c_i0;
-    w2c_i1 = 1u;
-    w2c_i0 = (u32)((s32)w2c_i0 < (s32)w2c_i1);
-    if (w2c_i0) {goto w2c_B25;}
-    w2c_i0 = w2c_l7;
-    w2c_i1 = w2c_l12;
-    w2c_i2 = 4294967295u;
-    w2c_i1 ^= w2c_i2;
-    w2c_i0 += w2c_i1;
-    w2c_j0 = (u64)(w2c_i0);
-    w2c_j1 = 1ull;
-    w2c_j0 += w2c_j1;
-    w2c_l6 = w2c_j0;
-    w2c_i0 = w2c_l9;
-    w2c_i1 = w2c_l8;
-    w2c_i0 += w2c_i1;
-    w2c_l9 = w2c_i0;
-    w2c_j0 = w2c_l6;
-    w2c_j1 = w2c_p0;
-    w2c_i2 = 32u;
-    w2c_j3 = w2c_l6;
-    w2c_j1 = memset(w2c_j1, w2c_i2, w2c_j3);
-    w2c_j0 += w2c_j1;
-    w2c_p0 = w2c_j0;
-    w2c_B25:;
-    w2c_j0 = w2c_l14;
-    w2c_j1 = 8ull;
-    w2c_j0 += w2c_j1;
-    w2c_p2 = w2c_j0;
-    w2c_i0 = w2c_l9;
-    w2c_i1 = w2c_l5;
-    w2c_i0 += w2c_i1;
-    w2c_l5 = w2c_i0;
-    goto w2c_L1;
-    w2c_B22:;
-    w2c_i0 = w2c_l11;
-    w2c_i1 = 16u;
-    w2c_i0 &= w2c_i1;
-    w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_B37;}
-    w2c_j0 = w2c_p2;
-    w2c_j1 = 7ull;
-    w2c_j0 += w2c_j1;
-    w2c_j1 = 18446744073709551608ull;
-    w2c_j0 &= w2c_j1;
-    w2c_l6 = w2c_j0;
-    w2c_j1 = 8ull;
-    w2c_j0 += w2c_j1;
-    w2c_p2 = w2c_j0;
-    w2c_j0 = w2c_l6;
-    w2c_j0 = i64_load((u64)(w2c_j0));
-    w2c_l16 = w2c_j0;
-    goto w2c_B36;
-    w2c_B37:;
-    w2c_j0 = w2c_p2;
-    w2c_j0 = i64_load32_s((u64)(w2c_j0));
-    w2c_l16 = w2c_j0;
-    w2c_j0 = w2c_p2;
-    w2c_j1 = 4ull;
-    w2c_j0 += w2c_j1;
-    w2c_p2 = w2c_j0;
-    w2c_B36:;
-    w2c_j0 = w2c_l3;
-    w2c_l14 = w2c_j0;
-    w2c_j0 = w2c_l16;
-    w2c_l6 = w2c_j0;
-    w2c_j0 = w2c_l16;
-    w2c_j1 = 18446744073709551615ull;
-    w2c_i0 = (u64)((s64)w2c_j0 > (s64)w2c_j1);
-    w2c_l9 = w2c_i0;
-    if (w2c_i0) {goto w2c_B38;}
-    w2c_j0 = w2c_l3;
-    w2c_i1 = 45u;
-    i32_store8((u64)(w2c_j0), w2c_i1);
-    w2c_j0 = 0ull;
-    w2c_j1 = w2c_l16;
-    w2c_j0 -= w2c_j1;
-    w2c_l6 = w2c_j0;
-    w2c_j0 = w2c_l4;
-    w2c_l14 = w2c_j0;
-    w2c_B38:;
-    w2c_j0 = 0ull;
-    w2c_l10 = w2c_j0;
-    w2c_L39: 
-      w2c_j0 = w2c_l14;
-      w2c_j1 = w2c_l10;
-      w2c_j0 += w2c_j1;
-      w2c_j1 = w2c_l6;
-      w2c_j2 = w2c_l6;
-      w2c_j3 = 10ull;
-      w2c_j2 = DIV_U(w2c_j2, w2c_j3);
-      w2c_l17 = w2c_j2;
-      w2c_j3 = 10ull;
-      w2c_j2 *= w2c_j3;
-      w2c_j1 -= w2c_j2;
-      w2c_i1 = (u32)(w2c_j1);
-      w2c_i2 = 48u;
-      w2c_i1 |= w2c_i2;
-      i32_store8((u64)(w2c_j0), w2c_i1);
-      w2c_j0 = w2c_l10;
-      w2c_j1 = 1ull;
-      w2c_j0 += w2c_j1;
-      w2c_l10 = w2c_j0;
-      w2c_j0 = w2c_l6;
-      w2c_j1 = 9ull;
-      w2c_i0 = w2c_j0 > w2c_j1;
-      w2c_l8 = w2c_i0;
-      w2c_j0 = w2c_l17;
-      w2c_l6 = w2c_j0;
-      w2c_i0 = w2c_l8;
-      if (w2c_i0) {goto w2c_L39;}
-    w2c_j0 = w2c_l14;
-    w2c_j1 = w2c_l10;
-    w2c_j2 = 4294967295ull;
-    w2c_j1 &= w2c_j2;
-    w2c_j0 += w2c_j1;
-    w2c_i1 = 0u;
-    i32_store8((u64)(w2c_j0), w2c_i1);
-    w2c_j0 = w2c_l14;
-    w2c_j0 = strlen(w2c_j0);
-    w2c_i0 = (u32)(w2c_j0);
-    w2c_i1 = 4294967295u;
-    w2c_i0 += w2c_i1;
-    w2c_l8 = w2c_i0;
-    w2c_i1 = 1u;
-    w2c_i0 = (u32)((s32)w2c_i0 < (s32)w2c_i1);
-    if (w2c_i0) {goto w2c_B40;}
-    w2c_i0 = w2c_l8;
-    w2c_j0 = (u64)(w2c_i0);
-    w2c_l6 = w2c_j0;
-    w2c_j0 = 0ull;
-    w2c_l10 = w2c_j0;
-    w2c_L41: 
-      w2c_j0 = w2c_l14;
-      w2c_j1 = w2c_l10;
-      w2c_j0 += w2c_j1;
-      w2c_l17 = w2c_j0;
-      w2c_i0 = i32_load8_u((u64)(w2c_j0));
-      w2c_l8 = w2c_i0;
-      w2c_j0 = w2c_l17;
-      w2c_j1 = w2c_l14;
-      w2c_j2 = w2c_l6;
-      w2c_j1 += w2c_j2;
-      w2c_l18 = w2c_j1;
-      w2c_i1 = i32_load8_u((u64)(w2c_j1));
-      i32_store8((u64)(w2c_j0), w2c_i1);
-      w2c_j0 = w2c_l18;
-      w2c_i1 = w2c_l8;
-      i32_store8((u64)(w2c_j0), w2c_i1);
-      w2c_j0 = w2c_l10;
-      w2c_j1 = 1ull;
-      w2c_j0 += w2c_j1;
-      w2c_l10 = w2c_j0;
-      w2c_j1 = w2c_l6;
-      w2c_j2 = 18446744073709551615ull;
-      w2c_j1 += w2c_j2;
-      w2c_l6 = w2c_j1;
-      w2c_i0 = (u64)((s64)w2c_j0 < (s64)w2c_j1);
-      if (w2c_i0) {goto w2c_L41;}
-    w2c_B40:;
-    w2c_i0 = w2c_l11;
-    w2c_i1 = 4u;
-    w2c_i0 &= w2c_i1;
-    w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_B42;}
-    w2c_j0 = w2c_l3;
-    w2c_j0 = strlen(w2c_j0);
-    w2c_i1 = w2c_l7;
-    w2c_j1 = (u64)(s64)(s32)(w2c_i1);
-    w2c_i0 = w2c_j0 >= w2c_j1;
-    if (w2c_i0) {goto w2c_B43;}
-    w2c_i0 = w2c_l11;
-    w2c_i1 = 1u;
-    w2c_i0 &= w2c_i1;
-    w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_B42;}
-    w2c_B43:;
-    w2c_j0 = w2c_p0;
-    w2c_i1 = 45u;
-    w2c_i2 = 32u;
-    w2c_j3 = w2c_l16;
-    w2c_j4 = 0ull;
-    w2c_i3 = (u64)((s64)w2c_j3 < (s64)w2c_j4);
-    w2c_i1 = w2c_i3 ? w2c_i1 : w2c_i2;
-    i32_store8((u64)(w2c_j0), w2c_i1);
-    w2c_i0 = w2c_l7;
-    w2c_i1 = 4294967295u;
-    w2c_i0 += w2c_i1;
-    w2c_l7 = w2c_i0;
-    w2c_j0 = w2c_p0;
-    w2c_j1 = 1ull;
-    w2c_j0 += w2c_j1;
-    w2c_p0 = w2c_j0;
-    w2c_i0 = w2c_l5;
-    w2c_i1 = 1u;
-    w2c_i0 += w2c_i1;
-    w2c_l5 = w2c_i0;
-    w2c_i0 = w2c_l9;
-    if (w2c_i0) {goto w2c_B42;}
-    w2c_j0 = 0ull;
-    w2c_l10 = w2c_j0;
-    w2c_j0 = 0ull;
-    w2c_j1 = w2c_l16;
-    w2c_j0 -= w2c_j1;
-    w2c_l6 = w2c_j0;
-    w2c_L44: 
-      w2c_j0 = w2c_l3;
-      w2c_j1 = w2c_l10;
-      w2c_j0 += w2c_j1;
-      w2c_j1 = w2c_l6;
-      w2c_j2 = w2c_l6;
-      w2c_j3 = 10ull;
-      w2c_j2 = DIV_U(w2c_j2, w2c_j3);
-      w2c_l14 = w2c_j2;
-      w2c_j3 = 10ull;
-      w2c_j2 *= w2c_j3;
-      w2c_j1 -= w2c_j2;
-      w2c_i1 = (u32)(w2c_j1);
-      w2c_i2 = 48u;
-      w2c_i1 |= w2c_i2;
-      i32_store8((u64)(w2c_j0), w2c_i1);
-      w2c_j0 = w2c_l10;
-      w2c_j1 = 1ull;
-      w2c_j0 += w2c_j1;
-      w2c_l10 = w2c_j0;
-      w2c_j0 = w2c_l6;
-      w2c_j1 = 9ull;
-      w2c_i0 = w2c_j0 > w2c_j1;
-      w2c_l8 = w2c_i0;
-      w2c_j0 = w2c_l14;
-      w2c_l6 = w2c_j0;
-      w2c_i0 = w2c_l8;
-      if (w2c_i0) {goto w2c_L44;}
-    w2c_j0 = w2c_l3;
-    w2c_j1 = w2c_l10;
-    w2c_j2 = 4294967295ull;
-    w2c_j1 &= w2c_j2;
-    w2c_j0 += w2c_j1;
-    w2c_i1 = 0u;
-    i32_store8((u64)(w2c_j0), w2c_i1);
-    w2c_j0 = w2c_l3;
-    w2c_j0 = strlen(w2c_j0);
-    w2c_i0 = (u32)(w2c_j0);
-    w2c_i1 = 4294967295u;
-    w2c_i0 += w2c_i1;
-    w2c_l8 = w2c_i0;
-    w2c_i1 = 1u;
-    w2c_i0 = (u32)((s32)w2c_i0 < (s32)w2c_i1);
-    if (w2c_i0) {goto w2c_B42;}
-    w2c_i0 = w2c_l8;
-    w2c_j0 = (u64)(w2c_i0);
-    w2c_l6 = w2c_j0;
-    w2c_j0 = 0ull;
-    w2c_l10 = w2c_j0;
-    w2c_L45: 
-      w2c_j0 = w2c_l3;
-      w2c_j1 = w2c_l10;
-      w2c_j0 += w2c_j1;
-      w2c_l14 = w2c_j0;
-      w2c_i0 = i32_load8_u((u64)(w2c_j0));
-      w2c_l8 = w2c_i0;
-      w2c_j0 = w2c_l14;
-      w2c_j1 = w2c_l3;
-      w2c_j2 = w2c_l6;
-      w2c_j1 += w2c_j2;
-      w2c_l17 = w2c_j1;
-      w2c_i1 = i32_load8_u((u64)(w2c_j1));
-      i32_store8((u64)(w2c_j0), w2c_i1);
-      w2c_j0 = w2c_l17;
-      w2c_i1 = w2c_l8;
-      i32_store8((u64)(w2c_j0), w2c_i1);
-      w2c_j0 = w2c_l10;
-      w2c_j1 = 1ull;
-      w2c_j0 += w2c_j1;
-      w2c_l10 = w2c_j0;
-      w2c_j1 = w2c_l6;
-      w2c_j2 = 18446744073709551615ull;
-      w2c_j1 += w2c_j2;
-      w2c_l6 = w2c_j1;
-      w2c_i0 = (u64)((s64)w2c_j0 < (s64)w2c_j1);
-      if (w2c_i0) {goto w2c_L45;}
-    w2c_B42:;
-    w2c_j0 = w2c_l3;
-    w2c_j0 = strlen(w2c_j0);
-    w2c_i0 = (u32)(w2c_j0);
-    w2c_l12 = w2c_i0;
-    w2c_i0 = w2c_l11;
-    w2c_i1 = 2u;
-    w2c_i0 &= w2c_i1;
-    w2c_l15 = w2c_i0;
-    w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_B47;}
-    w2c_i0 = 0u;
-    w2c_l9 = w2c_i0;
-    goto w2c_B46;
-    w2c_B47:;
-    w2c_i0 = w2c_l7;
-    w2c_i1 = w2c_l12;
-    w2c_i0 -= w2c_i1;
-    w2c_l9 = w2c_i0;
-    w2c_i1 = 1u;
-    w2c_i0 = (u32)((s32)w2c_i0 >= (s32)w2c_i1);
-    if (w2c_i0) {goto w2c_B48;}
-    w2c_i0 = 0u;
-    w2c_l9 = w2c_i0;
-    goto w2c_B46;
-    w2c_B48:;
-    w2c_i0 = w2c_l7;
-    w2c_i1 = w2c_l12;
-    w2c_i2 = 4294967295u;
-    w2c_i1 ^= w2c_i2;
-    w2c_i0 += w2c_i1;
-    w2c_j0 = (u64)(w2c_i0);
-    w2c_j1 = 1ull;
-    w2c_j0 += w2c_j1;
-    w2c_l6 = w2c_j0;
-    w2c_j0 = w2c_l6;
-    w2c_j1 = w2c_p0;
-    w2c_i2 = 48u;
-    w2c_i3 = 32u;
-    w2c_i4 = w2c_l11;
-    w2c_i5 = 1u;
-    w2c_i4 &= w2c_i5;
-    w2c_i2 = w2c_i4 ? w2c_i2 : w2c_i3;
-    w2c_j3 = w2c_l6;
-    w2c_j1 = memset(w2c_j1, w2c_i2, w2c_j3);
-    w2c_j0 += w2c_j1;
-    w2c_p0 = w2c_j0;
-    w2c_B46:;
-    w2c_j0 = w2c_l3;
-    w2c_i0 = i32_load8_u((u64)(w2c_j0));
-    w2c_l8 = w2c_i0;
-    w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_B49;}
-    w2c_i0 = w2c_l11;
-    w2c_i1 = 8u;
-    w2c_i0 &= w2c_i1;
-    w2c_l13 = w2c_i0;
-    w2c_j0 = w2c_l4;
-    w2c_l6 = w2c_j0;
-    w2c_L50: 
-      w2c_j0 = w2c_p0;
-      w2c_i1 = w2c_l8;
-      w2c_i2 = 32u;
-      w2c_i1 ^= w2c_i2;
-      w2c_i2 = w2c_l8;
-      w2c_i3 = w2c_l8;
-      w2c_i3 = (u32)(s32)(s8)(u8)(w2c_i3);
-      w2c_i4 = 4294967199u;
-      w2c_i3 += w2c_i4;
-      w2c_i4 = 26u;
-      w2c_i3 = w2c_i3 < w2c_i4;
-      w2c_i1 = w2c_i3 ? w2c_i1 : w2c_i2;
-      w2c_i2 = w2c_l8;
-      w2c_i3 = w2c_l13;
-      w2c_i1 = w2c_i3 ? w2c_i1 : w2c_i2;
-      i32_store8((u64)(w2c_j0), w2c_i1);
-      w2c_j0 = w2c_p0;
-      w2c_j1 = 1ull;
-      w2c_j0 += w2c_j1;
-      w2c_p0 = w2c_j0;
-      w2c_i0 = w2c_l9;
-      w2c_i1 = 1u;
-      w2c_i0 += w2c_i1;
-      w2c_l9 = w2c_i0;
-      w2c_j0 = w2c_l6;
-      w2c_i0 = i32_load8_u((u64)(w2c_j0));
-      w2c_l8 = w2c_i0;
-      w2c_j0 = w2c_l6;
-      w2c_j1 = 1ull;
-      w2c_j0 += w2c_j1;
-      w2c_l6 = w2c_j0;
-      w2c_i0 = w2c_l8;
-      if (w2c_i0) {goto w2c_L50;}
-    w2c_B49:;
-    w2c_i0 = w2c_l15;
-    w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_B51;}
-    w2c_i0 = w2c_l7;
-    w2c_i1 = w2c_l12;
-    w2c_i0 -= w2c_i1;
-    w2c_l8 = w2c_i0;
-    w2c_i1 = 1u;
-    w2c_i0 = (u32)((s32)w2c_i0 < (s32)w2c_i1);
-    if (w2c_i0) {goto w2c_B51;}
-    w2c_i0 = w2c_l7;
-    w2c_i1 = w2c_l12;
-    w2c_i2 = 4294967295u;
-    w2c_i1 ^= w2c_i2;
-    w2c_i0 += w2c_i1;
-    w2c_j0 = (u64)(w2c_i0);
-    w2c_j1 = 1ull;
-    w2c_j0 += w2c_j1;
-    w2c_l6 = w2c_j0;
-    w2c_i0 = w2c_l9;
-    w2c_i1 = w2c_l8;
-    w2c_i0 += w2c_i1;
-    w2c_l9 = w2c_i0;
-    w2c_j0 = w2c_l6;
-    w2c_j1 = w2c_p0;
-    w2c_i2 = 32u;
-    w2c_j3 = w2c_l6;
-    w2c_j1 = memset(w2c_j1, w2c_i2, w2c_j3);
-    w2c_j0 += w2c_j1;
-    w2c_p0 = w2c_j0;
-    w2c_B51:;
-    w2c_i0 = w2c_l9;
-    w2c_i1 = w2c_l5;
-    w2c_i0 += w2c_i1;
-    w2c_l5 = w2c_i0;
-    goto w2c_L1;
-    w2c_B21:;
-    w2c_i0 = w2c_l11;
-    w2c_i1 = 16u;
-    w2c_i0 &= w2c_i1;
-    w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_B53;}
-    w2c_j0 = w2c_p2;
-    w2c_j1 = 7ull;
-    w2c_j0 += w2c_j1;
-    w2c_j1 = 18446744073709551608ull;
-    w2c_j0 &= w2c_j1;
-    w2c_l6 = w2c_j0;
-    w2c_j1 = 8ull;
-    w2c_j0 += w2c_j1;
-    w2c_p2 = w2c_j0;
-    w2c_j0 = w2c_l6;
-    w2c_j0 = i64_load((u64)(w2c_j0));
-    w2c_l6 = w2c_j0;
-    goto w2c_B52;
-    w2c_B53:;
-    w2c_j0 = w2c_p2;
-    w2c_j0 = i64_load32_u((u64)(w2c_j0));
-    w2c_l6 = w2c_j0;
-    w2c_j0 = w2c_p2;
-    w2c_j1 = 4ull;
-    w2c_j0 += w2c_j1;
-    w2c_p2 = w2c_j0;
-    w2c_B52:;
-    w2c_j0 = 0ull;
-    w2c_l10 = w2c_j0;
-    w2c_L54: 
-      w2c_j0 = w2c_l3;
-      w2c_j1 = w2c_l10;
-      w2c_j0 += w2c_j1;
-      w2c_j1 = w2c_l6;
-      w2c_j2 = w2c_l6;
-      w2c_j3 = 10ull;
-      w2c_j2 = DIV_U(w2c_j2, w2c_j3);
-      w2c_l14 = w2c_j2;
-      w2c_j3 = 10ull;
-      w2c_j2 *= w2c_j3;
-      w2c_j1 -= w2c_j2;
-      w2c_i1 = (u32)(w2c_j1);
-      w2c_i2 = 48u;
-      w2c_i1 |= w2c_i2;
-      i32_store8((u64)(w2c_j0), w2c_i1);
-      w2c_j0 = w2c_l10;
-      w2c_j1 = 1ull;
-      w2c_j0 += w2c_j1;
-      w2c_l10 = w2c_j0;
-      w2c_j0 = w2c_l6;
-      w2c_j1 = 9ull;
-      w2c_i0 = w2c_j0 > w2c_j1;
-      w2c_l8 = w2c_i0;
-      w2c_j0 = w2c_l14;
-      w2c_l6 = w2c_j0;
-      w2c_i0 = w2c_l8;
-      if (w2c_i0) {goto w2c_L54;}
-    w2c_j0 = w2c_l3;
-    w2c_j1 = w2c_l10;
-    w2c_j2 = 4294967295ull;
-    w2c_j1 &= w2c_j2;
-    w2c_j0 += w2c_j1;
-    w2c_i1 = 0u;
-    i32_store8((u64)(w2c_j0), w2c_i1);
-    w2c_j0 = w2c_l3;
-    w2c_j0 = strlen(w2c_j0);
-    w2c_i0 = (u32)(w2c_j0);
-    w2c_i1 = 4294967295u;
-    w2c_i0 += w2c_i1;
-    w2c_l8 = w2c_i0;
-    w2c_i1 = 1u;
-    w2c_i0 = (u32)((s32)w2c_i0 < (s32)w2c_i1);
-    if (w2c_i0) {goto w2c_B55;}
-    w2c_i0 = w2c_l8;
-    w2c_j0 = (u64)(w2c_i0);
-    w2c_l6 = w2c_j0;
-    w2c_j0 = 0ull;
-    w2c_l10 = w2c_j0;
-    w2c_L56: 
-      w2c_j0 = w2c_l3;
-      w2c_j1 = w2c_l10;
-      w2c_j0 += w2c_j1;
-      w2c_l14 = w2c_j0;
-      w2c_i0 = i32_load8_u((u64)(w2c_j0));
-      w2c_l8 = w2c_i0;
-      w2c_j0 = w2c_l14;
-      w2c_j1 = w2c_l3;
-      w2c_j2 = w2c_l6;
-      w2c_j1 += w2c_j2;
-      w2c_l17 = w2c_j1;
-      w2c_i1 = i32_load8_u((u64)(w2c_j1));
-      i32_store8((u64)(w2c_j0), w2c_i1);
-      w2c_j0 = w2c_l17;
-      w2c_i1 = w2c_l8;
-      i32_store8((u64)(w2c_j0), w2c_i1);
-      w2c_j0 = w2c_l10;
-      w2c_j1 = 1ull;
-      w2c_j0 += w2c_j1;
-      w2c_l10 = w2c_j0;
-      w2c_j1 = w2c_l6;
-      w2c_j2 = 18446744073709551615ull;
-      w2c_j1 += w2c_j2;
-      w2c_l6 = w2c_j1;
-      w2c_i0 = (u64)((s64)w2c_j0 < (s64)w2c_j1);
-      if (w2c_i0) {goto w2c_L56;}
-    w2c_B55:;
-    w2c_j0 = w2c_l3;
-    w2c_j0 = strlen(w2c_j0);
-    w2c_i0 = (u32)(w2c_j0);
-    w2c_l12 = w2c_i0;
-    w2c_i0 = w2c_l11;
-    w2c_i1 = 2u;
-    w2c_i0 &= w2c_i1;
-    w2c_l15 = w2c_i0;
-    w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_B58;}
-    w2c_i0 = 0u;
-    w2c_l9 = w2c_i0;
-    goto w2c_B57;
-    w2c_B58:;
-    w2c_i0 = w2c_l7;
-    w2c_i1 = w2c_l12;
-    w2c_i0 -= w2c_i1;
-    w2c_l9 = w2c_i0;
-    w2c_i1 = 1u;
-    w2c_i0 = (u32)((s32)w2c_i0 >= (s32)w2c_i1);
-    if (w2c_i0) {goto w2c_B59;}
-    w2c_i0 = 0u;
-    w2c_l9 = w2c_i0;
-    goto w2c_B57;
-    w2c_B59:;
-    w2c_i0 = w2c_l7;
-    w2c_i1 = w2c_l12;
-    w2c_i2 = 4294967295u;
-    w2c_i1 ^= w2c_i2;
-    w2c_i0 += w2c_i1;
-    w2c_j0 = (u64)(w2c_i0);
-    w2c_j1 = 1ull;
-    w2c_j0 += w2c_j1;
-    w2c_l6 = w2c_j0;
-    w2c_j0 = w2c_l6;
-    w2c_j1 = w2c_p0;
-    w2c_i2 = 48u;
-    w2c_i3 = 32u;
-    w2c_i4 = w2c_l11;
-    w2c_i5 = 1u;
-    w2c_i4 &= w2c_i5;
-    w2c_i2 = w2c_i4 ? w2c_i2 : w2c_i3;
-    w2c_j3 = w2c_l6;
-    w2c_j1 = memset(w2c_j1, w2c_i2, w2c_j3);
-    w2c_j0 += w2c_j1;
-    w2c_p0 = w2c_j0;
-    w2c_B57:;
-    w2c_j0 = w2c_l3;
-    w2c_i0 = i32_load8_u((u64)(w2c_j0));
-    w2c_l8 = w2c_i0;
-    w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_B60;}
-    w2c_i0 = w2c_l11;
-    w2c_i1 = 8u;
-    w2c_i0 &= w2c_i1;
-    w2c_l13 = w2c_i0;
-    w2c_j0 = w2c_l4;
-    w2c_l6 = w2c_j0;
-    w2c_L61: 
-      w2c_j0 = w2c_p0;
-      w2c_i1 = w2c_l8;
-      w2c_i2 = 32u;
-      w2c_i1 ^= w2c_i2;
-      w2c_i2 = w2c_l8;
-      w2c_i3 = w2c_l8;
-      w2c_i3 = (u32)(s32)(s8)(u8)(w2c_i3);
-      w2c_i4 = 4294967199u;
-      w2c_i3 += w2c_i4;
-      w2c_i4 = 26u;
-      w2c_i3 = w2c_i3 < w2c_i4;
-      w2c_i1 = w2c_i3 ? w2c_i1 : w2c_i2;
-      w2c_i2 = w2c_l8;
-      w2c_i3 = w2c_l13;
-      w2c_i1 = w2c_i3 ? w2c_i1 : w2c_i2;
-      i32_store8((u64)(w2c_j0), w2c_i1);
-      w2c_j0 = w2c_p0;
-      w2c_j1 = 1ull;
-      w2c_j0 += w2c_j1;
-      w2c_p0 = w2c_j0;
-      w2c_i0 = w2c_l9;
-      w2c_i1 = 1u;
-      w2c_i0 += w2c_i1;
-      w2c_l9 = w2c_i0;
-      w2c_j0 = w2c_l6;
-      w2c_i0 = i32_load8_u((u64)(w2c_j0));
-      w2c_l8 = w2c_i0;
-      w2c_j0 = w2c_l6;
-      w2c_j1 = 1ull;
-      w2c_j0 += w2c_j1;
-      w2c_l6 = w2c_j0;
-      w2c_i0 = w2c_l8;
-      if (w2c_i0) {goto w2c_L61;}
-    w2c_B60:;
-    w2c_i0 = w2c_l15;
-    w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_B62;}
-    w2c_i0 = w2c_l7;
-    w2c_i1 = w2c_l12;
-    w2c_i0 -= w2c_i1;
-    w2c_l8 = w2c_i0;
-    w2c_i1 = 1u;
-    w2c_i0 = (u32)((s32)w2c_i0 < (s32)w2c_i1);
-    if (w2c_i0) {goto w2c_B62;}
-    w2c_i0 = w2c_l7;
-    w2c_i1 = w2c_l12;
-    w2c_i2 = 4294967295u;
-    w2c_i1 ^= w2c_i2;
-    w2c_i0 += w2c_i1;
-    w2c_j0 = (u64)(w2c_i0);
-    w2c_j1 = 1ull;
-    w2c_j0 += w2c_j1;
-    w2c_l6 = w2c_j0;
-    w2c_i0 = w2c_l9;
-    w2c_i1 = w2c_l8;
-    w2c_i0 += w2c_i1;
-    w2c_l9 = w2c_i0;
-    w2c_j0 = w2c_l6;
-    w2c_j1 = w2c_p0;
-    w2c_i2 = 32u;
-    w2c_j3 = w2c_l6;
-    w2c_j1 = memset(w2c_j1, w2c_i2, w2c_j3);
-    w2c_j0 += w2c_j1;
-    w2c_p0 = w2c_j0;
-    w2c_B62:;
-    w2c_i0 = w2c_l9;
-    w2c_i1 = w2c_l5;
-    w2c_i0 += w2c_i1;
-    w2c_l5 = w2c_i0;
-    goto w2c_L1;
-    w2c_B20:;
-    w2c_i0 = w2c_l11;
-    w2c_i1 = 8u;
-    w2c_i0 |= w2c_i1;
-    w2c_l11 = w2c_i0;
-    w2c_B19:;
-    w2c_i0 = w2c_l11;
-    w2c_i1 = 16u;
-    w2c_i0 &= w2c_i1;
-    w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_B64;}
-    w2c_j0 = w2c_p2;
-    w2c_j1 = 7ull;
-    w2c_j0 += w2c_j1;
-    w2c_j1 = 18446744073709551608ull;
-    w2c_j0 &= w2c_j1;
-    w2c_l6 = w2c_j0;
-    w2c_j1 = 8ull;
-    w2c_j0 += w2c_j1;
-    w2c_p2 = w2c_j0;
-    w2c_j0 = w2c_l6;
-    w2c_j0 = i64_load((u64)(w2c_j0));
-    w2c_l6 = w2c_j0;
-    goto w2c_B63;
-    w2c_B64:;
-    w2c_j0 = w2c_p2;
-    w2c_j0 = i64_load32_u((u64)(w2c_j0));
-    w2c_l6 = w2c_j0;
-    w2c_j0 = w2c_p2;
-    w2c_j1 = 4ull;
-    w2c_j0 += w2c_j1;
-    w2c_p2 = w2c_j0;
-    w2c_B63:;
-    w2c_j0 = w2c_l3;
-    w2c_l10 = w2c_j0;
-    w2c_L65: 
-      w2c_j0 = w2c_l10;
-      w2c_i1 = 48u;
-      w2c_i2 = 87u;
-      w2c_j3 = w2c_l6;
-      w2c_i3 = (u32)(w2c_j3);
-      w2c_i4 = 15u;
-      w2c_i3 &= w2c_i4;
-      w2c_l8 = w2c_i3;
-      w2c_i4 = 10u;
-      w2c_i3 = w2c_i3 < w2c_i4;
-      w2c_i1 = w2c_i3 ? w2c_i1 : w2c_i2;
-      w2c_i2 = w2c_l8;
-      w2c_i1 += w2c_i2;
-      i32_store8((u64)(w2c_j0), w2c_i1);
-      w2c_j0 = w2c_l10;
-      w2c_j1 = 1ull;
-      w2c_j0 += w2c_j1;
-      w2c_l10 = w2c_j0;
-      w2c_j0 = w2c_l6;
-      w2c_j1 = 15ull;
-      w2c_i0 = w2c_j0 > w2c_j1;
-      w2c_l8 = w2c_i0;
-      w2c_j0 = w2c_l6;
-      w2c_j1 = 4ull;
-      w2c_j0 >>= (w2c_j1 & 63);
-      w2c_l6 = w2c_j0;
-      w2c_i0 = w2c_l8;
-      if (w2c_i0) {goto w2c_L65;}
-    w2c_j0 = w2c_l10;
-    w2c_i1 = 0u;
-    i32_store8((u64)(w2c_j0), w2c_i1);
-    w2c_j0 = w2c_l3;
-    w2c_j0 = strlen(w2c_j0);
-    w2c_i0 = (u32)(w2c_j0);
-    w2c_i1 = 4294967295u;
-    w2c_i0 += w2c_i1;
-    w2c_l8 = w2c_i0;
-    w2c_i1 = 1u;
-    w2c_i0 = (u32)((s32)w2c_i0 < (s32)w2c_i1);
-    if (w2c_i0) {goto w2c_B66;}
-    w2c_i0 = w2c_l8;
-    w2c_j0 = (u64)(w2c_i0);
-    w2c_l6 = w2c_j0;
-    w2c_j0 = 0ull;
-    w2c_l10 = w2c_j0;
-    w2c_L67: 
-      w2c_j0 = w2c_l3;
-      w2c_j1 = w2c_l10;
-      w2c_j0 += w2c_j1;
-      w2c_l14 = w2c_j0;
-      w2c_i0 = i32_load8_u((u64)(w2c_j0));
-      w2c_l8 = w2c_i0;
-      w2c_j0 = w2c_l14;
-      w2c_j1 = w2c_l3;
-      w2c_j2 = w2c_l6;
-      w2c_j1 += w2c_j2;
-      w2c_l17 = w2c_j1;
-      w2c_i1 = i32_load8_u((u64)(w2c_j1));
-      i32_store8((u64)(w2c_j0), w2c_i1);
-      w2c_j0 = w2c_l17;
-      w2c_i1 = w2c_l8;
-      i32_store8((u64)(w2c_j0), w2c_i1);
-      w2c_j0 = w2c_l10;
-      w2c_j1 = 1ull;
-      w2c_j0 += w2c_j1;
-      w2c_l10 = w2c_j0;
-      w2c_j1 = w2c_l6;
-      w2c_j2 = 18446744073709551615ull;
-      w2c_j1 += w2c_j2;
-      w2c_l6 = w2c_j1;
-      w2c_i0 = (u64)((s64)w2c_j0 < (s64)w2c_j1);
-      if (w2c_i0) {goto w2c_L67;}
-    w2c_B66:;
-    w2c_j0 = w2c_l3;
-    w2c_j0 = strlen(w2c_j0);
-    w2c_i0 = (u32)(w2c_j0);
-    w2c_l12 = w2c_i0;
-    w2c_i0 = w2c_l11;
-    w2c_i1 = 2u;
-    w2c_i0 &= w2c_i1;
-    w2c_l15 = w2c_i0;
-    w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_B69;}
-    w2c_i0 = 0u;
-    w2c_l9 = w2c_i0;
-    goto w2c_B68;
-    w2c_B69:;
-    w2c_i0 = w2c_l7;
-    w2c_i1 = w2c_l12;
-    w2c_i0 -= w2c_i1;
-    w2c_l9 = w2c_i0;
-    w2c_i1 = 1u;
-    w2c_i0 = (u32)((s32)w2c_i0 >= (s32)w2c_i1);
-    if (w2c_i0) {goto w2c_B70;}
-    w2c_i0 = 0u;
-    w2c_l9 = w2c_i0;
-    goto w2c_B68;
-    w2c_B70:;
-    w2c_i0 = w2c_l7;
-    w2c_i1 = w2c_l12;
-    w2c_i2 = 4294967295u;
-    w2c_i1 ^= w2c_i2;
-    w2c_i0 += w2c_i1;
-    w2c_j0 = (u64)(w2c_i0);
-    w2c_j1 = 1ull;
-    w2c_j0 += w2c_j1;
-    w2c_l6 = w2c_j0;
-    w2c_j0 = w2c_l6;
-    w2c_j1 = w2c_p0;
-    w2c_i2 = 48u;
-    w2c_i3 = 32u;
-    w2c_i4 = w2c_l11;
-    w2c_i5 = 1u;
-    w2c_i4 &= w2c_i5;
-    w2c_i2 = w2c_i4 ? w2c_i2 : w2c_i3;
-    w2c_j3 = w2c_l6;
-    w2c_j1 = memset(w2c_j1, w2c_i2, w2c_j3);
-    w2c_j0 += w2c_j1;
-    w2c_p0 = w2c_j0;
-    w2c_B68:;
-    w2c_j0 = w2c_l3;
-    w2c_i0 = i32_load8_u((u64)(w2c_j0));
-    w2c_l8 = w2c_i0;
-    w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_B71;}
-    w2c_i0 = w2c_l11;
-    w2c_i1 = 8u;
-    w2c_i0 &= w2c_i1;
-    w2c_l13 = w2c_i0;
-    w2c_j0 = w2c_l4;
-    w2c_l6 = w2c_j0;
-    w2c_L72: 
-      w2c_j0 = w2c_p0;
-      w2c_i1 = w2c_l8;
-      w2c_i2 = 32u;
-      w2c_i1 ^= w2c_i2;
-      w2c_i2 = w2c_l8;
-      w2c_i3 = w2c_l8;
-      w2c_i3 = (u32)(s32)(s8)(u8)(w2c_i3);
-      w2c_i4 = 4294967199u;
-      w2c_i3 += w2c_i4;
-      w2c_i4 = 26u;
-      w2c_i3 = w2c_i3 < w2c_i4;
-      w2c_i1 = w2c_i3 ? w2c_i1 : w2c_i2;
-      w2c_i2 = w2c_l8;
-      w2c_i3 = w2c_l13;
-      w2c_i1 = w2c_i3 ? w2c_i1 : w2c_i2;
-      i32_store8((u64)(w2c_j0), w2c_i1);
-      w2c_j0 = w2c_p0;
-      w2c_j1 = 1ull;
-      w2c_j0 += w2c_j1;
-      w2c_p0 = w2c_j0;
-      w2c_i0 = w2c_l9;
-      w2c_i1 = 1u;
-      w2c_i0 += w2c_i1;
-      w2c_l9 = w2c_i0;
-      w2c_j0 = w2c_l6;
-      w2c_i0 = i32_load8_u((u64)(w2c_j0));
-      w2c_l8 = w2c_i0;
-      w2c_j0 = w2c_l6;
-      w2c_j1 = 1ull;
-      w2c_j0 += w2c_j1;
-      w2c_l6 = w2c_j0;
-      w2c_i0 = w2c_l8;
-      if (w2c_i0) {goto w2c_L72;}
-    w2c_B71:;
-    w2c_i0 = w2c_l15;
-    w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_B73;}
-    w2c_i0 = w2c_l7;
-    w2c_i1 = w2c_l12;
-    w2c_i0 -= w2c_i1;
-    w2c_l8 = w2c_i0;
-    w2c_i1 = 1u;
-    w2c_i0 = (u32)((s32)w2c_i0 < (s32)w2c_i1);
-    if (w2c_i0) {goto w2c_B73;}
-    w2c_i0 = w2c_l7;
-    w2c_i1 = w2c_l12;
-    w2c_i2 = 4294967295u;
-    w2c_i1 ^= w2c_i2;
-    w2c_i0 += w2c_i1;
-    w2c_j0 = (u64)(w2c_i0);
-    w2c_j1 = 1ull;
-    w2c_j0 += w2c_j1;
-    w2c_l6 = w2c_j0;
-    w2c_i0 = w2c_l9;
-    w2c_i1 = w2c_l8;
-    w2c_i0 += w2c_i1;
-    w2c_l9 = w2c_i0;
-    w2c_j0 = w2c_l6;
-    w2c_j1 = w2c_p0;
-    w2c_i2 = 32u;
-    w2c_j3 = w2c_l6;
-    w2c_j1 = memset(w2c_j1, w2c_i2, w2c_j3);
-    w2c_j0 += w2c_j1;
-    w2c_p0 = w2c_j0;
-    w2c_B73:;
-    w2c_i0 = w2c_l9;
-    w2c_i1 = w2c_l5;
-    w2c_i0 += w2c_i1;
-    w2c_l5 = w2c_i0;
-    goto w2c_L1;
-    w2c_B18:;
-    w2c_j0 = w2c_p2;
-    w2c_j1 = 7ull;
-    w2c_j0 += w2c_j1;
-    w2c_j1 = 18446744073709551608ull;
-    w2c_j0 &= w2c_j1;
-    w2c_l10 = w2c_j0;
-    w2c_d0 = f64_load((u64)(w2c_j0));
-    w2c_i1 = w2c_l13;
-    w2c_j2 = w2c_l3;
-    w2c_native0x2Dplasma_dtoa0x2E1(w2c_d0, w2c_i1, w2c_j2);
-    w2c_j0 = w2c_l3;
-    w2c_j0 = strlen(w2c_j0);
-    w2c_i0 = (u32)(w2c_j0);
-    w2c_l12 = w2c_i0;
-    w2c_i0 = w2c_l11;
-    w2c_i1 = 2u;
-    w2c_i0 &= w2c_i1;
-    w2c_l15 = w2c_i0;
-    w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_B75;}
-    w2c_i0 = 0u;
-    w2c_l9 = w2c_i0;
-    goto w2c_B74;
-    w2c_B75:;
-    w2c_i0 = w2c_l7;
-    w2c_i1 = w2c_l12;
-    w2c_i0 -= w2c_i1;
-    w2c_l9 = w2c_i0;
-    w2c_i1 = 1u;
-    w2c_i0 = (u32)((s32)w2c_i0 >= (s32)w2c_i1);
-    if (w2c_i0) {goto w2c_B76;}
-    w2c_i0 = 0u;
-    w2c_l9 = w2c_i0;
-    goto w2c_B74;
-    w2c_B76:;
-    w2c_i0 = w2c_l7;
-    w2c_i1 = w2c_l12;
-    w2c_i2 = 4294967295u;
-    w2c_i1 ^= w2c_i2;
-    w2c_i0 += w2c_i1;
-    w2c_j0 = (u64)(w2c_i0);
-    w2c_j1 = 1ull;
-    w2c_j0 += w2c_j1;
-    w2c_l6 = w2c_j0;
-    w2c_j0 = w2c_l6;
-    w2c_j1 = w2c_p0;
-    w2c_i2 = 48u;
-    w2c_i3 = 32u;
-    w2c_i4 = w2c_l11;
-    w2c_i5 = 1u;
-    w2c_i4 &= w2c_i5;
-    w2c_i2 = w2c_i4 ? w2c_i2 : w2c_i3;
-    w2c_j3 = w2c_l6;
-    w2c_j1 = memset(w2c_j1, w2c_i2, w2c_j3);
-    w2c_j0 += w2c_j1;
-    w2c_p0 = w2c_j0;
-    w2c_B74:;
-    w2c_j0 = w2c_l3;
-    w2c_i0 = i32_load8_u((u64)(w2c_j0));
-    w2c_l8 = w2c_i0;
-    w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_B77;}
-    w2c_i0 = w2c_l11;
-    w2c_i1 = 8u;
-    w2c_i0 &= w2c_i1;
-    w2c_l13 = w2c_i0;
-    w2c_j0 = w2c_l4;
-    w2c_l6 = w2c_j0;
-    w2c_L78: 
-      w2c_j0 = w2c_p0;
-      w2c_i1 = w2c_l8;
-      w2c_i2 = 32u;
-      w2c_i1 ^= w2c_i2;
-      w2c_i2 = w2c_l8;
-      w2c_i3 = w2c_l8;
-      w2c_i3 = (u32)(s32)(s8)(u8)(w2c_i3);
-      w2c_i4 = 4294967199u;
-      w2c_i3 += w2c_i4;
-      w2c_i4 = 26u;
-      w2c_i3 = w2c_i3 < w2c_i4;
-      w2c_i1 = w2c_i3 ? w2c_i1 : w2c_i2;
-      w2c_i2 = w2c_l8;
-      w2c_i3 = w2c_l13;
-      w2c_i1 = w2c_i3 ? w2c_i1 : w2c_i2;
-      i32_store8((u64)(w2c_j0), w2c_i1);
-      w2c_j0 = w2c_p0;
-      w2c_j1 = 1ull;
-      w2c_j0 += w2c_j1;
-      w2c_p0 = w2c_j0;
-      w2c_i0 = w2c_l9;
-      w2c_i1 = 1u;
-      w2c_i0 += w2c_i1;
-      w2c_l9 = w2c_i0;
-      w2c_j0 = w2c_l6;
-      w2c_i0 = i32_load8_u((u64)(w2c_j0));
-      w2c_l8 = w2c_i0;
-      w2c_j0 = w2c_l6;
-      w2c_j1 = 1ull;
-      w2c_j0 += w2c_j1;
-      w2c_l6 = w2c_j0;
-      w2c_i0 = w2c_l8;
-      if (w2c_i0) {goto w2c_L78;}
-    w2c_B77:;
-    w2c_i0 = w2c_l15;
-    w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_B79;}
-    w2c_i0 = w2c_l7;
-    w2c_i1 = w2c_l12;
-    w2c_i0 -= w2c_i1;
-    w2c_l8 = w2c_i0;
-    w2c_i1 = 1u;
-    w2c_i0 = (u32)((s32)w2c_i0 < (s32)w2c_i1);
-    if (w2c_i0) {goto w2c_B79;}
-    w2c_i0 = w2c_l7;
-    w2c_i1 = w2c_l12;
-    w2c_i2 = 4294967295u;
-    w2c_i1 ^= w2c_i2;
-    w2c_i0 += w2c_i1;
-    w2c_j0 = (u64)(w2c_i0);
-    w2c_j1 = 1ull;
-    w2c_j0 += w2c_j1;
-    w2c_l6 = w2c_j0;
-    w2c_i0 = w2c_l9;
-    w2c_i1 = w2c_l8;
-    w2c_i0 += w2c_i1;
-    w2c_l9 = w2c_i0;
-    w2c_j0 = w2c_l6;
-    w2c_j1 = w2c_p0;
-    w2c_i2 = 32u;
-    w2c_j3 = w2c_l6;
-    w2c_j1 = memset(w2c_j1, w2c_i2, w2c_j3);
-    w2c_j0 += w2c_j1;
-    w2c_p0 = w2c_j0;
-    w2c_B79:;
-    w2c_j0 = w2c_l10;
-    w2c_j1 = 8ull;
-    w2c_j0 += w2c_j1;
-    w2c_p2 = w2c_j0;
-    w2c_i0 = w2c_l9;
-    w2c_i1 = w2c_l5;
-    w2c_i0 += w2c_i1;
-    w2c_l5 = w2c_i0;
-    goto w2c_L1;
-    w2c_B17:;
-    w2c_j0 = w2c_p0;
-    w2c_i1 = w2c_l9;
-    i32_store8((u64)(w2c_j0), w2c_i1);
-    w2c_j0 = w2c_p0;
-    w2c_j1 = 1ull;
-    w2c_j0 += w2c_j1;
-    w2c_p0 = w2c_j0;
-    w2c_i0 = w2c_l5;
-    w2c_i1 = 1u;
-    w2c_i0 += w2c_i1;
-    w2c_l5 = w2c_i0;
-    goto w2c_L1;
-    w2c_B16:;
-  w2c_i0 = 24u;
-  w2c_l13 = w2c_i0;
-  w2c_i0 = w2c_l11;
-  w2c_i1 = 2u;
-  w2c_i0 &= w2c_i1;
-  w2c_l12 = w2c_i0;
-  if (w2c_i0) {goto w2c_B80;}
-  w2c_i0 = w2c_l7;
-  w2c_i1 = 25u;
-  w2c_i0 = (u32)((s32)w2c_i0 < (s32)w2c_i1);
-  if (w2c_i0) {goto w2c_B80;}
-  w2c_j0 = w2c_p0;
-  w2c_i1 = 48u;
-  w2c_i2 = 32u;
-  w2c_i3 = w2c_l11;
-  w2c_i4 = 1u;
-  w2c_i3 &= w2c_i4;
-  w2c_i1 = w2c_i3 ? w2c_i1 : w2c_i2;
-  w2c_i2 = w2c_l7;
-  w2c_i3 = 4294967272u;
-  w2c_i2 += w2c_i3;
-  w2c_j2 = (u64)(w2c_i2);
-  w2c_j0 = memset(w2c_j0, w2c_i1, w2c_j2);
-  w2c_i1 = w2c_l7;
-  w2c_i2 = 4294967271u;
-  w2c_i1 += w2c_i2;
-  w2c_j1 = (u64)(w2c_i1);
-  w2c_j0 += w2c_j1;
-  w2c_j1 = 1ull;
-  w2c_j0 += w2c_j1;
-  w2c_p0 = w2c_j0;
-  w2c_i0 = w2c_l7;
-  w2c_l13 = w2c_i0;
-  w2c_B80:;
-  w2c_i0 = w2c_l11;
-  w2c_i1 = 8u;
-  w2c_i0 &= w2c_i1;
-  w2c_l9 = w2c_i0;
-  w2c_i0 = 37u;
-  w2c_l8 = w2c_i0;
-  w2c_j0 = 0ull;
-  w2c_l6 = w2c_j0;
-  w2c_L81: 
-    w2c_j0 = w2c_p0;
-    w2c_j1 = w2c_l6;
-    w2c_j0 += w2c_j1;
-    w2c_i1 = w2c_l8;
-    w2c_i2 = 32u;
-    w2c_i1 ^= w2c_i2;
-    w2c_i2 = w2c_l8;
-    w2c_i3 = w2c_l8;
-    w2c_i3 = (u32)(s32)(s8)(u8)(w2c_i3);
-    w2c_i4 = 4294967199u;
-    w2c_i3 += w2c_i4;
-    w2c_i4 = 26u;
-    w2c_i3 = w2c_i3 < w2c_i4;
-    w2c_i1 = w2c_i3 ? w2c_i1 : w2c_i2;
-    w2c_i2 = w2c_l8;
-    w2c_i3 = w2c_l9;
-    w2c_i1 = w2c_i3 ? w2c_i1 : w2c_i2;
-    i32_store8((u64)(w2c_j0), w2c_i1);
-    w2c_j0 = w2c_l6;
-    w2c_j1 = (u64)(&data_segment_data_w2c_native0x2Dplasma_0x2Erodata) + 1126u;
-    w2c_j0 += w2c_j1;
-    w2c_i0 = i32_load8_u((u64)(w2c_j0));
-    w2c_l8 = w2c_i0;
-    w2c_j0 = w2c_l6;
-    w2c_j1 = 1ull;
-    w2c_j0 += w2c_j1;
-    w2c_l10 = w2c_j0;
-    w2c_l6 = w2c_j0;
-    w2c_j0 = w2c_l10;
-    w2c_j1 = 24ull;
-    w2c_i0 = w2c_j0 != w2c_j1;
-    if (w2c_i0) {goto w2c_L81;}
-  w2c_j0 = w2c_p0;
-  w2c_j1 = w2c_l10;
-  w2c_j0 += w2c_j1;
-  w2c_l6 = w2c_j0;
-  w2c_i0 = w2c_l12;
-  if (w2c_i0) {goto w2c_B83;}
-  w2c_j0 = w2c_l6;
-  w2c_p0 = w2c_j0;
-  goto w2c_B82;
-  w2c_B83:;
-  w2c_i0 = w2c_l7;
-  w2c_i1 = 25u;
-  w2c_i0 = (u32)((s32)w2c_i0 >= (s32)w2c_i1);
-  if (w2c_i0) {goto w2c_B84;}
-  w2c_j0 = w2c_l6;
-  w2c_p0 = w2c_j0;
-  goto w2c_B82;
-  w2c_B84:;
-  w2c_j0 = w2c_l6;
-  w2c_i1 = 32u;
-  w2c_i2 = w2c_l7;
-  w2c_i3 = 4294967272u;
-  w2c_i2 += w2c_i3;
-  w2c_l8 = w2c_i2;
-  w2c_j2 = (u64)(w2c_i2);
-  w2c_j0 = memset(w2c_j0, w2c_i1, w2c_j2);
-  w2c_i0 = w2c_l13;
-  w2c_i1 = w2c_l8;
-  w2c_i0 += w2c_i1;
-  w2c_l13 = w2c_i0;
-  w2c_j0 = w2c_p0;
-  w2c_i1 = w2c_l7;
-  w2c_i2 = 4294967271u;
-  w2c_i1 += w2c_i2;
-  w2c_j1 = (u64)(w2c_i1);
-  w2c_j0 += w2c_j1;
-  w2c_j1 = 25ull;
-  w2c_j0 += w2c_j1;
-  w2c_p0 = w2c_j0;
-  w2c_B82:;
-  w2c_i0 = w2c_l13;
-  w2c_i1 = w2c_l5;
-  w2c_i0 += w2c_i1;
-  w2c_l5 = w2c_i0;
-  w2c_B0:;
-  w2c_j0 = w2c_p0;
-  w2c_i1 = 0u;
-  i32_store8((u64)(w2c_j0), w2c_i1);
-  w2c_j0 = w2c_l3;
-  w2c_j1 = 80ull;
-  w2c_j0 += w2c_j1;
-  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
-  w2c_i0 = w2c_l5;
-  FUNC_EPILOGUE;
-  return w2c_i0;
-}
-
-static u32 w2c_native0x2Dplasma_sprintf0x2E1(u64 w2c_p0, u64 w2c_p1, u64 w2c_p2) {
-  u32 w2c_l4 = 0;
-  u64 w2c_l3 = 0;
-  FUNC_PROLOGUE;
-  u32 w2c_i0;
-  u64 w2c_j0, w2c_j1, w2c_j2;
-  w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
-  w2c_j1 = 16ull;
-  w2c_j0 -= w2c_j1;
-  w2c_l3 = w2c_j0;
-  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
-  w2c_j0 = w2c_l3;
-  w2c_j1 = w2c_p2;
-  i64_store((u64)(w2c_j0) + 8u, w2c_j1);
-  w2c_j0 = w2c_p0;
-  w2c_j1 = w2c_p1;
-  w2c_j2 = w2c_p2;
-  w2c_i0 = w2c_native0x2Dplasma_vsprintf0x2E1(w2c_j0, w2c_j1, w2c_j2);
-  w2c_l4 = w2c_i0;
-  w2c_j0 = w2c_l3;
-  w2c_j1 = 16ull;
-  w2c_j0 += w2c_j1;
-  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
-  w2c_i0 = w2c_l4;
-  FUNC_EPILOGUE;
-  return w2c_i0;
-}
-
-static void w2c_native0x2Dplasma_android_app_pre_exec_cmd0x2E1(u64 w2c_p0, u32 w2c_p1) {
-  u64 w2c_l2 = 0, w2c_l3 = 0, w2c_l4 = 0;
-  FUNC_PROLOGUE;
-  u32 w2c_i0, w2c_i1, w2c_i2;
-  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3, w2c_j4, w2c_j5;
-  w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
-  w2c_j1 = 16ull;
-  w2c_j0 -= w2c_j1;
-  w2c_l2 = w2c_j0;
-  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  u64 w2c_j0, w2c_j1, w2c_j3, w2c_j4, w2c_j5;
   w2c_i0 = w2c_p1;
   switch (w2c_i0) {
     case 0: goto w2c_B6;
@@ -3789,25 +1734,25 @@ static void w2c_native0x2Dplasma_android_app_pre_exec_cmd0x2E1(u64 w2c_p0, u32 w
   w2c_j0 = w2c_p0;
   w2c_j1 = 104ull;
   w2c_j0 += w2c_j1;
-  w2c_l3 = w2c_j0;
+  w2c_l2 = w2c_j0;
   w2c_i0 = pthread_mutex_lock(w2c_j0);
   w2c_j0 = w2c_p0;
   w2c_j0 = i64_load((u64)(w2c_j0) + 64u);
-  w2c_l4 = w2c_j0;
+  w2c_l3 = w2c_j0;
   w2c_i0 = !(w2c_j0);
   if (w2c_i0) {goto w2c_B7;}
-  w2c_j0 = w2c_l4;
+  w2c_j0 = w2c_l3;
   AInputQueue_detachLooper(w2c_j0);
   w2c_B7:;
   w2c_j0 = w2c_p0;
   w2c_j1 = w2c_p0;
   w2c_j1 = i64_load((u64)(w2c_j1) + 272u);
-  w2c_l4 = w2c_j1;
+  w2c_l3 = w2c_j1;
   i64_store((u64)(w2c_j0) + 64u, w2c_j1);
-  w2c_j0 = w2c_l4;
+  w2c_j0 = w2c_l3;
   w2c_i0 = !(w2c_j0);
   if (w2c_i0) {goto w2c_B8;}
-  w2c_j0 = w2c_l4;
+  w2c_j0 = w2c_l3;
   w2c_j1 = w2c_p0;
   w2c_j1 = i64_load((u64)(w2c_j1) + 56u);
   w2c_i2 = 2u;
@@ -3821,14 +1766,14 @@ static void w2c_native0x2Dplasma_android_app_pre_exec_cmd0x2E1(u64 w2c_p0, u32 w
   w2c_j1 = 144ull;
   w2c_j0 += w2c_j1;
   w2c_i0 = pthread_cond_broadcast(w2c_j0);
-  w2c_j0 = w2c_l3;
+  w2c_j0 = w2c_l2;
   w2c_i0 = pthread_mutex_unlock(w2c_j0);
-  goto w2c_B0;
+  goto w2c_Bfunc;
   w2c_B5:;
   w2c_j0 = w2c_p0;
   w2c_j1 = 104ull;
   w2c_j0 += w2c_j1;
-  w2c_l4 = w2c_j0;
+  w2c_l3 = w2c_j0;
   w2c_i0 = pthread_mutex_lock(w2c_j0);
   w2c_j0 = w2c_p0;
   w2c_j1 = w2c_p0;
@@ -3838,20 +1783,20 @@ static void w2c_native0x2Dplasma_android_app_pre_exec_cmd0x2E1(u64 w2c_p0, u32 w
   w2c_j1 = 144ull;
   w2c_j0 += w2c_j1;
   w2c_i0 = pthread_cond_broadcast(w2c_j0);
-  w2c_j0 = w2c_l4;
+  w2c_j0 = w2c_l3;
   w2c_i0 = pthread_mutex_unlock(w2c_j0);
-  goto w2c_B0;
+  goto w2c_Bfunc;
   w2c_B4:;
   w2c_j0 = w2c_p0;
   w2c_j1 = 144ull;
   w2c_j0 += w2c_j1;
   w2c_i0 = pthread_cond_broadcast(w2c_j0);
-  goto w2c_B0;
+  goto w2c_Bfunc;
   w2c_B3:;
   w2c_j0 = w2c_p0;
   w2c_j1 = 104ull;
   w2c_j0 += w2c_j1;
-  w2c_l4 = w2c_j0;
+  w2c_l3 = w2c_j0;
   w2c_i0 = pthread_mutex_lock(w2c_j0);
   w2c_j0 = w2c_p0;
   w2c_i1 = w2c_p1;
@@ -3860,9 +1805,9 @@ static void w2c_native0x2Dplasma_android_app_pre_exec_cmd0x2E1(u64 w2c_p0, u32 w
   w2c_j1 = 144ull;
   w2c_j0 += w2c_j1;
   w2c_i0 = pthread_cond_broadcast(w2c_j0);
-  w2c_j0 = w2c_l4;
+  w2c_j0 = w2c_l3;
   w2c_i0 = pthread_mutex_unlock(w2c_j0);
-  goto w2c_B0;
+  goto w2c_Bfunc;
   w2c_B2:;
   w2c_j0 = w2c_p0;
   w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
@@ -3871,24 +1816,84 @@ static void w2c_native0x2Dplasma_android_app_pre_exec_cmd0x2E1(u64 w2c_p0, u32 w
   w2c_j1 = i64_load((u64)(w2c_j1) + 64u);
   AConfiguration_fromAssetManager(w2c_j0, w2c_j1);
   w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
-  w2c_j1 = w2c_l2;
-  w2c_j2 = 14ull;
-  w2c_j1 += w2c_j2;
-  AConfiguration_getLanguage(w2c_j0, w2c_j1);
-  w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
-  w2c_j1 = w2c_l2;
-  w2c_j2 = 12ull;
-  w2c_j1 += w2c_j2;
-  AConfiguration_getCountry(w2c_j0, w2c_j1);
-  goto w2c_B0;
+  w2c_0x24native0x2Dplasma_print_cur_config0x2E1(w2c_j0);
+  goto w2c_Bfunc;
   w2c_B1:;
   w2c_j0 = w2c_p0;
   w2c_i1 = 1u;
   i32_store((u64)(w2c_j0) + 100u, w2c_i1);
   w2c_B0:;
-  w2c_j0 = w2c_l2;
+  w2c_Bfunc:;
+  FUNC_EPILOGUE;
+}
+
+static void w2c_0x24native0x2Dplasma_print_cur_config0x2E1(u64 w2c_p0) {
+  u64 w2c_l1 = 0;
+  FUNC_PROLOGUE;
+  u32 w2c_i0;
+  u64 w2c_j0, w2c_j1, w2c_j2;
+  w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
+  w2c_j1 = 16ull;
+  w2c_j0 -= w2c_j1;
+  w2c_l1 = w2c_j0;
+  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
+  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
+  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  w2c_j0 = w2c_p0;
+  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
+  w2c_j1 = w2c_l1;
+  w2c_j2 = 14ull;
+  w2c_j1 += w2c_j2;
+  AConfiguration_getLanguage(w2c_j0, w2c_j1);
+  w2c_j0 = w2c_p0;
+  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
+  w2c_j1 = w2c_l1;
+  w2c_j2 = 12ull;
+  w2c_j1 += w2c_j2;
+  AConfiguration_getCountry(w2c_j0, w2c_j1);
+  w2c_j0 = w2c_p0;
+  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
+  w2c_i0 = AConfiguration_getMcc(w2c_j0);
+  w2c_j0 = w2c_p0;
+  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
+  w2c_i0 = AConfiguration_getMnc(w2c_j0);
+  w2c_j0 = w2c_p0;
+  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
+  w2c_i0 = AConfiguration_getOrientation(w2c_j0);
+  w2c_j0 = w2c_p0;
+  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
+  w2c_i0 = AConfiguration_getTouchscreen(w2c_j0);
+  w2c_j0 = w2c_p0;
+  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
+  w2c_i0 = AConfiguration_getDensity(w2c_j0);
+  w2c_j0 = w2c_p0;
+  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
+  w2c_i0 = AConfiguration_getKeyboard(w2c_j0);
+  w2c_j0 = w2c_p0;
+  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
+  w2c_i0 = AConfiguration_getNavigation(w2c_j0);
+  w2c_j0 = w2c_p0;
+  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
+  w2c_i0 = AConfiguration_getKeysHidden(w2c_j0);
+  w2c_j0 = w2c_p0;
+  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
+  w2c_i0 = AConfiguration_getNavHidden(w2c_j0);
+  w2c_j0 = w2c_p0;
+  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
+  w2c_i0 = AConfiguration_getSdkVersion(w2c_j0);
+  w2c_j0 = w2c_p0;
+  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
+  w2c_i0 = AConfiguration_getScreenSize(w2c_j0);
+  w2c_j0 = w2c_p0;
+  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
+  w2c_i0 = AConfiguration_getScreenLong(w2c_j0);
+  w2c_j0 = w2c_p0;
+  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
+  w2c_i0 = AConfiguration_getUiModeType(w2c_j0);
+  w2c_j0 = w2c_p0;
+  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
+  w2c_i0 = AConfiguration_getUiModeNight(w2c_j0);
+  w2c_j0 = w2c_l1;
   w2c_j1 = 16ull;
   w2c_j0 += w2c_j1;
   if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
@@ -3897,7 +1902,7 @@ static void w2c_native0x2Dplasma_android_app_pre_exec_cmd0x2E1(u64 w2c_p0, u32 w
   FUNC_EPILOGUE;
 }
 
-static void w2c_native0x2Dplasma_android_app_post_exec_cmd0x2E1(u64 w2c_p0, u32 w2c_p1) {
+static void w2c_0x24native0x2Dplasma_android_app_post_exec_cmd0x2E1(u64 w2c_p0, u32 w2c_p1) {
   u64 w2c_l2 = 0, w2c_l3 = 0;
   FUNC_PROLOGUE;
   u32 w2c_i0, w2c_i1;
@@ -3978,8 +1983,8 @@ static void w2c_native0x2Dplasma_android_app_post_exec_cmd0x2E1(u64 w2c_p0, u32 
   FUNC_EPILOGUE;
 }
 
-static void w2c_native0x2Dplasma_ANativeActivity_onCreate0x2E1(u64 w2c_p0, u64 w2c_p1, u64 w2c_p2) {
-  u64 w2c_l3 = 0, w2c_l4 = 0, w2c_l5 = 0, w2c_l6 = 0, w2c_l7 = 0, w2c_l8 = 0;
+static void w2c_0x24native0x2Dplasma_ANativeActivity_onCreate0x2E1(u64 w2c_p0, u64 w2c_p1, u64 w2c_p2) {
+  u64 w2c_l3 = 0, w2c_l4 = 0, w2c_l5 = 0, w2c_l6 = 0, w2c_l7 = 0;
   FUNC_PROLOGUE;
   u32 w2c_i0, w2c_i1;
   u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3;
@@ -3993,52 +1998,52 @@ static void w2c_native0x2Dplasma_ANativeActivity_onCreate0x2E1(u64 w2c_p0, u64 w
   w2c_j0 = w2c_p0;
   w2c_j0 = i64_load((u64)(w2c_j0));
   w2c_l4 = w2c_j0;
-  w2c_j1 = (u64)(&w2c_native0x2Dplasma_onConfigurationChanged0x2E1);
+  w2c_j1 = (u64)(&w2c_0x24native0x2Dplasma_onConfigurationChanged0x2E1);
   i64_store((u64)(w2c_j0) + 112u, w2c_j1);
   w2c_j0 = w2c_l4;
-  w2c_j1 = (u64)(&w2c_native0x2Dplasma_onContentRectChanged0x2E1);
+  w2c_j1 = (u64)(&w2c_0x24native0x2Dplasma_onContentRectChanged0x2E1);
   i64_store((u64)(w2c_j0) + 104u, w2c_j1);
   w2c_j0 = w2c_l4;
-  w2c_j1 = (u64)(&w2c_native0x2Dplasma_onLowMemory0x2E1);
+  w2c_j1 = (u64)(&w2c_0x24native0x2Dplasma_onLowMemory0x2E1);
   i64_store((u64)(w2c_j0) + 120u, w2c_j1);
   w2c_j0 = w2c_l4;
-  w2c_j1 = (u64)(&w2c_native0x2Dplasma_onInputQueueDestroyed0x2E1);
+  w2c_j1 = (u64)(&w2c_0x24native0x2Dplasma_onInputQueueDestroyed0x2E1);
   i64_store((u64)(w2c_j0) + 96u, w2c_j1);
   w2c_j0 = w2c_l4;
-  w2c_j1 = (u64)(&w2c_native0x2Dplasma_onInputQueueCreated0x2E1);
+  w2c_j1 = (u64)(&w2c_0x24native0x2Dplasma_onInputQueueCreated0x2E1);
   i64_store((u64)(w2c_j0) + 88u, w2c_j1);
   w2c_j0 = w2c_l4;
-  w2c_j1 = (u64)(&w2c_native0x2Dplasma_onDestroy0x2E1);
+  w2c_j1 = (u64)(&w2c_0x24native0x2Dplasma_onDestroy0x2E1);
   i64_store((u64)(w2c_j0) + 40u, w2c_j1);
   w2c_j0 = w2c_l4;
-  w2c_j1 = (u64)(&w2c_native0x2Dplasma_onNativeWindowDestroyed0x2E1);
+  w2c_j1 = (u64)(&w2c_0x24native0x2Dplasma_onNativeWindowDestroyed0x2E1);
   i64_store((u64)(w2c_j0) + 80u, w2c_j1);
   w2c_j0 = w2c_l4;
-  w2c_j1 = (u64)(&w2c_native0x2Dplasma_onNativeWindowCreated0x2E1);
+  w2c_j1 = (u64)(&w2c_0x24native0x2Dplasma_onNativeWindowCreated0x2E1);
   i64_store((u64)(w2c_j0) + 56u, w2c_j1);
   w2c_j0 = w2c_l4;
-  w2c_j1 = (u64)(&w2c_native0x2Dplasma_onNativeWindowRedrawNeeded0x2E1);
+  w2c_j1 = (u64)(&w2c_0x24native0x2Dplasma_onNativeWindowRedrawNeeded0x2E1);
   i64_store((u64)(w2c_j0) + 72u, w2c_j1);
   w2c_j0 = w2c_l4;
-  w2c_j1 = (u64)(&w2c_native0x2Dplasma_onNativeWindowResized0x2E1);
+  w2c_j1 = (u64)(&w2c_0x24native0x2Dplasma_onNativeWindowResized0x2E1);
   i64_store((u64)(w2c_j0) + 64u, w2c_j1);
   w2c_j0 = w2c_l4;
-  w2c_j1 = (u64)(&w2c_native0x2Dplasma_onPause0x2E1);
+  w2c_j1 = (u64)(&w2c_0x24native0x2Dplasma_onPause0x2E1);
   i64_store((u64)(w2c_j0) + 24u, w2c_j1);
   w2c_j0 = w2c_l4;
-  w2c_j1 = (u64)(&w2c_native0x2Dplasma_onSaveInstanceState0x2E1);
+  w2c_j1 = (u64)(&w2c_0x24native0x2Dplasma_onSaveInstanceState0x2E1);
   i64_store((u64)(w2c_j0) + 16u, w2c_j1);
   w2c_j0 = w2c_l4;
-  w2c_j1 = (u64)(&w2c_native0x2Dplasma_onResume0x2E1);
+  w2c_j1 = (u64)(&w2c_0x24native0x2Dplasma_onResume0x2E1);
   i64_store((u64)(w2c_j0) + 8u, w2c_j1);
   w2c_j0 = w2c_l4;
-  w2c_j1 = (u64)(&w2c_native0x2Dplasma_onWindowFocusChanged0x2E1);
+  w2c_j1 = (u64)(&w2c_0x24native0x2Dplasma_onWindowFocusChanged0x2E1);
   i64_store((u64)(w2c_j0) + 48u, w2c_j1);
   w2c_j0 = w2c_l4;
-  w2c_j1 = (u64)(&w2c_native0x2Dplasma_onStop0x2E1);
+  w2c_j1 = (u64)(&w2c_0x24native0x2Dplasma_onStop0x2E1);
   i64_store((u64)(w2c_j0) + 32u, w2c_j1);
   w2c_j0 = w2c_l4;
-  w2c_j1 = (u64)(&w2c_native0x2Dplasma_onStart0x2E1);
+  w2c_j1 = (u64)(&w2c_0x24native0x2Dplasma_onStart0x2E1);
   i64_store((u64)(w2c_j0), w2c_j1);
   w2c_j0 = 1ull;
   w2c_j1 = 304ull;
@@ -4046,18 +2051,16 @@ static void w2c_native0x2Dplasma_ANativeActivity_onCreate0x2E1(u64 w2c_p0, u64 w
   w2c_l4 = w2c_j0;
   w2c_j1 = w2c_p0;
   i64_store((u64)(w2c_j0) + 24u, w2c_j1);
-  w2c_j0 = 0ull;
-  w2c_l5 = w2c_j0;
   w2c_j0 = w2c_l4;
   w2c_j1 = 104ull;
   w2c_j0 += w2c_j1;
-  w2c_l6 = w2c_j0;
+  w2c_l5 = w2c_j0;
   w2c_j1 = 0ull;
   w2c_i0 = pthread_mutex_init(w2c_j0, w2c_j1);
   w2c_j0 = w2c_l4;
   w2c_j1 = 144ull;
   w2c_j0 += w2c_j1;
-  w2c_l7 = w2c_j0;
+  w2c_l6 = w2c_j0;
   w2c_j1 = 0ull;
   w2c_i0 = pthread_cond_init(w2c_j0, w2c_j1);
   w2c_j0 = w2c_p1;
@@ -4065,14 +2068,14 @@ static void w2c_native0x2Dplasma_ANativeActivity_onCreate0x2E1(u64 w2c_p0, u64 w
   if (w2c_i0) {goto w2c_B0;}
   w2c_j0 = w2c_p2;
   w2c_j0 = malloc(w2c_j0);
-  w2c_l8 = w2c_j0;
+  w2c_l7 = w2c_j0;
   w2c_j0 = w2c_l4;
   w2c_j1 = w2c_p2;
   i64_store((u64)(w2c_j0) + 48u, w2c_j1);
   w2c_j0 = w2c_l4;
-  w2c_j1 = w2c_l8;
+  w2c_j1 = w2c_l7;
   i64_store((u64)(w2c_j0) + 40u, w2c_j1);
-  w2c_j0 = w2c_l8;
+  w2c_j0 = w2c_l7;
   w2c_j1 = w2c_p1;
   w2c_j2 = w2c_p2;
   w2c_j0 = memcpy(w2c_j0, w2c_j1, w2c_j2);
@@ -4081,7 +2084,15 @@ static void w2c_native0x2Dplasma_ANativeActivity_onCreate0x2E1(u64 w2c_p0, u64 w
   w2c_j1 = 56ull;
   w2c_j0 += w2c_j1;
   w2c_i0 = pipe(w2c_j0);
-  if (w2c_i0) {goto w2c_B1;}
+  w2c_i0 = !(w2c_i0);
+  if (w2c_i0) {goto w2c_B2;}
+  w2c_j0 = __errno();
+  w2c_i0 = i32_load((u64)(w2c_j0));
+  w2c_j0 = strerror(w2c_i0);
+  w2c_j0 = 0ull;
+  w2c_l4 = w2c_j0;
+  goto w2c_B1;
+  w2c_B2:;
   w2c_j0 = w2c_l4;
   w2c_j1 = w2c_l3;
   w2c_j1 = i64_load((u64)(w2c_j1) + 56u);
@@ -4095,30 +2106,28 @@ static void w2c_native0x2Dplasma_ANativeActivity_onCreate0x2E1(u64 w2c_p0, u64 w
   w2c_j1 = 200ull;
   w2c_j0 += w2c_j1;
   w2c_j1 = w2c_l3;
-  w2c_j2 = (u64)(&w2c_native0x2Dplasma_android_app_entry0x2E1);
+  w2c_j2 = (u64)(&w2c_0x24native0x2Dplasma_android_app_entry0x2E1);
   w2c_j3 = w2c_l4;
   w2c_i0 = pthread_create(w2c_j0, w2c_j1, w2c_j2, w2c_j3);
-  w2c_j0 = w2c_l6;
+  w2c_j0 = w2c_l5;
   w2c_i0 = pthread_mutex_lock(w2c_j0);
   w2c_j0 = w2c_l4;
   w2c_i0 = i32_load((u64)(w2c_j0) + 256u);
-  if (w2c_i0) {goto w2c_B2;}
-  w2c_L3: 
-    w2c_j0 = w2c_l7;
-    w2c_j1 = w2c_l6;
+  if (w2c_i0) {goto w2c_B3;}
+  w2c_L4: 
+    w2c_j0 = w2c_l6;
+    w2c_j1 = w2c_l5;
     w2c_i0 = pthread_cond_wait(w2c_j0, w2c_j1);
     w2c_j0 = w2c_l4;
     w2c_i0 = i32_load((u64)(w2c_j0) + 256u);
     w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_L3;}
-  w2c_B2:;
-  w2c_j0 = w2c_l6;
+    if (w2c_i0) {goto w2c_L4;}
+  w2c_B3:;
+  w2c_j0 = w2c_l5;
   w2c_i0 = pthread_mutex_unlock(w2c_j0);
-  w2c_j0 = w2c_l4;
-  w2c_l5 = w2c_j0;
   w2c_B1:;
   w2c_j0 = w2c_p0;
-  w2c_j1 = w2c_l5;
+  w2c_j1 = w2c_l4;
   i64_store((u64)(w2c_j0) + 56u, w2c_j1);
   w2c_j0 = w2c_l3;
   w2c_j1 = 64ull;
@@ -4129,7 +2138,7 @@ static void w2c_native0x2Dplasma_ANativeActivity_onCreate0x2E1(u64 w2c_p0, u64 w
   FUNC_EPILOGUE;
 }
 
-static void w2c_native0x2Dplasma_onConfigurationChanged0x2E1(u64 w2c_p0) {
+static void w2c_0x24native0x2Dplasma_onConfigurationChanged0x2E1(u64 w2c_p0) {
   u32 w2c_l2 = 0;
   u64 w2c_l1 = 0;
   FUNC_PROLOGUE;
@@ -4159,6 +2168,13 @@ static void w2c_native0x2Dplasma_onConfigurationChanged0x2E1(u64 w2c_p0) {
   w2c_j1 += w2c_j2;
   w2c_j2 = 1ull;
   w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
+  w2c_j1 = 1ull;
+  w2c_i0 = w2c_j0 == w2c_j1;
+  if (w2c_i0) {goto w2c_B0;}
+  w2c_j0 = __errno();
+  w2c_i0 = i32_load((u64)(w2c_j0));
+  w2c_j0 = strerror(w2c_i0);
+  w2c_B0:;
   w2c_j0 = w2c_l1;
   w2c_j1 = 16ull;
   w2c_j0 += w2c_j1;
@@ -4168,7 +2184,7 @@ static void w2c_native0x2Dplasma_onConfigurationChanged0x2E1(u64 w2c_p0) {
   FUNC_EPILOGUE;
 }
 
-static void w2c_native0x2Dplasma_onContentRectChanged0x2E1(u64 w2c_p0, u64 w2c_p1) {
+static void w2c_0x24native0x2Dplasma_onContentRectChanged0x2E1(u64 w2c_p0, u64 w2c_p1) {
   u32 w2c_l5 = 0;
   u64 w2c_l2 = 0, w2c_l3 = 0, w2c_l4 = 0;
   FUNC_PROLOGUE;
@@ -4220,6 +2236,13 @@ static void w2c_native0x2Dplasma_onContentRectChanged0x2E1(u64 w2c_p0, u64 w2c_p
   w2c_j1 += w2c_j2;
   w2c_j2 = 1ull;
   w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
+  w2c_j1 = 1ull;
+  w2c_i0 = w2c_j0 == w2c_j1;
+  if (w2c_i0) {goto w2c_B0;}
+  w2c_j0 = __errno();
+  w2c_i0 = i32_load((u64)(w2c_j0));
+  w2c_j0 = strerror(w2c_i0);
+  w2c_B0:;
   w2c_j0 = w2c_l2;
   w2c_j1 = 16ull;
   w2c_j0 += w2c_j1;
@@ -4229,7 +2252,7 @@ static void w2c_native0x2Dplasma_onContentRectChanged0x2E1(u64 w2c_p0, u64 w2c_p
   FUNC_EPILOGUE;
 }
 
-static void w2c_native0x2Dplasma_onLowMemory0x2E1(u64 w2c_p0) {
+static void w2c_0x24native0x2Dplasma_onLowMemory0x2E1(u64 w2c_p0) {
   u32 w2c_l2 = 0;
   u64 w2c_l1 = 0;
   FUNC_PROLOGUE;
@@ -4259,6 +2282,13 @@ static void w2c_native0x2Dplasma_onLowMemory0x2E1(u64 w2c_p0) {
   w2c_j1 += w2c_j2;
   w2c_j2 = 1ull;
   w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
+  w2c_j1 = 1ull;
+  w2c_i0 = w2c_j0 == w2c_j1;
+  if (w2c_i0) {goto w2c_B0;}
+  w2c_j0 = __errno();
+  w2c_i0 = i32_load((u64)(w2c_j0));
+  w2c_j0 = strerror(w2c_i0);
+  w2c_B0:;
   w2c_j0 = w2c_l1;
   w2c_j1 = 16ull;
   w2c_j0 += w2c_j1;
@@ -4268,151 +2298,33 @@ static void w2c_native0x2Dplasma_onLowMemory0x2E1(u64 w2c_p0) {
   FUNC_EPILOGUE;
 }
 
-static void w2c_native0x2Dplasma_onInputQueueDestroyed0x2E1(u64 w2c_p0, u64 w2c_p1) {
-  u32 w2c_l4 = 0;
-  u64 w2c_l2 = 0, w2c_l3 = 0, w2c_l5 = 0;
+static void w2c_0x24native0x2Dplasma_onInputQueueDestroyed0x2E1(u64 w2c_p0, u64 w2c_p1) {
   FUNC_PROLOGUE;
-  u32 w2c_i0, w2c_i1;
-  u64 w2c_j0, w2c_j1, w2c_j2;
-  w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
-  w2c_j1 = 16ull;
-  w2c_j0 -= w2c_j1;
-  w2c_l2 = w2c_j0;
-  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  u64 w2c_j0, w2c_j1;
   w2c_j0 = w2c_p0;
   w2c_j1 = 56ull;
   w2c_j0 += w2c_j1;
   w2c_j0 = i64_load((u64)(w2c_j0));
-  w2c_p0 = w2c_j0;
-  w2c_j1 = 104ull;
-  w2c_j0 += w2c_j1;
-  w2c_l3 = w2c_j0;
-  w2c_i0 = pthread_mutex_lock(w2c_j0);
-  w2c_j0 = w2c_p0;
   w2c_j1 = 0ull;
-  i64_store((u64)(w2c_j0) + 272u, w2c_j1);
-  w2c_j0 = w2c_p0;
-  w2c_j1 = 196ull;
-  w2c_j0 += w2c_j1;
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_l4 = w2c_i0;
-  w2c_j0 = w2c_l2;
-  w2c_i1 = 0u;
-  i32_store8((u64)(w2c_j0) + 15u, w2c_i1);
-  w2c_i0 = w2c_l4;
-  w2c_j1 = w2c_l2;
-  w2c_j2 = 15ull;
-  w2c_j1 += w2c_j2;
-  w2c_j2 = 1ull;
-  w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
-  w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 64u);
-  w2c_j1 = w2c_p0;
-  w2c_j1 = i64_load((u64)(w2c_j1) + 272u);
-  w2c_i0 = w2c_j0 == w2c_j1;
-  if (w2c_i0) {goto w2c_B0;}
-  w2c_j0 = w2c_p0;
-  w2c_j1 = 144ull;
-  w2c_j0 += w2c_j1;
-  w2c_l5 = w2c_j0;
-  w2c_L1: 
-    w2c_j0 = w2c_l5;
-    w2c_j1 = w2c_l3;
-    w2c_i0 = pthread_cond_wait(w2c_j0, w2c_j1);
-    w2c_j0 = w2c_p0;
-    w2c_j0 = i64_load((u64)(w2c_j0) + 64u);
-    w2c_j1 = w2c_p0;
-    w2c_j1 = i64_load((u64)(w2c_j1) + 272u);
-    w2c_i0 = w2c_j0 != w2c_j1;
-    if (w2c_i0) {goto w2c_L1;}
-  w2c_B0:;
-  w2c_j0 = w2c_l3;
-  w2c_i0 = pthread_mutex_unlock(w2c_j0);
-  w2c_j0 = w2c_l2;
-  w2c_j1 = 16ull;
-  w2c_j0 += w2c_j1;
-  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  w2c_0x24native0x2Dplasma_android_app_set_input0x2E1(w2c_j0, w2c_j1);
   FUNC_EPILOGUE;
 }
 
-static void w2c_native0x2Dplasma_onInputQueueCreated0x2E1(u64 w2c_p0, u64 w2c_p1) {
-  u32 w2c_l4 = 0;
-  u64 w2c_l2 = 0, w2c_l3 = 0;
+static void w2c_0x24native0x2Dplasma_onInputQueueCreated0x2E1(u64 w2c_p0, u64 w2c_p1) {
   FUNC_PROLOGUE;
-  u32 w2c_i0, w2c_i1;
-  u64 w2c_j0, w2c_j1, w2c_j2;
-  w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
-  w2c_j1 = 16ull;
-  w2c_j0 -= w2c_j1;
-  w2c_l2 = w2c_j0;
-  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  u64 w2c_j0, w2c_j1;
   w2c_j0 = w2c_p0;
   w2c_j1 = 56ull;
   w2c_j0 += w2c_j1;
   w2c_j0 = i64_load((u64)(w2c_j0));
-  w2c_p0 = w2c_j0;
-  w2c_j1 = 104ull;
-  w2c_j0 += w2c_j1;
-  w2c_l3 = w2c_j0;
-  w2c_i0 = pthread_mutex_lock(w2c_j0);
-  w2c_j0 = w2c_p0;
   w2c_j1 = w2c_p1;
-  i64_store((u64)(w2c_j0) + 272u, w2c_j1);
-  w2c_j0 = w2c_p0;
-  w2c_j1 = 196ull;
-  w2c_j0 += w2c_j1;
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_l4 = w2c_i0;
-  w2c_j0 = w2c_l2;
-  w2c_i1 = 0u;
-  i32_store8((u64)(w2c_j0) + 15u, w2c_i1);
-  w2c_i0 = w2c_l4;
-  w2c_j1 = w2c_l2;
-  w2c_j2 = 15ull;
-  w2c_j1 += w2c_j2;
-  w2c_j2 = 1ull;
-  w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
-  w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 64u);
-  w2c_j1 = w2c_p0;
-  w2c_j1 = i64_load((u64)(w2c_j1) + 272u);
-  w2c_i0 = w2c_j0 == w2c_j1;
-  if (w2c_i0) {goto w2c_B0;}
-  w2c_j0 = w2c_p0;
-  w2c_j1 = 144ull;
-  w2c_j0 += w2c_j1;
-  w2c_p1 = w2c_j0;
-  w2c_L1: 
-    w2c_j0 = w2c_p1;
-    w2c_j1 = w2c_l3;
-    w2c_i0 = pthread_cond_wait(w2c_j0, w2c_j1);
-    w2c_j0 = w2c_p0;
-    w2c_j0 = i64_load((u64)(w2c_j0) + 64u);
-    w2c_j1 = w2c_p0;
-    w2c_j1 = i64_load((u64)(w2c_j1) + 272u);
-    w2c_i0 = w2c_j0 != w2c_j1;
-    if (w2c_i0) {goto w2c_L1;}
-  w2c_B0:;
-  w2c_j0 = w2c_l3;
-  w2c_i0 = pthread_mutex_unlock(w2c_j0);
-  w2c_j0 = w2c_l2;
-  w2c_j1 = 16ull;
-  w2c_j0 += w2c_j1;
-  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  w2c_0x24native0x2Dplasma_android_app_set_input0x2E1(w2c_j0, w2c_j1);
   FUNC_EPILOGUE;
 }
 
-static void w2c_native0x2Dplasma_onDestroy0x2E1(u64 w2c_p0) {
-  u32 w2c_l4 = 0;
-  u64 w2c_l1 = 0, w2c_l2 = 0, w2c_l3 = 0, w2c_l5 = 0;
+static void w2c_0x24native0x2Dplasma_onDestroy0x2E1(u64 w2c_p0) {
+  u32 w2c_l3 = 0;
+  u64 w2c_l1 = 0, w2c_l2 = 0, w2c_l4 = 0;
   FUNC_PROLOGUE;
   u32 w2c_i0, w2c_i1;
   u64 w2c_j0, w2c_j1, w2c_j2;
@@ -4435,40 +2347,48 @@ static void w2c_native0x2Dplasma_onDestroy0x2E1(u64 w2c_p0) {
   w2c_j0 = w2c_p0;
   w2c_j1 = 196ull;
   w2c_j0 += w2c_j1;
-  w2c_l3 = w2c_j0;
   w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_l4 = w2c_i0;
+  w2c_l3 = w2c_i0;
   w2c_j0 = w2c_l1;
   w2c_i1 = 15u;
   i32_store8((u64)(w2c_j0) + 15u, w2c_i1);
-  w2c_i0 = w2c_l4;
+  w2c_i0 = w2c_l3;
   w2c_j1 = w2c_l1;
   w2c_j2 = 15ull;
   w2c_j1 += w2c_j2;
   w2c_j2 = 1ull;
   w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
+  w2c_j1 = 1ull;
+  w2c_i0 = w2c_j0 == w2c_j1;
+  if (w2c_i0) {goto w2c_B0;}
+  w2c_j0 = __errno();
+  w2c_i0 = i32_load((u64)(w2c_j0));
+  w2c_j0 = strerror(w2c_i0);
+  w2c_B0:;
   w2c_j0 = w2c_p0;
   w2c_i0 = i32_load((u64)(w2c_j0) + 264u);
-  if (w2c_i0) {goto w2c_B0;}
+  if (w2c_i0) {goto w2c_B1;}
   w2c_j0 = w2c_p0;
   w2c_j1 = 144ull;
   w2c_j0 += w2c_j1;
-  w2c_l5 = w2c_j0;
-  w2c_L1: 
-    w2c_j0 = w2c_l5;
+  w2c_l4 = w2c_j0;
+  w2c_L2: 
+    w2c_j0 = w2c_l4;
     w2c_j1 = w2c_l2;
     w2c_i0 = pthread_cond_wait(w2c_j0, w2c_j1);
     w2c_j0 = w2c_p0;
     w2c_i0 = i32_load((u64)(w2c_j0) + 264u);
     w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_L1;}
-  w2c_B0:;
+    if (w2c_i0) {goto w2c_L2;}
+  w2c_B1:;
   w2c_j0 = w2c_l2;
   w2c_i0 = pthread_mutex_unlock(w2c_j0);
   w2c_j0 = w2c_p0;
   w2c_i0 = i32_load((u64)(w2c_j0) + 192u);
   w2c_i0 = close(w2c_i0);
-  w2c_j0 = w2c_l3;
+  w2c_j0 = w2c_p0;
+  w2c_j1 = 196ull;
+  w2c_j0 += w2c_j1;
   w2c_i0 = i32_load((u64)(w2c_j0));
   w2c_i0 = close(w2c_i0);
   w2c_j0 = w2c_p0;
@@ -4488,182 +2408,31 @@ static void w2c_native0x2Dplasma_onDestroy0x2E1(u64 w2c_p0) {
   FUNC_EPILOGUE;
 }
 
-static void w2c_native0x2Dplasma_onNativeWindowDestroyed0x2E1(u64 w2c_p0, u64 w2c_p1) {
-  u32 w2c_l4 = 0;
-  u64 w2c_l2 = 0, w2c_l3 = 0, w2c_l5 = 0;
+static void w2c_0x24native0x2Dplasma_onNativeWindowDestroyed0x2E1(u64 w2c_p0, u64 w2c_p1) {
   FUNC_PROLOGUE;
-  u32 w2c_i0, w2c_i1;
-  u64 w2c_j0, w2c_j1, w2c_j2;
-  w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
-  w2c_j1 = 16ull;
-  w2c_j0 -= w2c_j1;
-  w2c_l2 = w2c_j0;
-  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  u64 w2c_j0, w2c_j1;
   w2c_j0 = w2c_p0;
   w2c_j1 = 56ull;
   w2c_j0 += w2c_j1;
   w2c_j0 = i64_load((u64)(w2c_j0));
-  w2c_p0 = w2c_j0;
-  w2c_j1 = 104ull;
-  w2c_j0 += w2c_j1;
-  w2c_l3 = w2c_j0;
-  w2c_i0 = pthread_mutex_lock(w2c_j0);
-  w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 280u);
-  w2c_i0 = !(w2c_j0);
-  if (w2c_i0) {goto w2c_B0;}
-  w2c_j0 = w2c_p0;
-  w2c_j1 = 196ull;
-  w2c_j0 += w2c_j1;
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_l4 = w2c_i0;
-  w2c_j0 = w2c_l2;
-  w2c_i1 = 2u;
-  i32_store8((u64)(w2c_j0) + 15u, w2c_i1);
-  w2c_i0 = w2c_l4;
-  w2c_j1 = w2c_l2;
-  w2c_j2 = 15ull;
-  w2c_j1 += w2c_j2;
-  w2c_j2 = 1ull;
-  w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
-  w2c_B0:;
-  w2c_j0 = w2c_p0;
   w2c_j1 = 0ull;
-  i64_store((u64)(w2c_j0) + 280u, w2c_j1);
-  w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 72u);
-  w2c_i0 = !(w2c_j0);
-  if (w2c_i0) {goto w2c_B1;}
-  w2c_j0 = w2c_p0;
-  w2c_j1 = 144ull;
-  w2c_j0 += w2c_j1;
-  w2c_l5 = w2c_j0;
-  w2c_L2: 
-    w2c_j0 = w2c_l5;
-    w2c_j1 = w2c_l3;
-    w2c_i0 = pthread_cond_wait(w2c_j0, w2c_j1);
-    w2c_j0 = w2c_p0;
-    w2c_j0 = i64_load((u64)(w2c_j0) + 72u);
-    w2c_j1 = w2c_p0;
-    w2c_j1 = i64_load((u64)(w2c_j1) + 280u);
-    w2c_i0 = w2c_j0 != w2c_j1;
-    if (w2c_i0) {goto w2c_L2;}
-  w2c_B1:;
-  w2c_j0 = w2c_l3;
-  w2c_i0 = pthread_mutex_unlock(w2c_j0);
-  w2c_j0 = w2c_l2;
-  w2c_j1 = 16ull;
-  w2c_j0 += w2c_j1;
-  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  w2c_0x24native0x2Dplasma_android_app_set_window0x2E1(w2c_j0, w2c_j1);
   FUNC_EPILOGUE;
 }
 
-static void w2c_native0x2Dplasma_onNativeWindowCreated0x2E1(u64 w2c_p0, u64 w2c_p1) {
-  u32 w2c_l4 = 0;
-  u64 w2c_l2 = 0, w2c_l3 = 0;
+static void w2c_0x24native0x2Dplasma_onNativeWindowCreated0x2E1(u64 w2c_p0, u64 w2c_p1) {
   FUNC_PROLOGUE;
-  u32 w2c_i0, w2c_i1;
-  u64 w2c_j0, w2c_j1, w2c_j2;
-  w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
-  w2c_j1 = 16ull;
-  w2c_j0 -= w2c_j1;
-  w2c_l2 = w2c_j0;
-  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  u64 w2c_j0, w2c_j1;
   w2c_j0 = w2c_p0;
   w2c_j1 = 56ull;
   w2c_j0 += w2c_j1;
   w2c_j0 = i64_load((u64)(w2c_j0));
-  w2c_p0 = w2c_j0;
-  w2c_j1 = 104ull;
-  w2c_j0 += w2c_j1;
-  w2c_l3 = w2c_j0;
-  w2c_i0 = pthread_mutex_lock(w2c_j0);
-  w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 280u);
-  w2c_i0 = !(w2c_j0);
-  if (w2c_i0) {goto w2c_B0;}
-  w2c_j0 = w2c_p0;
-  w2c_j1 = 196ull;
-  w2c_j0 += w2c_j1;
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_l4 = w2c_i0;
-  w2c_j0 = w2c_l2;
-  w2c_i1 = 2u;
-  i32_store8((u64)(w2c_j0) + 14u, w2c_i1);
-  w2c_i0 = w2c_l4;
-  w2c_j1 = w2c_l2;
-  w2c_j2 = 14ull;
-  w2c_j1 += w2c_j2;
-  w2c_j2 = 1ull;
-  w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
-  w2c_B0:;
-  w2c_j0 = w2c_p0;
   w2c_j1 = w2c_p1;
-  i64_store((u64)(w2c_j0) + 280u, w2c_j1);
-  w2c_j0 = w2c_p1;
-  w2c_i0 = !(w2c_j0);
-  w2c_i0 = !(w2c_i0);
-  if (w2c_i0) {goto w2c_B2;}
-  w2c_j0 = 0ull;
-  w2c_p1 = w2c_j0;
-  goto w2c_B1;
-  w2c_B2:;
-  w2c_j0 = w2c_p0;
-  w2c_j1 = 196ull;
-  w2c_j0 += w2c_j1;
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_l4 = w2c_i0;
-  w2c_j0 = w2c_l2;
-  w2c_i1 = 1u;
-  i32_store8((u64)(w2c_j0) + 15u, w2c_i1);
-  w2c_i0 = w2c_l4;
-  w2c_j1 = w2c_l2;
-  w2c_j2 = 15ull;
-  w2c_j1 += w2c_j2;
-  w2c_j2 = 1ull;
-  w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
-  w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 280u);
-  w2c_p1 = w2c_j0;
-  w2c_B1:;
-  w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 72u);
-  w2c_j1 = w2c_p1;
-  w2c_i0 = w2c_j0 == w2c_j1;
-  if (w2c_i0) {goto w2c_B3;}
-  w2c_j0 = w2c_p0;
-  w2c_j1 = 144ull;
-  w2c_j0 += w2c_j1;
-  w2c_p1 = w2c_j0;
-  w2c_L4: 
-    w2c_j0 = w2c_p1;
-    w2c_j1 = w2c_l3;
-    w2c_i0 = pthread_cond_wait(w2c_j0, w2c_j1);
-    w2c_j0 = w2c_p0;
-    w2c_j0 = i64_load((u64)(w2c_j0) + 72u);
-    w2c_j1 = w2c_p0;
-    w2c_j1 = i64_load((u64)(w2c_j1) + 280u);
-    w2c_i0 = w2c_j0 != w2c_j1;
-    if (w2c_i0) {goto w2c_L4;}
-  w2c_B3:;
-  w2c_j0 = w2c_l3;
-  w2c_i0 = pthread_mutex_unlock(w2c_j0);
-  w2c_j0 = w2c_l2;
-  w2c_j1 = 16ull;
-  w2c_j0 += w2c_j1;
-  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  w2c_0x24native0x2Dplasma_android_app_set_window0x2E1(w2c_j0, w2c_j1);
   FUNC_EPILOGUE;
 }
 
-static void w2c_native0x2Dplasma_onNativeWindowRedrawNeeded0x2E1(u64 w2c_p0, u64 w2c_p1) {
+static void w2c_0x24native0x2Dplasma_onNativeWindowRedrawNeeded0x2E1(u64 w2c_p0, u64 w2c_p1) {
   u32 w2c_l3 = 0;
   u64 w2c_l2 = 0;
   FUNC_PROLOGUE;
@@ -4693,6 +2462,13 @@ static void w2c_native0x2Dplasma_onNativeWindowRedrawNeeded0x2E1(u64 w2c_p0, u64
   w2c_j1 += w2c_j2;
   w2c_j2 = 1ull;
   w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
+  w2c_j1 = 1ull;
+  w2c_i0 = w2c_j0 == w2c_j1;
+  if (w2c_i0) {goto w2c_B0;}
+  w2c_j0 = __errno();
+  w2c_i0 = i32_load((u64)(w2c_j0));
+  w2c_j0 = strerror(w2c_i0);
+  w2c_B0:;
   w2c_j0 = w2c_l2;
   w2c_j1 = 16ull;
   w2c_j0 += w2c_j1;
@@ -4702,7 +2478,7 @@ static void w2c_native0x2Dplasma_onNativeWindowRedrawNeeded0x2E1(u64 w2c_p0, u64
   FUNC_EPILOGUE;
 }
 
-static void w2c_native0x2Dplasma_onNativeWindowResized0x2E1(u64 w2c_p0, u64 w2c_p1) {
+static void w2c_0x24native0x2Dplasma_onNativeWindowResized0x2E1(u64 w2c_p0, u64 w2c_p1) {
   u32 w2c_l3 = 0;
   u64 w2c_l2 = 0;
   FUNC_PROLOGUE;
@@ -4732,6 +2508,13 @@ static void w2c_native0x2Dplasma_onNativeWindowResized0x2E1(u64 w2c_p0, u64 w2c_
   w2c_j1 += w2c_j2;
   w2c_j2 = 1ull;
   w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
+  w2c_j1 = 1ull;
+  w2c_i0 = w2c_j0 == w2c_j1;
+  if (w2c_i0) {goto w2c_B0;}
+  w2c_j0 = __errno();
+  w2c_i0 = i32_load((u64)(w2c_j0));
+  w2c_j0 = strerror(w2c_i0);
+  w2c_B0:;
   w2c_j0 = w2c_l2;
   w2c_j1 = 16ull;
   w2c_j0 += w2c_j1;
@@ -4741,7 +2524,7 @@ static void w2c_native0x2Dplasma_onNativeWindowResized0x2E1(u64 w2c_p0, u64 w2c_
   FUNC_EPILOGUE;
 }
 
-static void w2c_native0x2Dplasma_onPause0x2E1(u64 w2c_p0) {
+static void w2c_0x24native0x2Dplasma_onPause0x2E1(u64 w2c_p0) {
   u32 w2c_l3 = 0;
   u64 w2c_l1 = 0, w2c_l2 = 0, w2c_l4 = 0;
   FUNC_PROLOGUE;
@@ -4777,16 +2560,23 @@ static void w2c_native0x2Dplasma_onPause0x2E1(u64 w2c_p0) {
   w2c_j1 += w2c_j2;
   w2c_j2 = 1ull;
   w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
+  w2c_j1 = 1ull;
+  w2c_i0 = w2c_j0 == w2c_j1;
+  if (w2c_i0) {goto w2c_B0;}
+  w2c_j0 = __errno();
+  w2c_i0 = i32_load((u64)(w2c_j0));
+  w2c_j0 = strerror(w2c_i0);
+  w2c_B0:;
   w2c_j0 = w2c_p0;
   w2c_i0 = i32_load((u64)(w2c_j0) + 96u);
   w2c_i1 = 13u;
   w2c_i0 = w2c_i0 == w2c_i1;
-  if (w2c_i0) {goto w2c_B0;}
+  if (w2c_i0) {goto w2c_B1;}
   w2c_j0 = w2c_p0;
   w2c_j1 = 144ull;
   w2c_j0 += w2c_j1;
   w2c_l4 = w2c_j0;
-  w2c_L1: 
+  w2c_L2: 
     w2c_j0 = w2c_l4;
     w2c_j1 = w2c_l2;
     w2c_i0 = pthread_cond_wait(w2c_j0, w2c_j1);
@@ -4794,8 +2584,8 @@ static void w2c_native0x2Dplasma_onPause0x2E1(u64 w2c_p0) {
     w2c_i0 = i32_load((u64)(w2c_j0) + 96u);
     w2c_i1 = 13u;
     w2c_i0 = w2c_i0 != w2c_i1;
-    if (w2c_i0) {goto w2c_L1;}
-  w2c_B0:;
+    if (w2c_i0) {goto w2c_L2;}
+  w2c_B1:;
   w2c_j0 = w2c_l2;
   w2c_i0 = pthread_mutex_unlock(w2c_j0);
   w2c_j0 = w2c_l1;
@@ -4807,7 +2597,7 @@ static void w2c_native0x2Dplasma_onPause0x2E1(u64 w2c_p0) {
   FUNC_EPILOGUE;
 }
 
-static u64 w2c_native0x2Dplasma_onSaveInstanceState0x2E1(u64 w2c_p0, u64 w2c_p1) {
+static u64 w2c_0x24native0x2Dplasma_onSaveInstanceState0x2E1(u64 w2c_p0, u64 w2c_p1) {
   u32 w2c_l4 = 0;
   u64 w2c_l2 = 0, w2c_l3 = 0, w2c_l5 = 0;
   FUNC_PROLOGUE;
@@ -4846,27 +2636,34 @@ static u64 w2c_native0x2Dplasma_onSaveInstanceState0x2E1(u64 w2c_p0, u64 w2c_p1)
   w2c_j1 += w2c_j2;
   w2c_j2 = 1ull;
   w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
+  w2c_j1 = 1ull;
+  w2c_i0 = w2c_j0 == w2c_j1;
+  if (w2c_i0) {goto w2c_B0;}
+  w2c_j0 = __errno();
+  w2c_i0 = i32_load((u64)(w2c_j0));
+  w2c_j0 = strerror(w2c_i0);
+  w2c_B0:;
   w2c_j0 = w2c_p0;
   w2c_i0 = i32_load((u64)(w2c_j0) + 260u);
-  if (w2c_i0) {goto w2c_B0;}
+  if (w2c_i0) {goto w2c_B1;}
   w2c_j0 = w2c_p0;
   w2c_j1 = 144ull;
   w2c_j0 += w2c_j1;
   w2c_l5 = w2c_j0;
-  w2c_L1: 
+  w2c_L2: 
     w2c_j0 = w2c_l5;
     w2c_j1 = w2c_l3;
     w2c_i0 = pthread_cond_wait(w2c_j0, w2c_j1);
     w2c_j0 = w2c_p0;
     w2c_i0 = i32_load((u64)(w2c_j0) + 260u);
     w2c_i0 = !(w2c_i0);
-    if (w2c_i0) {goto w2c_L1;}
-  w2c_B0:;
+    if (w2c_i0) {goto w2c_L2;}
+  w2c_B1:;
   w2c_j0 = w2c_p0;
   w2c_j0 = i64_load((u64)(w2c_j0) + 40u);
   w2c_l5 = w2c_j0;
   w2c_i0 = !(w2c_j0);
-  if (w2c_i0) {goto w2c_B2;}
+  if (w2c_i0) {goto w2c_B3;}
   w2c_j0 = w2c_p1;
   w2c_j1 = w2c_p0;
   w2c_j1 = i64_load((u64)(w2c_j1) + 48u);
@@ -4882,7 +2679,7 @@ static u64 w2c_native0x2Dplasma_onSaveInstanceState0x2E1(u64 w2c_p0, u64 w2c_p1)
   w2c_j0 = w2c_p0;
   w2c_j1 = 0ull;
   i64_store((u64)(w2c_j0), w2c_j1);
-  w2c_B2:;
+  w2c_B3:;
   w2c_j0 = w2c_l3;
   w2c_i0 = pthread_mutex_unlock(w2c_j0);
   w2c_j0 = w2c_l2;
@@ -4896,7 +2693,7 @@ static u64 w2c_native0x2Dplasma_onSaveInstanceState0x2E1(u64 w2c_p0, u64 w2c_p1)
   return w2c_j0;
 }
 
-static void w2c_native0x2Dplasma_onResume0x2E1(u64 w2c_p0) {
+static void w2c_0x24native0x2Dplasma_onResume0x2E1(u64 w2c_p0) {
   u32 w2c_l3 = 0;
   u64 w2c_l1 = 0, w2c_l2 = 0, w2c_l4 = 0;
   FUNC_PROLOGUE;
@@ -4932,16 +2729,23 @@ static void w2c_native0x2Dplasma_onResume0x2E1(u64 w2c_p0) {
   w2c_j1 += w2c_j2;
   w2c_j2 = 1ull;
   w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
+  w2c_j1 = 1ull;
+  w2c_i0 = w2c_j0 == w2c_j1;
+  if (w2c_i0) {goto w2c_B0;}
+  w2c_j0 = __errno();
+  w2c_i0 = i32_load((u64)(w2c_j0));
+  w2c_j0 = strerror(w2c_i0);
+  w2c_B0:;
   w2c_j0 = w2c_p0;
   w2c_i0 = i32_load((u64)(w2c_j0) + 96u);
   w2c_i1 = 11u;
   w2c_i0 = w2c_i0 == w2c_i1;
-  if (w2c_i0) {goto w2c_B0;}
+  if (w2c_i0) {goto w2c_B1;}
   w2c_j0 = w2c_p0;
   w2c_j1 = 144ull;
   w2c_j0 += w2c_j1;
   w2c_l4 = w2c_j0;
-  w2c_L1: 
+  w2c_L2: 
     w2c_j0 = w2c_l4;
     w2c_j1 = w2c_l2;
     w2c_i0 = pthread_cond_wait(w2c_j0, w2c_j1);
@@ -4949,8 +2753,8 @@ static void w2c_native0x2Dplasma_onResume0x2E1(u64 w2c_p0) {
     w2c_i0 = i32_load((u64)(w2c_j0) + 96u);
     w2c_i1 = 11u;
     w2c_i0 = w2c_i0 != w2c_i1;
-    if (w2c_i0) {goto w2c_L1;}
-  w2c_B0:;
+    if (w2c_i0) {goto w2c_L2;}
+  w2c_B1:;
   w2c_j0 = w2c_l2;
   w2c_i0 = pthread_mutex_unlock(w2c_j0);
   w2c_j0 = w2c_l1;
@@ -4962,7 +2766,7 @@ static void w2c_native0x2Dplasma_onResume0x2E1(u64 w2c_p0) {
   FUNC_EPILOGUE;
 }
 
-static void w2c_native0x2Dplasma_onWindowFocusChanged0x2E1(u64 w2c_p0, u32 w2c_p1) {
+static void w2c_0x24native0x2Dplasma_onWindowFocusChanged0x2E1(u64 w2c_p0, u32 w2c_p1) {
   u32 w2c_l3 = 0;
   u64 w2c_l2 = 0;
   FUNC_PROLOGUE;
@@ -4995,6 +2799,13 @@ static void w2c_native0x2Dplasma_onWindowFocusChanged0x2E1(u64 w2c_p0, u32 w2c_p
   w2c_j1 += w2c_j2;
   w2c_j2 = 1ull;
   w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
+  w2c_j1 = 1ull;
+  w2c_i0 = w2c_j0 == w2c_j1;
+  if (w2c_i0) {goto w2c_B0;}
+  w2c_j0 = __errno();
+  w2c_i0 = i32_load((u64)(w2c_j0));
+  w2c_j0 = strerror(w2c_i0);
+  w2c_B0:;
   w2c_j0 = w2c_l2;
   w2c_j1 = 16ull;
   w2c_j0 += w2c_j1;
@@ -5004,7 +2815,7 @@ static void w2c_native0x2Dplasma_onWindowFocusChanged0x2E1(u64 w2c_p0, u32 w2c_p
   FUNC_EPILOGUE;
 }
 
-static void w2c_native0x2Dplasma_onStop0x2E1(u64 w2c_p0) {
+static void w2c_0x24native0x2Dplasma_onStop0x2E1(u64 w2c_p0) {
   u32 w2c_l3 = 0;
   u64 w2c_l1 = 0, w2c_l2 = 0, w2c_l4 = 0;
   FUNC_PROLOGUE;
@@ -5040,16 +2851,23 @@ static void w2c_native0x2Dplasma_onStop0x2E1(u64 w2c_p0) {
   w2c_j1 += w2c_j2;
   w2c_j2 = 1ull;
   w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
+  w2c_j1 = 1ull;
+  w2c_i0 = w2c_j0 == w2c_j1;
+  if (w2c_i0) {goto w2c_B0;}
+  w2c_j0 = __errno();
+  w2c_i0 = i32_load((u64)(w2c_j0));
+  w2c_j0 = strerror(w2c_i0);
+  w2c_B0:;
   w2c_j0 = w2c_p0;
   w2c_i0 = i32_load((u64)(w2c_j0) + 96u);
   w2c_i1 = 14u;
   w2c_i0 = w2c_i0 == w2c_i1;
-  if (w2c_i0) {goto w2c_B0;}
+  if (w2c_i0) {goto w2c_B1;}
   w2c_j0 = w2c_p0;
   w2c_j1 = 144ull;
   w2c_j0 += w2c_j1;
   w2c_l4 = w2c_j0;
-  w2c_L1: 
+  w2c_L2: 
     w2c_j0 = w2c_l4;
     w2c_j1 = w2c_l2;
     w2c_i0 = pthread_cond_wait(w2c_j0, w2c_j1);
@@ -5057,8 +2875,8 @@ static void w2c_native0x2Dplasma_onStop0x2E1(u64 w2c_p0) {
     w2c_i0 = i32_load((u64)(w2c_j0) + 96u);
     w2c_i1 = 14u;
     w2c_i0 = w2c_i0 != w2c_i1;
-    if (w2c_i0) {goto w2c_L1;}
-  w2c_B0:;
+    if (w2c_i0) {goto w2c_L2;}
+  w2c_B1:;
   w2c_j0 = w2c_l2;
   w2c_i0 = pthread_mutex_unlock(w2c_j0);
   w2c_j0 = w2c_l1;
@@ -5070,7 +2888,7 @@ static void w2c_native0x2Dplasma_onStop0x2E1(u64 w2c_p0) {
   FUNC_EPILOGUE;
 }
 
-static void w2c_native0x2Dplasma_onStart0x2E1(u64 w2c_p0) {
+static void w2c_0x24native0x2Dplasma_onStart0x2E1(u64 w2c_p0) {
   u32 w2c_l3 = 0;
   u64 w2c_l1 = 0, w2c_l2 = 0, w2c_l4 = 0;
   FUNC_PROLOGUE;
@@ -5106,16 +2924,23 @@ static void w2c_native0x2Dplasma_onStart0x2E1(u64 w2c_p0) {
   w2c_j1 += w2c_j2;
   w2c_j2 = 1ull;
   w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
+  w2c_j1 = 1ull;
+  w2c_i0 = w2c_j0 == w2c_j1;
+  if (w2c_i0) {goto w2c_B0;}
+  w2c_j0 = __errno();
+  w2c_i0 = i32_load((u64)(w2c_j0));
+  w2c_j0 = strerror(w2c_i0);
+  w2c_B0:;
   w2c_j0 = w2c_p0;
   w2c_i0 = i32_load((u64)(w2c_j0) + 96u);
   w2c_i1 = 10u;
   w2c_i0 = w2c_i0 == w2c_i1;
-  if (w2c_i0) {goto w2c_B0;}
+  if (w2c_i0) {goto w2c_B1;}
   w2c_j0 = w2c_p0;
   w2c_j1 = 144ull;
   w2c_j0 += w2c_j1;
   w2c_l4 = w2c_j0;
-  w2c_L1: 
+  w2c_L2: 
     w2c_j0 = w2c_l4;
     w2c_j1 = w2c_l2;
     w2c_i0 = pthread_cond_wait(w2c_j0, w2c_j1);
@@ -5123,8 +2948,8 @@ static void w2c_native0x2Dplasma_onStart0x2E1(u64 w2c_p0) {
     w2c_i0 = i32_load((u64)(w2c_j0) + 96u);
     w2c_i1 = 10u;
     w2c_i0 = w2c_i0 != w2c_i1;
-    if (w2c_i0) {goto w2c_L1;}
-  w2c_B0:;
+    if (w2c_i0) {goto w2c_L2;}
+  w2c_B1:;
   w2c_j0 = w2c_l2;
   w2c_i0 = pthread_mutex_unlock(w2c_j0);
   w2c_j0 = w2c_l1;
@@ -5136,43 +2961,26 @@ static void w2c_native0x2Dplasma_onStart0x2E1(u64 w2c_p0) {
   FUNC_EPILOGUE;
 }
 
-static u64 w2c_native0x2Dplasma_android_app_entry0x2E1(u64 w2c_p0) {
-  u64 w2c_l1 = 0, w2c_l2 = 0, w2c_l3 = 0, w2c_l4 = 0;
+static u64 w2c_0x24native0x2Dplasma_android_app_entry0x2E1(u64 w2c_p0) {
+  u64 w2c_l1 = 0, w2c_l2 = 0, w2c_l3 = 0;
   FUNC_PROLOGUE;
   u32 w2c_i0, w2c_i1, w2c_i2, w2c_i3;
-  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j4, w2c_j5, w2c_j6;
-  w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
-  w2c_j1 = 16ull;
-  w2c_j0 -= w2c_j1;
-  w2c_l1 = w2c_j0;
-  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  u64 w2c_j0, w2c_j1, w2c_j4, w2c_j5, w2c_j6;
   w2c_j0 = w2c_p0;
   w2c_j1 = AConfiguration_new();
-  w2c_l2 = w2c_j1;
+  w2c_l1 = w2c_j1;
   i64_store((u64)(w2c_j0) + 32u, w2c_j1);
-  w2c_j0 = w2c_l2;
+  w2c_j0 = w2c_l1;
   w2c_j1 = w2c_p0;
   w2c_j1 = i64_load((u64)(w2c_j1) + 24u);
   w2c_j1 = i64_load((u64)(w2c_j1) + 64u);
   AConfiguration_fromAssetManager(w2c_j0, w2c_j1);
   w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
-  w2c_j1 = w2c_l1;
-  w2c_j2 = 14ull;
-  w2c_j1 += w2c_j2;
-  AConfiguration_getLanguage(w2c_j0, w2c_j1);
-  w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
-  w2c_j1 = w2c_l1;
-  w2c_j2 = 12ull;
-  w2c_j1 += w2c_j2;
-  AConfiguration_getCountry(w2c_j0, w2c_j1);
+  w2c_0x24native0x2Dplasma_print_cur_config0x2E1(w2c_j0);
   w2c_j0 = w2c_p0;
   w2c_j1 = 248ull;
   w2c_j0 += w2c_j1;
-  w2c_j1 = (u64)(&w2c_native0x2Dplasma_process_input0x2E1);
+  w2c_j1 = (u64)(&w2c_0x24native0x2Dplasma_process_input0x2E1);
   i64_store((u64)(w2c_j0), w2c_j1);
   w2c_j0 = w2c_p0;
   w2c_j1 = 240ull;
@@ -5185,7 +2993,7 @@ static u64 w2c_native0x2Dplasma_android_app_entry0x2E1(u64 w2c_p0) {
   w2c_j0 = w2c_p0;
   w2c_j1 = 224ull;
   w2c_j0 += w2c_j1;
-  w2c_j1 = (u64)(&w2c_native0x2Dplasma_process_cmd0x2E1);
+  w2c_j1 = (u64)(&w2c_0x24native0x2Dplasma_process_cmd0x2E1);
   i64_store((u64)(w2c_j0), w2c_j1);
   w2c_j0 = w2c_p0;
   w2c_j1 = 216ull;
@@ -5197,7 +3005,7 @@ static u64 w2c_native0x2Dplasma_android_app_entry0x2E1(u64 w2c_p0) {
   i32_store((u64)(w2c_j0) + 208u, w2c_i1);
   w2c_i0 = 1u;
   w2c_j0 = ALooper_prepare(w2c_i0);
-  w2c_l2 = w2c_j0;
+  w2c_l1 = w2c_j0;
   w2c_j1 = w2c_p0;
   w2c_i1 = i32_load((u64)(w2c_j1) + 192u);
   w2c_i2 = 1u;
@@ -5208,12 +3016,12 @@ static u64 w2c_native0x2Dplasma_android_app_entry0x2E1(u64 w2c_p0) {
   w2c_j5 += w2c_j6;
   w2c_i0 = ALooper_addFd(w2c_j0, w2c_i1, w2c_i2, w2c_i3, w2c_j4, w2c_j5);
   w2c_j0 = w2c_p0;
-  w2c_j1 = w2c_l2;
+  w2c_j1 = w2c_l1;
   i64_store((u64)(w2c_j0) + 56u, w2c_j1);
   w2c_j0 = w2c_p0;
   w2c_j1 = 104ull;
   w2c_j0 += w2c_j1;
-  w2c_l2 = w2c_j0;
+  w2c_l1 = w2c_j0;
   w2c_i0 = pthread_mutex_lock(w2c_j0);
   w2c_j0 = w2c_p0;
   w2c_i1 = 1u;
@@ -5221,43 +3029,43 @@ static u64 w2c_native0x2Dplasma_android_app_entry0x2E1(u64 w2c_p0) {
   w2c_j0 = w2c_p0;
   w2c_j1 = 144ull;
   w2c_j0 += w2c_j1;
-  w2c_l3 = w2c_j0;
+  w2c_l2 = w2c_j0;
   w2c_i0 = pthread_cond_broadcast(w2c_j0);
-  w2c_j0 = w2c_l2;
+  w2c_j0 = w2c_l1;
   w2c_i0 = pthread_mutex_unlock(w2c_j0);
   w2c_j0 = w2c_p0;
-  w2c_native0x2Dplasma_android_main0x2E1(w2c_j0);
-  w2c_j0 = w2c_l2;
+  w2c_0x24native0x2Dplasma_android_main0x2E1(w2c_j0);
+  w2c_j0 = w2c_l1;
   w2c_i0 = pthread_mutex_lock(w2c_j0);
   w2c_j0 = w2c_p0;
   w2c_j0 = i64_load((u64)(w2c_j0) + 40u);
-  w2c_l4 = w2c_j0;
+  w2c_l3 = w2c_j0;
   w2c_i0 = !(w2c_j0);
   if (w2c_i0) {goto w2c_B0;}
-  w2c_j0 = w2c_l4;
+  w2c_j0 = w2c_l3;
   free(w2c_j0);
   w2c_j0 = w2c_p0;
   w2c_j1 = 40ull;
   w2c_j0 += w2c_j1;
-  w2c_l4 = w2c_j0;
+  w2c_l3 = w2c_j0;
   w2c_j1 = 8ull;
   w2c_j0 += w2c_j1;
   w2c_j1 = 0ull;
   i64_store((u64)(w2c_j0), w2c_j1);
-  w2c_j0 = w2c_l4;
+  w2c_j0 = w2c_l3;
   w2c_j1 = 0ull;
   i64_store((u64)(w2c_j0), w2c_j1);
   w2c_B0:;
-  w2c_j0 = w2c_l2;
+  w2c_j0 = w2c_l1;
   w2c_i0 = pthread_mutex_unlock(w2c_j0);
-  w2c_j0 = w2c_l2;
+  w2c_j0 = w2c_l1;
   w2c_i0 = pthread_mutex_lock(w2c_j0);
   w2c_j0 = w2c_p0;
   w2c_j0 = i64_load((u64)(w2c_j0) + 64u);
-  w2c_l4 = w2c_j0;
+  w2c_l3 = w2c_j0;
   w2c_i0 = !(w2c_j0);
   if (w2c_i0) {goto w2c_B1;}
-  w2c_j0 = w2c_l4;
+  w2c_j0 = w2c_l3;
   AInputQueue_detachLooper(w2c_j0);
   w2c_B1:;
   w2c_j0 = w2c_p0;
@@ -5266,22 +3074,200 @@ static u64 w2c_native0x2Dplasma_android_app_entry0x2E1(u64 w2c_p0) {
   w2c_j0 = w2c_p0;
   w2c_i1 = 1u;
   i32_store((u64)(w2c_j0) + 264u, w2c_i1);
-  w2c_j0 = w2c_l3;
-  w2c_i0 = pthread_cond_broadcast(w2c_j0);
   w2c_j0 = w2c_l2;
-  w2c_i0 = pthread_mutex_unlock(w2c_j0);
+  w2c_i0 = pthread_cond_broadcast(w2c_j0);
   w2c_j0 = w2c_l1;
-  w2c_j1 = 16ull;
-  w2c_j0 += w2c_j1;
-  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  w2c_i0 = pthread_mutex_unlock(w2c_j0);
   w2c_j0 = 0ull;
   FUNC_EPILOGUE;
   return w2c_j0;
 }
 
-static void w2c_native0x2Dplasma_process_input0x2E1(u64 w2c_p0, u64 w2c_p1) {
+static void w2c_0x24native0x2Dplasma_android_app_set_input0x2E1(u64 w2c_p0, u64 w2c_p1) {
+  u32 w2c_l4 = 0;
+  u64 w2c_l2 = 0, w2c_l3 = 0;
+  FUNC_PROLOGUE;
+  u32 w2c_i0, w2c_i1;
+  u64 w2c_j0, w2c_j1, w2c_j2;
+  w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
+  w2c_j1 = 16ull;
+  w2c_j0 -= w2c_j1;
+  w2c_l2 = w2c_j0;
+  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
+  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
+  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  w2c_j0 = w2c_p0;
+  w2c_j1 = 104ull;
+  w2c_j0 += w2c_j1;
+  w2c_l3 = w2c_j0;
+  w2c_i0 = pthread_mutex_lock(w2c_j0);
+  w2c_j0 = w2c_p0;
+  w2c_j1 = w2c_p1;
+  i64_store((u64)(w2c_j0) + 272u, w2c_j1);
+  w2c_j0 = w2c_p0;
+  w2c_j1 = 196ull;
+  w2c_j0 += w2c_j1;
+  w2c_i0 = i32_load((u64)(w2c_j0));
+  w2c_l4 = w2c_i0;
+  w2c_j0 = w2c_l2;
+  w2c_i1 = 0u;
+  i32_store8((u64)(w2c_j0) + 15u, w2c_i1);
+  w2c_i0 = w2c_l4;
+  w2c_j1 = w2c_l2;
+  w2c_j2 = 15ull;
+  w2c_j1 += w2c_j2;
+  w2c_j2 = 1ull;
+  w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
+  w2c_j1 = 1ull;
+  w2c_i0 = w2c_j0 == w2c_j1;
+  if (w2c_i0) {goto w2c_B0;}
+  w2c_j0 = __errno();
+  w2c_i0 = i32_load((u64)(w2c_j0));
+  w2c_j0 = strerror(w2c_i0);
+  w2c_B0:;
+  w2c_j0 = w2c_p0;
+  w2c_j0 = i64_load((u64)(w2c_j0) + 64u);
+  w2c_j1 = w2c_p0;
+  w2c_j1 = i64_load((u64)(w2c_j1) + 272u);
+  w2c_i0 = w2c_j0 == w2c_j1;
+  if (w2c_i0) {goto w2c_B1;}
+  w2c_j0 = w2c_p0;
+  w2c_j1 = 144ull;
+  w2c_j0 += w2c_j1;
+  w2c_p1 = w2c_j0;
+  w2c_L2: 
+    w2c_j0 = w2c_p1;
+    w2c_j1 = w2c_l3;
+    w2c_i0 = pthread_cond_wait(w2c_j0, w2c_j1);
+    w2c_j0 = w2c_p0;
+    w2c_j0 = i64_load((u64)(w2c_j0) + 64u);
+    w2c_j1 = w2c_p0;
+    w2c_j1 = i64_load((u64)(w2c_j1) + 272u);
+    w2c_i0 = w2c_j0 != w2c_j1;
+    if (w2c_i0) {goto w2c_L2;}
+  w2c_B1:;
+  w2c_j0 = w2c_l3;
+  w2c_i0 = pthread_mutex_unlock(w2c_j0);
+  w2c_j0 = w2c_l2;
+  w2c_j1 = 16ull;
+  w2c_j0 += w2c_j1;
+  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
+  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
+  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  FUNC_EPILOGUE;
+}
+
+static void w2c_0x24native0x2Dplasma_android_app_set_window0x2E1(u64 w2c_p0, u64 w2c_p1) {
+  u32 w2c_l4 = 0;
+  u64 w2c_l2 = 0, w2c_l3 = 0;
+  FUNC_PROLOGUE;
+  u32 w2c_i0, w2c_i1;
+  u64 w2c_j0, w2c_j1, w2c_j2;
+  w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
+  w2c_j1 = 16ull;
+  w2c_j0 -= w2c_j1;
+  w2c_l2 = w2c_j0;
+  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
+  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
+  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  w2c_j0 = w2c_p0;
+  w2c_j1 = 104ull;
+  w2c_j0 += w2c_j1;
+  w2c_l3 = w2c_j0;
+  w2c_i0 = pthread_mutex_lock(w2c_j0);
+  w2c_j0 = w2c_p0;
+  w2c_j0 = i64_load((u64)(w2c_j0) + 280u);
+  w2c_i0 = !(w2c_j0);
+  if (w2c_i0) {goto w2c_B0;}
+  w2c_j0 = w2c_p0;
+  w2c_j1 = 196ull;
+  w2c_j0 += w2c_j1;
+  w2c_i0 = i32_load((u64)(w2c_j0));
+  w2c_l4 = w2c_i0;
+  w2c_j0 = w2c_l2;
+  w2c_i1 = 2u;
+  i32_store8((u64)(w2c_j0) + 14u, w2c_i1);
+  w2c_i0 = w2c_l4;
+  w2c_j1 = w2c_l2;
+  w2c_j2 = 14ull;
+  w2c_j1 += w2c_j2;
+  w2c_j2 = 1ull;
+  w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
+  w2c_j1 = 1ull;
+  w2c_i0 = w2c_j0 == w2c_j1;
+  if (w2c_i0) {goto w2c_B0;}
+  w2c_j0 = __errno();
+  w2c_i0 = i32_load((u64)(w2c_j0));
+  w2c_j0 = strerror(w2c_i0);
+  w2c_B0:;
+  w2c_j0 = w2c_p0;
+  w2c_j1 = w2c_p1;
+  i64_store((u64)(w2c_j0) + 280u, w2c_j1);
+  w2c_j0 = w2c_p1;
+  w2c_i0 = !(w2c_j0);
+  w2c_i0 = !(w2c_i0);
+  if (w2c_i0) {goto w2c_B2;}
+  w2c_j0 = 0ull;
+  w2c_p1 = w2c_j0;
+  goto w2c_B1;
+  w2c_B2:;
+  w2c_j0 = w2c_p0;
+  w2c_j1 = 196ull;
+  w2c_j0 += w2c_j1;
+  w2c_i0 = i32_load((u64)(w2c_j0));
+  w2c_l4 = w2c_i0;
+  w2c_j0 = w2c_l2;
+  w2c_i1 = 1u;
+  i32_store8((u64)(w2c_j0) + 15u, w2c_i1);
+  w2c_i0 = w2c_l4;
+  w2c_j1 = w2c_l2;
+  w2c_j2 = 15ull;
+  w2c_j1 += w2c_j2;
+  w2c_j2 = 1ull;
+  w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
+  w2c_j1 = 1ull;
+  w2c_i0 = w2c_j0 == w2c_j1;
+  if (w2c_i0) {goto w2c_B3;}
+  w2c_j0 = __errno();
+  w2c_i0 = i32_load((u64)(w2c_j0));
+  w2c_j0 = strerror(w2c_i0);
+  w2c_B3:;
+  w2c_j0 = w2c_p0;
+  w2c_j0 = i64_load((u64)(w2c_j0) + 280u);
+  w2c_p1 = w2c_j0;
+  w2c_B1:;
+  w2c_j0 = w2c_p0;
+  w2c_j0 = i64_load((u64)(w2c_j0) + 72u);
+  w2c_j1 = w2c_p1;
+  w2c_i0 = w2c_j0 == w2c_j1;
+  if (w2c_i0) {goto w2c_B4;}
+  w2c_j0 = w2c_p0;
+  w2c_j1 = 144ull;
+  w2c_j0 += w2c_j1;
+  w2c_p1 = w2c_j0;
+  w2c_L5: 
+    w2c_j0 = w2c_p1;
+    w2c_j1 = w2c_l3;
+    w2c_i0 = pthread_cond_wait(w2c_j0, w2c_j1);
+    w2c_j0 = w2c_p0;
+    w2c_j0 = i64_load((u64)(w2c_j0) + 72u);
+    w2c_j1 = w2c_p0;
+    w2c_j1 = i64_load((u64)(w2c_j1) + 280u);
+    w2c_i0 = w2c_j0 != w2c_j1;
+    if (w2c_i0) {goto w2c_L5;}
+  w2c_B4:;
+  w2c_j0 = w2c_l3;
+  w2c_i0 = pthread_mutex_unlock(w2c_j0);
+  w2c_j0 = w2c_l2;
+  w2c_j1 = 16ull;
+  w2c_j0 += w2c_j1;
+  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
+  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
+  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  FUNC_EPILOGUE;
+}
+
+static void w2c_0x24native0x2Dplasma_process_input0x2E1(u64 w2c_p0, u64 w2c_p1) {
   u32 w2c_l4 = 0;
   u64 w2c_l2 = 0, w2c_l3 = 0;
   FUNC_PROLOGUE;
@@ -5307,6 +3293,9 @@ static void w2c_native0x2Dplasma_process_input0x2E1(u64 w2c_p0, u64 w2c_p1) {
   w2c_i0 = (u32)((s32)w2c_i0 < (s32)w2c_i1);
   if (w2c_i0) {goto w2c_B0;}
   w2c_L1: 
+    w2c_j0 = w2c_l2;
+    w2c_j0 = i64_load((u64)(w2c_j0) + 8u);
+    w2c_i0 = AInputEvent_getType(w2c_j0);
     w2c_j0 = w2c_p0;
     w2c_j0 = i64_load((u64)(w2c_j0) + 64u);
     w2c_j1 = w2c_l2;
@@ -5356,7 +3345,7 @@ static void w2c_native0x2Dplasma_process_input0x2E1(u64 w2c_p0, u64 w2c_p1) {
   FUNC_EPILOGUE;
 }
 
-static void w2c_native0x2Dplasma_process_cmd0x2E1(u64 w2c_p0, u64 w2c_p1) {
+static void w2c_0x24native0x2Dplasma_process_cmd0x2E1(u64 w2c_p0, u64 w2c_p1) {
   u32 w2c_l3 = 0;
   u64 w2c_l2 = 0, w2c_l4 = 0, w2c_l5 = 0;
   FUNC_PROLOGUE;
@@ -5420,7 +3409,7 @@ static void w2c_native0x2Dplasma_process_cmd0x2E1(u64 w2c_p0, u64 w2c_p1) {
   w2c_i1 = w2c_l3;
   w2c_i1 = (u32)(s32)(s8)(u8)(w2c_i1);
   w2c_l3 = w2c_i1;
-  w2c_native0x2Dplasma_android_app_pre_exec_cmd0x2E1(w2c_j0, w2c_i1);
+  w2c_0x24native0x2Dplasma_android_app_pre_exec_cmd0x2E1(w2c_j0, w2c_i1);
   w2c_j0 = w2c_p0;
   w2c_j0 = i64_load((u64)(w2c_j0) + 8u);
   w2c_l4 = w2c_j0;
@@ -5433,7 +3422,7 @@ static void w2c_native0x2Dplasma_process_cmd0x2E1(u64 w2c_p0, u64 w2c_p1) {
   w2c_B2:;
   w2c_j0 = w2c_p0;
   w2c_i1 = w2c_l3;
-  w2c_native0x2Dplasma_android_app_post_exec_cmd0x2E1(w2c_j0, w2c_i1);
+  w2c_0x24native0x2Dplasma_android_app_post_exec_cmd0x2E1(w2c_j0, w2c_i1);
   w2c_j0 = w2c_l2;
   w2c_j1 = 16ull;
   w2c_j0 += w2c_j1;
@@ -5444,7 +3433,7 @@ static void w2c_native0x2Dplasma_process_cmd0x2E1(u64 w2c_p0, u64 w2c_p1) {
 }
 
 /* export: 'ANativeActivity_onCreate' */
-void w2c_native0x2Dplasma_ANativeActivity_onCreate(u64 w2c_p0, u64 w2c_p1, u64 w2c_p2) {
-  return w2c_native0x2Dplasma_ANativeActivity_onCreate0x2E1(w2c_p0, w2c_p1, w2c_p2);
+void w2c_0x24native0x2Dplasma_ANativeActivity_onCreate(u64 w2c_p0, u64 w2c_p1, u64 w2c_p2) {
+  return w2c_0x24native0x2Dplasma_ANativeActivity_onCreate0x2E1(w2c_p0, w2c_p1, w2c_p2);
 }
 

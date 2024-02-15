@@ -37,11 +37,11 @@ extern "C" {
 #ifndef NO_SANDBOX
 struct w2c_env;
 
-typedef struct w2c_native0x2Dplasma {
+typedef struct w2c_0x24native0x2Dplasma {
   struct w2c_env* w2c_env_instance;
   wasm_rt_memory_t w2c_memory;
   wasm_rt_funcref_table_t w2c_0x5F_indirect_function_table;
-} w2c_native0x2Dplasma;
+} w2c_0x24native0x2Dplasma;
 
 #endif
 
@@ -51,8 +51,36 @@ void AConfiguration_delete(u64);
 void AConfiguration_fromAssetManager(u64, u64);
 /* import: 'env' 'AConfiguration_getCountry' */
 void AConfiguration_getCountry(u64, u64);
+/* import: 'env' 'AConfiguration_getDensity' */
+u32 AConfiguration_getDensity(u64);
+/* import: 'env' 'AConfiguration_getKeyboard' */
+u32 AConfiguration_getKeyboard(u64);
+/* import: 'env' 'AConfiguration_getKeysHidden' */
+u32 AConfiguration_getKeysHidden(u64);
 /* import: 'env' 'AConfiguration_getLanguage' */
 void AConfiguration_getLanguage(u64, u64);
+/* import: 'env' 'AConfiguration_getMcc' */
+u32 AConfiguration_getMcc(u64);
+/* import: 'env' 'AConfiguration_getMnc' */
+u32 AConfiguration_getMnc(u64);
+/* import: 'env' 'AConfiguration_getNavHidden' */
+u32 AConfiguration_getNavHidden(u64);
+/* import: 'env' 'AConfiguration_getNavigation' */
+u32 AConfiguration_getNavigation(u64);
+/* import: 'env' 'AConfiguration_getOrientation' */
+u32 AConfiguration_getOrientation(u64);
+/* import: 'env' 'AConfiguration_getScreenLong' */
+u32 AConfiguration_getScreenLong(u64);
+/* import: 'env' 'AConfiguration_getScreenSize' */
+u32 AConfiguration_getScreenSize(u64);
+/* import: 'env' 'AConfiguration_getSdkVersion' */
+u32 AConfiguration_getSdkVersion(u64);
+/* import: 'env' 'AConfiguration_getTouchscreen' */
+u32 AConfiguration_getTouchscreen(u64);
+/* import: 'env' 'AConfiguration_getUiModeNight' */
+u32 AConfiguration_getUiModeNight(u64);
+/* import: 'env' 'AConfiguration_getUiModeType' */
+u32 AConfiguration_getUiModeType(u64);
 /* import: 'env' 'AConfiguration_new' */
 u64 AConfiguration_new();
 /* import: 'env' 'AInputEvent_getType' */
@@ -67,6 +95,12 @@ void AInputQueue_finishEvent(u64, u64, u32);
 u32 AInputQueue_getEvent(u64, u64);
 /* import: 'env' 'AInputQueue_preDispatchEvent' */
 u32 AInputQueue_preDispatchEvent(u64, u64);
+/* import: 'env' 'AKeyEvent_getAction' */
+u32 AKeyEvent_getAction(u64);
+/* import: 'env' 'AKeyEvent_getKeyCode' */
+u32 AKeyEvent_getKeyCode(u64);
+/* import: 'env' 'AKeyEvent_getMetaState' */
+u32 AKeyEvent_getMetaState(u64);
 /* import: 'env' 'ALooper_addFd' */
 u32 ALooper_addFd(u64, u32, u32, u32, u64, u64);
 /* import: 'env' 'ALooper_pollAll' */
@@ -85,6 +119,8 @@ u32 ANativeWindow_lock(u64, u64, u64);
 u32 ANativeWindow_setBuffersGeometry(u64, u32, u32, u32);
 /* import: 'env' 'ANativeWindow_unlockAndPost' */
 u32 ANativeWindow_unlockAndPost(u64);
+/* import: 'env' '__errno' */
+u64 __errno();
 /* import: 'env' 'calloc' */
 u64 calloc(u64, u64);
 /* import: 'env' 'clock_gettime' */
@@ -129,14 +165,16 @@ u32 pthread_mutex_unlock(u64);
 u64 read(u32, u64, u64);
 /* import: 'env' 'sin' */
 f64 sin(f64);
-/* import: 'env' 'strlen' */
-u64 strlen(u64);
+/* import: 'env' 'sprintf' */
+u32 sprintf(u64, u64, ...);
+/* import: 'env' 'strerror' */
+u64 strerror(u32);
 /* import: 'env' 'write' */
 ;
 
 /* export: 'ANativeActivity_onCreate' */
-#define w2c_native0x2Dplasma_ANativeActivity_onCreate ANativeActivity_onCreate
-void w2c_native0x2Dplasma_ANativeActivity_onCreate(u64, u64, u64);
+#define w2c_0x24native0x2Dplasma_ANativeActivity_onCreate ANativeActivity_onCreate
+void w2c_0x24native0x2Dplasma_ANativeActivity_onCreate(u64, u64, u64);
 
 #ifdef __cplusplus
 }
