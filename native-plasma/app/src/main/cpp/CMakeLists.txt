@@ -33,6 +33,11 @@ add_executable(native-plasma
 target_include_directories(native-plasma PRIVATE
     ${ANDROID_NDK}/sources/android/native_app_glue)
 
+target_link_libraries(native-plasma
+    android
+    log
+    m)
+
 else()
 
 # Export ANativeActivity_onCreate(), 
