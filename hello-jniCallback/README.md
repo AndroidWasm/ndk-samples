@@ -17,14 +17,32 @@ with C++ support.
 ## Getting Started
 
 1. [Download Android Studio](http://developer.android.com/sdk/index.html)
-1. Launch Android Studio.
-1. Open the sample directory.
-1. Open *File/Project Structure...*
+2. Set up the [WASM-NDK toolchain](https://github.com/AndroidWasm/wasm_ndk)
+3. Manually compile the C++ code to WASM:
+
+   ```
+   cd app/src/main/cpp
+   mkdir build_wasm
+   cd build_wasm
+   cmake --toolchain $WASM_NDK/cmake/toolchain/android_wasm.toolchain.cmake ..
+   cmake --build .
+   ```
+
+4. Run `wasm2c` (still from within `build_wasm`):
+
+   ```
+   $WABT_HOME/bin/wasm2c --experimental --enable-memory64 --disable-sandbox \
+   hello-jnicallback -o hello-jnicallback_generated.c
+   ```
+
+5. Set `WABT_HOME` and then launch Android Studio.
+6. Open the sample directory.
+7. Open *File/Project Structure...*
 
 - Click *Download* or *Select NDK location*.
 
-1. Click *Tools/Android/Sync Project with Gradle Files*.
-1. Click *Run/Run 'app'*.
+8. Click *Tools/Android/Sync Project with Gradle Files*.
+9. Click *Run/Run 'app'*.
 
 ## Screenshots
 

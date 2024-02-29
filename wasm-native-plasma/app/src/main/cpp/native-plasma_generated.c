@@ -31,6 +31,7 @@ static void w2c_0x24native0x2Dplasma_onStart0x2E1(u64);
 static u64 w2c_0x24native0x2Dplasma_android_app_entry0x2E1(u64);
 static void w2c_0x24native0x2Dplasma_android_app_set_input0x2E1(u64, u64);
 static void w2c_0x24native0x2Dplasma_android_app_set_window0x2E1(u64, u64);
+static void w2c_0x24native0x2Dplasma_android_app_set_activity_state0x2E1(u64, u32);
 static void w2c_0x24native0x2Dplasma_process_input0x2E1(u64, u64);
 static void w2c_0x24native0x2Dplasma_process_cmd0x2E1(u64, u64);
 WASM_RT_THREAD_LOCAL uint8_t __attribute__((aligned(16))) g_w2c_stack_array[65536 + 4096];
@@ -41,7 +42,7 @@ extern struct data_struct_w2c_0x24native0x2Dplasma_0x2Edata data_segment_data_w2
 extern struct data_struct_w2c_0x24native0x2Dplasma_0x2Ebss data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss;
 
 struct __attribute__((__packed__)) data_struct_w2c_0x24native0x2Dplasma_0x2Erodata {
-  u8 plain_data_at_0[1118];
+  u8 plain_data_at_0[2173];
 } data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata = {
   {
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x7e, 0x81, 0xa5, 0x81,
@@ -129,15 +130,103 @@ struct __attribute__((__packed__)) data_struct_w2c_0x24native0x2Dplasma_0x2Eroda
     0x1c, 0x30, 0x30, 0xe0, 0x30, 0x30, 0x1c, 0x00, 0x18, 0x18, 0x18, 0x00,
     0x18, 0x18, 0x18, 0x00, 0xe0, 0x30, 0x30, 0x1c, 0x30, 0x30, 0xe0, 0x00,
     0x76, 0xdc, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x10, 0x38, 0x6c,
-    0xc6, 0xc6, 0xfe, 0x00, 0x57, 0x41, 0x53, 0x4d, 0x00, 0x72, 0x65, 0x6e,
-    0x64, 0x65, 0x72, 0x20, 0x74, 0x69, 0x6d, 0x65, 0x20, 0x6d, 0x73, 0x20,
-    0x28, 0x61, 0x76, 0x67, 0x2c, 0x6d, 0x69, 0x6e, 0x2c, 0x6d, 0x61, 0x78,
-    0x29, 0x20, 0x3d, 0x20, 0x28, 0x25, 0x2e, 0x32, 0x66, 0x2c, 0x25, 0x2e,
-    0x32, 0x66, 0x2c, 0x25, 0x2e, 0x32, 0x66, 0x29, 0x00, 0x66, 0x72, 0x61,
-    0x6d, 0x65, 0x2f, 0x73, 0x20, 0x28, 0x61, 0x76, 0x67, 0x2c, 0x6d, 0x69,
-    0x6e, 0x2c, 0x6d, 0x61, 0x78, 0x29, 0x20, 0x3d, 0x20, 0x28, 0x25, 0x2e,
-    0x31, 0x66, 0x2c, 0x25, 0x2e, 0x31, 0x66, 0x2c, 0x25, 0x2e, 0x31, 0x66,
-    0x29, 0x00,
+    0xc6, 0xc6, 0xfe, 0x00, 0x4b, 0x65, 0x79, 0x20, 0x65, 0x76, 0x65, 0x6e,
+    0x74, 0x3a, 0x20, 0x61, 0x63, 0x74, 0x69, 0x6f, 0x6e, 0x3d, 0x25, 0x64,
+    0x20, 0x6b, 0x65, 0x79, 0x43, 0x6f, 0x64, 0x65, 0x3d, 0x25, 0x64, 0x20,
+    0x6d, 0x65, 0x74, 0x61, 0x53, 0x74, 0x61, 0x74, 0x65, 0x3d, 0x30, 0x78,
+    0x25, 0x78, 0x00, 0x63, 0x6f, 0x75, 0x6c, 0x64, 0x20, 0x6e, 0x6f, 0x74,
+    0x20, 0x63, 0x72, 0x65, 0x61, 0x74, 0x65, 0x20, 0x70, 0x69, 0x70, 0x65,
+    0x3a, 0x20, 0x25, 0x73, 0x00, 0x46, 0x61, 0x69, 0x6c, 0x75, 0x72, 0x65,
+    0x20, 0x77, 0x72, 0x69, 0x74, 0x69, 0x6e, 0x67, 0x20, 0x61, 0x6e, 0x64,
+    0x72, 0x6f, 0x69, 0x64, 0x5f, 0x61, 0x70, 0x70, 0x20, 0x63, 0x6d, 0x64,
+    0x3a, 0x20, 0x25, 0x73, 0x00, 0x41, 0x74, 0x74, 0x61, 0x63, 0x68, 0x69,
+    0x6e, 0x67, 0x20, 0x69, 0x6e, 0x70, 0x75, 0x74, 0x20, 0x71, 0x75, 0x65,
+    0x75, 0x65, 0x20, 0x74, 0x6f, 0x20, 0x6c, 0x6f, 0x6f, 0x70, 0x65, 0x72,
+    0x00, 0x55, 0x6e, 0x61, 0x62, 0x6c, 0x65, 0x20, 0x74, 0x6f, 0x20, 0x6c,
+    0x6f, 0x63, 0x6b, 0x20, 0x77, 0x69, 0x6e, 0x64, 0x6f, 0x77, 0x20, 0x62,
+    0x75, 0x66, 0x66, 0x65, 0x72, 0x00, 0x74, 0x68, 0x72, 0x65, 0x61, 0x64,
+    0x65, 0x64, 0x5f, 0x61, 0x70, 0x70, 0x00, 0x4c, 0x6f, 0x77, 0x4d, 0x65,
+    0x6d, 0x6f, 0x72, 0x79, 0x3a, 0x20, 0x25, 0x70, 0x00, 0x44, 0x65, 0x73,
+    0x74, 0x72, 0x6f, 0x79, 0x3a, 0x20, 0x25, 0x70, 0x00, 0x53, 0x74, 0x61,
+    0x72, 0x74, 0x3a, 0x20, 0x25, 0x70, 0x00, 0x53, 0x74, 0x6f, 0x70, 0x3a,
+    0x20, 0x25, 0x70, 0x00, 0x43, 0x72, 0x65, 0x61, 0x74, 0x69, 0x6e, 0x67,
+    0x3a, 0x20, 0x25, 0x70, 0x00, 0x53, 0x61, 0x76, 0x65, 0x49, 0x6e, 0x73,
+    0x74, 0x61, 0x6e, 0x63, 0x65, 0x53, 0x74, 0x61, 0x74, 0x65, 0x3a, 0x20,
+    0x25, 0x70, 0x00, 0x50, 0x61, 0x75, 0x73, 0x65, 0x3a, 0x20, 0x25, 0x70,
+    0x00, 0x52, 0x65, 0x73, 0x75, 0x6d, 0x65, 0x3a, 0x20, 0x25, 0x70, 0x00,
+    0x43, 0x6f, 0x6e, 0x66, 0x69, 0x67, 0x75, 0x72, 0x61, 0x74, 0x69, 0x6f,
+    0x6e, 0x43, 0x68, 0x61, 0x6e, 0x67, 0x65, 0x64, 0x3a, 0x20, 0x25, 0x70,
+    0x00, 0x4e, 0x61, 0x74, 0x69, 0x76, 0x65, 0x57, 0x69, 0x6e, 0x64, 0x6f,
+    0x77, 0x52, 0x65, 0x73, 0x69, 0x7a, 0x65, 0x64, 0x3a, 0x20, 0x25, 0x70,
+    0x20, 0x2d, 0x2d, 0x20, 0x25, 0x70, 0x00, 0x4e, 0x61, 0x74, 0x69, 0x76,
+    0x65, 0x57, 0x69, 0x6e, 0x64, 0x6f, 0x77, 0x44, 0x65, 0x73, 0x74, 0x72,
+    0x6f, 0x79, 0x65, 0x64, 0x3a, 0x20, 0x25, 0x70, 0x20, 0x2d, 0x2d, 0x20,
+    0x25, 0x70, 0x00, 0x49, 0x6e, 0x70, 0x75, 0x74, 0x51, 0x75, 0x65, 0x75,
+    0x65, 0x44, 0x65, 0x73, 0x74, 0x72, 0x6f, 0x79, 0x65, 0x64, 0x3a, 0x20,
+    0x25, 0x70, 0x20, 0x2d, 0x2d, 0x20, 0x25, 0x70, 0x00, 0x4e, 0x61, 0x74,
+    0x69, 0x76, 0x65, 0x57, 0x69, 0x6e, 0x64, 0x6f, 0x77, 0x43, 0x72, 0x65,
+    0x61, 0x74, 0x65, 0x64, 0x3a, 0x20, 0x25, 0x70, 0x20, 0x2d, 0x2d, 0x20,
+    0x25, 0x70, 0x00, 0x49, 0x6e, 0x70, 0x75, 0x74, 0x51, 0x75, 0x65, 0x75,
+    0x65, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x64, 0x3a, 0x20, 0x25, 0x70,
+    0x20, 0x2d, 0x2d, 0x20, 0x25, 0x70, 0x00, 0x4e, 0x61, 0x74, 0x69, 0x76,
+    0x65, 0x57, 0x69, 0x6e, 0x64, 0x6f, 0x77, 0x52, 0x65, 0x64, 0x72, 0x61,
+    0x77, 0x4e, 0x65, 0x65, 0x64, 0x65, 0x64, 0x3a, 0x20, 0x25, 0x70, 0x20,
+    0x2d, 0x2d, 0x20, 0x25, 0x70, 0x00, 0x43, 0x6f, 0x6e, 0x66, 0x69, 0x67,
+    0x3a, 0x20, 0x6d, 0x63, 0x63, 0x3d, 0x25, 0x64, 0x20, 0x6d, 0x6e, 0x63,
+    0x3d, 0x25, 0x64, 0x20, 0x6c, 0x61, 0x6e, 0x67, 0x3d, 0x25, 0x63, 0x25,
+    0x63, 0x20, 0x63, 0x6e, 0x74, 0x3d, 0x25, 0x63, 0x25, 0x63, 0x20, 0x6f,
+    0x72, 0x69, 0x65, 0x6e, 0x3d, 0x25, 0x64, 0x20, 0x74, 0x6f, 0x75, 0x63,
+    0x68, 0x3d, 0x25, 0x64, 0x20, 0x64, 0x65, 0x6e, 0x73, 0x3d, 0x25, 0x64,
+    0x20, 0x6b, 0x65, 0x79, 0x73, 0x3d, 0x25, 0x64, 0x20, 0x6e, 0x61, 0x76,
+    0x3d, 0x25, 0x64, 0x20, 0x6b, 0x65, 0x79, 0x73, 0x48, 0x69, 0x64, 0x3d,
+    0x25, 0x64, 0x20, 0x6e, 0x61, 0x76, 0x48, 0x69, 0x64, 0x3d, 0x25, 0x64,
+    0x20, 0x73, 0x64, 0x6b, 0x3d, 0x25, 0x64, 0x20, 0x73, 0x69, 0x7a, 0x65,
+    0x3d, 0x25, 0x64, 0x20, 0x6c, 0x6f, 0x6e, 0x67, 0x3d, 0x25, 0x64, 0x20,
+    0x6d, 0x6f, 0x64, 0x65, 0x74, 0x79, 0x70, 0x65, 0x3d, 0x25, 0x64, 0x20,
+    0x6d, 0x6f, 0x64, 0x65, 0x6e, 0x69, 0x67, 0x68, 0x74, 0x3d, 0x25, 0x64,
+    0x00, 0x61, 0x63, 0x74, 0x69, 0x76, 0x69, 0x74, 0x79, 0x53, 0x74, 0x61,
+    0x74, 0x65, 0x3d, 0x25, 0x64, 0x00, 0x4e, 0x65, 0x77, 0x20, 0x69, 0x6e,
+    0x70, 0x75, 0x74, 0x20, 0x65, 0x76, 0x65, 0x6e, 0x74, 0x3a, 0x20, 0x74,
+    0x79, 0x70, 0x65, 0x3d, 0x25, 0x64, 0x00, 0x43, 0x6f, 0x6e, 0x74, 0x65,
+    0x6e, 0x74, 0x52, 0x65, 0x63, 0x74, 0x43, 0x68, 0x61, 0x6e, 0x67, 0x65,
+    0x64, 0x3a, 0x20, 0x6c, 0x3d, 0x25, 0x64, 0x2c, 0x74, 0x3d, 0x25, 0x64,
+    0x2c, 0x72, 0x3d, 0x25, 0x64, 0x2c, 0x62, 0x3d, 0x25, 0x64, 0x00, 0x57,
+    0x69, 0x6e, 0x64, 0x6f, 0x77, 0x46, 0x6f, 0x63, 0x75, 0x73, 0x43, 0x68,
+    0x61, 0x6e, 0x67, 0x65, 0x64, 0x3a, 0x20, 0x25, 0x70, 0x20, 0x2d, 0x2d,
+    0x20, 0x25, 0x64, 0x00, 0x6c, 0x69, 0x62, 0x70, 0x6c, 0x61, 0x73, 0x6d,
+    0x61, 0x00, 0x41, 0x50, 0x50, 0x5f, 0x43, 0x4d, 0x44, 0x5f, 0x44, 0x45,
+    0x53, 0x54, 0x52, 0x4f, 0x59, 0x00, 0x41, 0x50, 0x50, 0x5f, 0x43, 0x4d,
+    0x44, 0x5f, 0x49, 0x4e, 0x49, 0x54, 0x5f, 0x57, 0x49, 0x4e, 0x44, 0x4f,
+    0x57, 0x00, 0x41, 0x50, 0x50, 0x5f, 0x43, 0x4d, 0x44, 0x5f, 0x54, 0x45,
+    0x52, 0x4d, 0x5f, 0x57, 0x49, 0x4e, 0x44, 0x4f, 0x57, 0x00, 0x57, 0x41,
+    0x53, 0x4d, 0x00, 0x41, 0x50, 0x50, 0x5f, 0x43, 0x4d, 0x44, 0x5f, 0x53,
+    0x41, 0x56, 0x45, 0x5f, 0x53, 0x54, 0x41, 0x54, 0x45, 0x00, 0x41, 0x50,
+    0x50, 0x5f, 0x43, 0x4d, 0x44, 0x5f, 0x49, 0x4e, 0x50, 0x55, 0x54, 0x5f,
+    0x43, 0x48, 0x41, 0x4e, 0x47, 0x45, 0x44, 0x00, 0x41, 0x50, 0x50, 0x5f,
+    0x43, 0x4d, 0x44, 0x5f, 0x43, 0x4f, 0x4e, 0x46, 0x49, 0x47, 0x5f, 0x43,
+    0x48, 0x41, 0x4e, 0x47, 0x45, 0x44, 0x00, 0x72, 0x65, 0x6e, 0x64, 0x65,
+    0x72, 0x20, 0x74, 0x69, 0x6d, 0x65, 0x20, 0x6d, 0x73, 0x20, 0x28, 0x61,
+    0x76, 0x67, 0x2c, 0x6d, 0x69, 0x6e, 0x2c, 0x6d, 0x61, 0x78, 0x29, 0x20,
+    0x3d, 0x20, 0x28, 0x25, 0x2e, 0x32, 0x66, 0x2c, 0x25, 0x2e, 0x32, 0x66,
+    0x2c, 0x25, 0x2e, 0x32, 0x66, 0x29, 0x00, 0x66, 0x72, 0x61, 0x6d, 0x65,
+    0x2f, 0x73, 0x20, 0x28, 0x61, 0x76, 0x67, 0x2c, 0x6d, 0x69, 0x6e, 0x2c,
+    0x6d, 0x61, 0x78, 0x29, 0x20, 0x3d, 0x20, 0x28, 0x25, 0x2e, 0x31, 0x66,
+    0x2c, 0x25, 0x2e, 0x31, 0x66, 0x2c, 0x25, 0x2e, 0x31, 0x66, 0x29, 0x00,
+    0x61, 0x6e, 0x64, 0x72, 0x6f, 0x69, 0x64, 0x5f, 0x61, 0x70, 0x70, 0x5f,
+    0x64, 0x65, 0x73, 0x74, 0x72, 0x6f, 0x79, 0x21, 0x00, 0x4e, 0x6f, 0x20,
+    0x64, 0x61, 0x74, 0x61, 0x20, 0x6f, 0x6e, 0x20, 0x63, 0x6f, 0x6d, 0x6d,
+    0x61, 0x6e, 0x64, 0x20, 0x70, 0x69, 0x70, 0x65, 0x21, 0x00, 0x45, 0x6e,
+    0x67, 0x69, 0x6e, 0x65, 0x20, 0x74, 0x68, 0x72, 0x65, 0x61, 0x64, 0x20,
+    0x64, 0x65, 0x73, 0x74, 0x72, 0x6f, 0x79, 0x20, 0x72, 0x65, 0x71, 0x75,
+    0x65, 0x73, 0x74, 0x65, 0x64, 0x21, 0x00, 0x66, 0x72, 0x61, 0x6d, 0x65,
+    0x2f, 0x73, 0x20, 0x28, 0x61, 0x76, 0x67, 0x2c, 0x6d, 0x69, 0x6e, 0x2c,
+    0x6d, 0x61, 0x78, 0x29, 0x20, 0x3d, 0x20, 0x28, 0x25, 0x2e, 0x31, 0x66,
+    0x2c, 0x25, 0x2e, 0x31, 0x66, 0x2c, 0x25, 0x2e, 0x31, 0x66, 0x29, 0x20,
+    0x72, 0x65, 0x6e, 0x64, 0x65, 0x72, 0x20, 0x74, 0x69, 0x6d, 0x65, 0x20,
+    0x6d, 0x73, 0x20, 0x28, 0x61, 0x76, 0x67, 0x2c, 0x6d, 0x69, 0x6e, 0x2c,
+    0x6d, 0x61, 0x78, 0x29, 0x20, 0x3d, 0x20, 0x28, 0x25, 0x2e, 0x31, 0x66,
+    0x2c, 0x25, 0x2e, 0x31, 0x66, 0x2c, 0x25, 0x2e, 0x31, 0x66, 0x29, 0x0a,
+    0x00,
   },
 };
 
@@ -446,6 +535,12 @@ static void w2c_0x24native0x2Dplasma_android_main0x2E1(u64 w2c_p0) {
     w2c_i0 = i32_load((u64)(w2c_j0) + 100u);
     w2c_i0 = !(w2c_i0);
     if (w2c_i0) {goto w2c_L8;}
+    w2c_i0 = 4u;
+    w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1780u;
+    w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 2050u;
+    {
+      w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2);
+    }
     w2c_j0 = w2c_l1;
     w2c_j1 = 3296ull;
     w2c_j0 += w2c_j1;
@@ -469,8 +564,8 @@ static void w2c_0x24native0x2Dplasma_android_main0x2E1(u64 w2c_p0) {
 
 static u32 w2c_0x24native0x2Dplasma_engine_handle_input0x2E1(u64 w2c_p0, u64 w2c_p1) {
   FUNC_PROLOGUE;
-  u32 w2c_i0, w2c_i1;
-  u64 w2c_j0;
+  u32 w2c_i0, w2c_i1, w2c_i3, w2c_i4, w2c_i5;
+  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3, w2c_j4, w2c_j5;
   w2c_j0 = w2c_p0;
   w2c_j0 = i64_load((u64)(w2c_j0));
   w2c_p0 = w2c_j0;
@@ -490,12 +585,21 @@ static u32 w2c_0x24native0x2Dplasma_engine_handle_input0x2E1(u64 w2c_p0, u64 w2c
   w2c_i1 = 1u;
   w2c_i0 = w2c_i0 != w2c_i1;
   if (w2c_i0) {goto w2c_B1;}
-  w2c_j0 = w2c_p1;
-  w2c_i0 = AKeyEvent_getAction(w2c_j0);
-  w2c_j0 = w2c_p1;
-  w2c_i0 = AKeyEvent_getKeyCode(w2c_j0);
-  w2c_j0 = w2c_p1;
-  w2c_i0 = AKeyEvent_getMetaState(w2c_j0);
+  w2c_i0 = 4u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1780u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1024u;
+  w2c_j3 = w2c_p1;
+  w2c_i3 = AKeyEvent_getAction(w2c_j3);
+  w2c_j4 = w2c_p1;
+  w2c_i4 = AKeyEvent_getKeyCode(w2c_j4);
+  w2c_j5 = w2c_p1;
+  w2c_i5 = AKeyEvent_getMetaState(w2c_j5);
+  {
+    u32 w2c_va_0 = w2c_i3;
+    u32 w2c_va_1 = w2c_i4;
+    u32 w2c_va_2 = w2c_i5;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0, w2c_va_1, w2c_va_2);
+  }
   w2c_B1:;
   w2c_i0 = 0u;
   w2c_Bfunc:;
@@ -586,7 +690,8 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   FUNC_PROLOGUE;
   u32 w2c_i0, w2c_i1, w2c_i2, w2c_i3, w2c_i4, w2c_i5;
   u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3, w2c_j4;
-  f64 w2c_d0, w2c_d1, w2c_d2, w2c_d3, w2c_d4;
+  f64 w2c_d0, w2c_d1, w2c_d2, w2c_d3, w2c_d4, w2c_d5, w2c_d6, w2c_d7, 
+      w2c_d8;
   w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
   w2c_j1 = 272ull;
   w2c_j0 -= w2c_j1;
@@ -606,9 +711,17 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_j1 += w2c_j2;
   w2c_j2 = 0ull;
   w2c_i0 = ANativeWindow_lock(w2c_j0, w2c_j1, w2c_j2);
-  w2c_i1 = 0u;
-  w2c_i0 = (u32)((s32)w2c_i0 < (s32)w2c_i1);
-  if (w2c_i0) {goto w2c_B0;}
+  w2c_i1 = 4294967295u;
+  w2c_i0 = (u32)((s32)w2c_i0 > (s32)w2c_i1);
+  if (w2c_i0) {goto w2c_B1;}
+  w2c_i0 = 5u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1780u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1165u;
+  {
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2);
+  }
+  goto w2c_B0;
+  w2c_B1:;
   w2c_j0 = w2c_l1;
   w2c_j1 = 64ull;
   w2c_j0 += w2c_j1;
@@ -660,25 +773,25 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_d1 = 2147483648;
   w2c_i0 = w2c_d0 < w2c_d1;
   w2c_i0 = !(w2c_i0);
-  if (w2c_i0) {goto w2c_B2;}
+  if (w2c_i0) {goto w2c_B3;}
   w2c_d0 = w2c_l5;
   w2c_i0 = I32_TRUNC_S_F64(w2c_d0);
   w2c_l6 = w2c_i0;
-  goto w2c_B1;
-  w2c_B2:;
+  goto w2c_B2;
+  w2c_B3:;
   w2c_i0 = 2147483648u;
   w2c_l6 = w2c_i0;
-  w2c_B1:;
+  w2c_B2:;
   w2c_j0 = w2c_l1;
   w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
   w2c_l7 = w2c_j0;
   w2c_i0 = w2c_l3;
-  if (w2c_i0) {goto w2c_B3;}
+  if (w2c_i0) {goto w2c_B4;}
   w2c_j0 = w2c_l1;
   w2c_i0 = i32_load((u64)(w2c_j0) + 16u);
   w2c_i1 = 1u;
   w2c_i0 = (u32)((s32)w2c_i0 < (s32)w2c_i1);
-  if (w2c_i0) {goto w2c_B3;}
+  if (w2c_i0) {goto w2c_B4;}
   w2c_i0 = w2c_l6;
   w2c_i1 = 7u;
   w2c_i0 >>= (w2c_i1 & 31);
@@ -698,15 +811,15 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_d1 = 2147483648;
   w2c_i0 = w2c_d0 < w2c_d1;
   w2c_i0 = !(w2c_i0);
-  if (w2c_i0) {goto w2c_B5;}
+  if (w2c_i0) {goto w2c_B6;}
   w2c_d0 = w2c_l5;
   w2c_i0 = I32_TRUNC_S_F64(w2c_d0);
   w2c_l8 = w2c_i0;
-  goto w2c_B4;
-  w2c_B5:;
+  goto w2c_B5;
+  w2c_B6:;
   w2c_i0 = 2147483648u;
   w2c_l8 = w2c_i0;
-  w2c_B4:;
+  w2c_B5:;
   w2c_i0 = w2c_l6;
   w2c_i1 = 270u;
   w2c_i0 += w2c_i1;
@@ -725,13 +838,13 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_l13 = w2c_i0;
   w2c_j0 = w2c_l7;
   w2c_l14 = w2c_j0;
-  w2c_L6: 
+  w2c_L7: 
     w2c_j0 = w2c_l1;
     w2c_j0 = i64_load32_s((u64)(w2c_j0) + 16u);
     w2c_l2 = w2c_j0;
     w2c_j1 = 1ull;
     w2c_i0 = (u64)((s64)w2c_j0 < (s64)w2c_j1);
-    if (w2c_i0) {goto w2c_B7;}
+    if (w2c_i0) {goto w2c_B8;}
     w2c_i0 = w2c_l13;
     w2c_i1 = 7u;
     w2c_i0 >>= (w2c_i1 & 31);
@@ -772,7 +885,7 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
     w2c_j1 = 3ull;
     w2c_j0 &= w2c_j1;
     w2c_i0 = !(w2c_j0);
-    if (w2c_i0) {goto w2c_B8;}
+    if (w2c_i0) {goto w2c_B9;}
     w2c_j0 = w2c_l14;
     w2c_j1 = w2c_l11;
     w2c_i1 = i32_load((u64)(w2c_j1));
@@ -813,18 +926,18 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
     w2c_l3 = w2c_i0;
     w2c_i0 = w2c_l10;
     w2c_l17 = w2c_i0;
-    w2c_B8:;
+    w2c_B9:;
     w2c_j0 = w2c_l2;
     w2c_j1 = 4ull;
     w2c_j0 += w2c_j1;
     w2c_j1 = w2c_l16;
     w2c_i0 = w2c_j0 <= w2c_j1;
-    if (w2c_i0) {goto w2c_B10;}
+    if (w2c_i0) {goto w2c_B11;}
     w2c_j0 = w2c_l2;
     w2c_l18 = w2c_j0;
-    goto w2c_B9;
-    w2c_B10:;
-    w2c_L11: 
+    goto w2c_B10;
+    w2c_B11:;
+    w2c_L12: 
       w2c_j0 = w2c_l2;
       w2c_i1 = w2c_l17;
       w2c_i2 = 7u;
@@ -952,12 +1065,12 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
       w2c_j0 = w2c_l20;
       w2c_j1 = w2c_l16;
       w2c_i0 = w2c_j0 <= w2c_j1;
-      if (w2c_i0) {goto w2c_L11;}
-    w2c_B9:;
+      if (w2c_i0) {goto w2c_L12;}
+    w2c_B10:;
     w2c_j0 = w2c_l18;
     w2c_j1 = w2c_l16;
     w2c_i0 = w2c_j0 >= w2c_j1;
-    if (w2c_i0) {goto w2c_B7;}
+    if (w2c_i0) {goto w2c_B8;}
     w2c_j0 = w2c_l18;
     w2c_i1 = w2c_l17;
     w2c_i2 = 7u;
@@ -1009,7 +1122,7 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
     w2c_j1 += w2c_j2;
     w2c_i1 = i32_load16_u((u64)(w2c_j1));
     i32_store16((u64)(w2c_j0), w2c_i1);
-    w2c_B7:;
+    w2c_B8:;
     w2c_i0 = w2c_l13;
     w2c_i1 = 402u;
     w2c_i0 += w2c_i1;
@@ -1032,15 +1145,15 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
     w2c_j1 = w2c_l1;
     w2c_i1 = i32_load((u64)(w2c_j1) + 20u);
     w2c_i0 = (u32)((s32)w2c_i0 < (s32)w2c_i1);
-    if (w2c_i0) {goto w2c_L6;}
-  w2c_B3:;
+    if (w2c_i0) {goto w2c_L7;}
+  w2c_B4:;
   w2c_j0 = w2c_l1;
   w2c_i0 = i32_load((u64)(w2c_j0) + 24u);
   w2c_l8 = w2c_i0;
   w2c_j0 = w2c_l1;
   w2c_j1 = 64ull;
   w2c_j0 += w2c_j1;
-  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1077u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1963u;
   w2c_j2 = 0ull;
   w2c_d2 = f64_load((u64)(w2c_j2) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 2624u);
   w2c_j3 = 0ull;
@@ -1065,7 +1178,7 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_j0 = w2c_l1;
   w2c_i0 = i32_load8_u((u64)(w2c_j0) + 64u);
   w2c_i0 = !(w2c_i0);
-  if (w2c_i0) {goto w2c_B12;}
+  if (w2c_i0) {goto w2c_B13;}
   w2c_j0 = w2c_l1;
   w2c_j1 = 64ull;
   w2c_j0 += w2c_j1;
@@ -1086,16 +1199,16 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_l22 = w2c_j0;
   w2c_j0 = w2c_l21;
   w2c_l14 = w2c_j0;
-  w2c_L13: 
+  w2c_L14: 
     w2c_j0 = 0ull;
     w2c_l20 = w2c_j0;
-    w2c_L14: 
+    w2c_L15: 
       w2c_i0 = 1u;
       w2c_l19 = w2c_i0;
-      w2c_L15: 
+      w2c_L16: 
         w2c_j0 = 0ull;
         w2c_l11 = w2c_j0;
-        w2c_L16: 
+        w2c_L17: 
           w2c_j0 = w2c_l11;
           w2c_j1 = 1ull;
           w2c_j0 <<= (w2c_j1 & 63);
@@ -1111,7 +1224,7 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
           w2c_l15 = w2c_i0;
           w2c_j0 = 0ull;
           w2c_l2 = w2c_j0;
-          w2c_L17: 
+          w2c_L18: 
             w2c_i0 = w2c_l15;
             w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata);
             w2c_j2 = w2c_l16;
@@ -1124,7 +1237,7 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
             w2c_i1 = i32_load8_u((u64)(w2c_j1));
             w2c_i0 &= w2c_i1;
             w2c_i0 = !(w2c_i0);
-            if (w2c_i0) {goto w2c_B18;}
+            if (w2c_i0) {goto w2c_B19;}
             w2c_j0 = w2c_l14;
             w2c_j1 = w2c_l2;
             w2c_j2 = w2c_l18;
@@ -1134,7 +1247,7 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
             w2c_j0 += w2c_j1;
             w2c_i1 = 15u;
             i32_store16((u64)(w2c_j0), w2c_i1);
-            w2c_B18:;
+            w2c_B19:;
             w2c_i0 = w2c_l3;
             w2c_i1 = 1u;
             w2c_i0 &= w2c_i1;
@@ -1144,14 +1257,14 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
             w2c_i0 = 0u;
             w2c_l3 = w2c_i0;
             w2c_i0 = w2c_l17;
-            if (w2c_i0) {goto w2c_L17;}
+            if (w2c_i0) {goto w2c_L18;}
           w2c_j0 = w2c_l11;
           w2c_j1 = 1ull;
           w2c_j0 += w2c_j1;
           w2c_l11 = w2c_j0;
           w2c_j1 = 8ull;
           w2c_i0 = w2c_j0 != w2c_j1;
-          if (w2c_i0) {goto w2c_L16;}
+          if (w2c_i0) {goto w2c_L17;}
         w2c_j0 = w2c_l14;
         w2c_j1 = w2c_l7;
         w2c_j0 += w2c_j1;
@@ -1163,14 +1276,14 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
         w2c_i0 = 0u;
         w2c_l19 = w2c_i0;
         w2c_i0 = w2c_l3;
-        if (w2c_i0) {goto w2c_L15;}
+        if (w2c_i0) {goto w2c_L16;}
       w2c_j0 = w2c_l20;
       w2c_j1 = 1ull;
       w2c_j0 += w2c_j1;
       w2c_l20 = w2c_j0;
       w2c_j1 = 8ull;
       w2c_i0 = w2c_j0 != w2c_j1;
-      if (w2c_i0) {goto w2c_L14;}
+      if (w2c_i0) {goto w2c_L15;}
     w2c_j0 = w2c_l14;
     w2c_j1 = w2c_l22;
     w2c_j0 += w2c_j1;
@@ -1183,12 +1296,12 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
     w2c_j0 += w2c_j1;
     w2c_l16 = w2c_j0;
     w2c_i0 = w2c_l3;
-    if (w2c_i0) {goto w2c_L13;}
-  w2c_B12:;
+    if (w2c_i0) {goto w2c_L14;}
+  w2c_B13:;
   w2c_j0 = w2c_l1;
   w2c_j1 = 64ull;
   w2c_j0 += w2c_j1;
-  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1029u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1915u;
   w2c_j2 = 0ull;
   w2c_d2 = f64_load((u64)(w2c_j2) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 2600u);
   w2c_j3 = 0ull;
@@ -1203,7 +1316,7 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   }
   w2c_j0 = w2c_l1;
   w2c_i0 = i32_load8_u((u64)(w2c_j0) + 64u);
-  if (w2c_i0) {goto w2c_B20;}
+  if (w2c_i0) {goto w2c_B21;}
   w2c_i0 = 16u;
   w2c_i1 = w2c_l8;
   w2c_i2 = 4u;
@@ -1214,8 +1327,8 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_i0 = w2c_l8;
   w2c_j0 = (u64)(s64)(s32)(w2c_i0);
   w2c_l7 = w2c_j0;
-  goto w2c_B19;
-  w2c_B20:;
+  goto w2c_B20;
+  w2c_B21:;
   w2c_j0 = w2c_l21;
   w2c_i1 = w2c_l8;
   w2c_i2 = 5u;
@@ -1239,16 +1352,16 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_j1 = 64ull;
   w2c_j0 += w2c_j1;
   w2c_l16 = w2c_j0;
-  w2c_L21: 
+  w2c_L22: 
     w2c_j0 = 0ull;
     w2c_l20 = w2c_j0;
-    w2c_L22: 
+    w2c_L23: 
       w2c_i0 = 1u;
       w2c_l19 = w2c_i0;
-      w2c_L23: 
+      w2c_L24: 
         w2c_j0 = 0ull;
         w2c_l11 = w2c_j0;
-        w2c_L24: 
+        w2c_L25: 
           w2c_j0 = w2c_l11;
           w2c_j1 = 1ull;
           w2c_j0 <<= (w2c_j1 & 63);
@@ -1264,7 +1377,7 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
           w2c_l15 = w2c_i0;
           w2c_j0 = 0ull;
           w2c_l2 = w2c_j0;
-          w2c_L25: 
+          w2c_L26: 
             w2c_i0 = w2c_l15;
             w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata);
             w2c_j2 = w2c_l16;
@@ -1277,7 +1390,7 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
             w2c_i1 = i32_load8_u((u64)(w2c_j1));
             w2c_i0 &= w2c_i1;
             w2c_i0 = !(w2c_i0);
-            if (w2c_i0) {goto w2c_B26;}
+            if (w2c_i0) {goto w2c_B27;}
             w2c_j0 = w2c_l14;
             w2c_j1 = w2c_l2;
             w2c_j2 = w2c_l18;
@@ -1287,7 +1400,7 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
             w2c_j0 += w2c_j1;
             w2c_i1 = 15u;
             i32_store16((u64)(w2c_j0), w2c_i1);
-            w2c_B26:;
+            w2c_B27:;
             w2c_i0 = w2c_l3;
             w2c_i1 = 1u;
             w2c_i0 &= w2c_i1;
@@ -1297,14 +1410,14 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
             w2c_i0 = 0u;
             w2c_l3 = w2c_i0;
             w2c_i0 = w2c_l17;
-            if (w2c_i0) {goto w2c_L25;}
+            if (w2c_i0) {goto w2c_L26;}
           w2c_j0 = w2c_l11;
           w2c_j1 = 1ull;
           w2c_j0 += w2c_j1;
           w2c_l11 = w2c_j0;
           w2c_j1 = 8ull;
           w2c_i0 = w2c_j0 != w2c_j1;
-          if (w2c_i0) {goto w2c_L24;}
+          if (w2c_i0) {goto w2c_L25;}
         w2c_j0 = w2c_l14;
         w2c_j1 = w2c_l7;
         w2c_j2 = 1ull;
@@ -1318,14 +1431,14 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
         w2c_i0 = 0u;
         w2c_l19 = w2c_i0;
         w2c_i0 = w2c_l3;
-        if (w2c_i0) {goto w2c_L23;}
+        if (w2c_i0) {goto w2c_L24;}
       w2c_j0 = w2c_l20;
       w2c_j1 = 1ull;
       w2c_j0 += w2c_j1;
       w2c_l20 = w2c_j0;
       w2c_j1 = 8ull;
       w2c_i0 = w2c_j0 != w2c_j1;
-      if (w2c_i0) {goto w2c_L22;}
+      if (w2c_i0) {goto w2c_L23;}
     w2c_j0 = w2c_l14;
     w2c_j1 = w2c_l22;
     w2c_j2 = 1ull;
@@ -1340,8 +1453,8 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
     w2c_j0 += w2c_j1;
     w2c_l16 = w2c_j0;
     w2c_i0 = w2c_l3;
-    if (w2c_i0) {goto w2c_L21;}
-  w2c_B19:;
+    if (w2c_i0) {goto w2c_L22;}
+  w2c_B20:;
   w2c_j0 = w2c_l7;
   w2c_j1 = 1ull;
   w2c_j0 <<= (w2c_j1 & 63);
@@ -1355,19 +1468,19 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_j1 <<= (w2c_j2 & 63);
   w2c_j0 += w2c_j1;
   w2c_l20 = w2c_j0;
-  w2c_j0 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1024u;
+  w2c_j0 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1846u;
   w2c_l11 = w2c_j0;
   w2c_j0 = w2c_l22;
   w2c_j1 = 1ull;
   w2c_j0 <<= (w2c_j1 & 63);
   w2c_l7 = w2c_j0;
-  w2c_L27: 
+  w2c_L28: 
     w2c_j0 = w2c_l11;
     w2c_j0 = i64_load8_u((u64)(w2c_j0));
     w2c_l14 = w2c_j0;
     w2c_j0 = 0ull;
     w2c_l18 = w2c_j0;
-    w2c_L28: 
+    w2c_L29: 
       w2c_j0 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata);
       w2c_j1 = w2c_l14;
       w2c_j2 = 3ull;
@@ -1379,25 +1492,25 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
       w2c_l17 = w2c_i0;
       w2c_i0 = 1u;
       w2c_l15 = w2c_i0;
-      w2c_L29: 
+      w2c_L30: 
         w2c_j0 = 0ull;
         w2c_l2 = w2c_j0;
         w2c_i0 = 7u;
         w2c_l3 = w2c_i0;
-        w2c_L30: 
+        w2c_L31: 
           w2c_i0 = w2c_l17;
           w2c_i1 = w2c_l3;
           w2c_i0 >>= (w2c_i1 & 31);
           w2c_i1 = 1u;
           w2c_i0 &= w2c_i1;
           w2c_i0 = !(w2c_i0);
-          if (w2c_i0) {goto w2c_B31;}
+          if (w2c_i0) {goto w2c_B32;}
           w2c_j0 = w2c_l20;
           w2c_j1 = w2c_l2;
           w2c_j0 += w2c_j1;
           w2c_i1 = 983055u;
           i32_store((u64)(w2c_j0), w2c_i1);
-          w2c_B31:;
+          w2c_B32:;
           w2c_i0 = w2c_l3;
           w2c_i1 = 4294967295u;
           w2c_i0 += w2c_i1;
@@ -1408,7 +1521,7 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
           w2c_l2 = w2c_j0;
           w2c_j1 = 32ull;
           w2c_i0 = w2c_j0 != w2c_j1;
-          if (w2c_i0) {goto w2c_L30;}
+          if (w2c_i0) {goto w2c_L31;}
         w2c_j0 = w2c_l20;
         w2c_j1 = w2c_l16;
         w2c_j0 += w2c_j1;
@@ -1420,14 +1533,14 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
         w2c_i0 = 0u;
         w2c_l15 = w2c_i0;
         w2c_i0 = w2c_l3;
-        if (w2c_i0) {goto w2c_L29;}
+        if (w2c_i0) {goto w2c_L30;}
       w2c_j0 = w2c_l18;
       w2c_j1 = 1ull;
       w2c_j0 += w2c_j1;
       w2c_l18 = w2c_j0;
       w2c_j1 = 8ull;
       w2c_i0 = w2c_j0 != w2c_j1;
-      if (w2c_i0) {goto w2c_L28;}
+      if (w2c_i0) {goto w2c_L29;}
     w2c_j0 = w2c_l20;
     w2c_j1 = w2c_l7;
     w2c_j0 += w2c_j1;
@@ -1436,9 +1549,9 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
     w2c_j1 = 1ull;
     w2c_j0 += w2c_j1;
     w2c_l11 = w2c_j0;
-    w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1028u;
+    w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1850u;
     w2c_i0 = w2c_j0 != w2c_j1;
-    if (w2c_i0) {goto w2c_L27;}
+    if (w2c_i0) {goto w2c_L28;}
   w2c_j0 = w2c_p0;
   w2c_j0 = i64_load((u64)(w2c_j0));
   w2c_j0 = i64_load((u64)(w2c_j0) + 72u);
@@ -1477,7 +1590,7 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_d0 -= w2c_d1;
   w2c_d1 = 1500;
   w2c_i0 = w2c_d0 >= w2c_d1;
-  if (w2c_i0) {goto w2c_B33;}
+  if (w2c_i0) {goto w2c_B34;}
   w2c_j0 = w2c_p0;
   w2c_j1 = 36ull;
   w2c_j0 += w2c_j1;
@@ -1488,8 +1601,8 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_j0 += w2c_j1;
   w2c_i0 = i32_load((u64)(w2c_j0));
   w2c_l17 = w2c_i0;
-  goto w2c_B32;
-  w2c_B33:;
+  goto w2c_B33;
+  w2c_B34:;
   w2c_j0 = w2c_p0;
   w2c_j1 = 36ull;
   w2c_j0 += w2c_j1;
@@ -1497,7 +1610,7 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_l15 = w2c_i0;
   w2c_i1 = 1u;
   w2c_i0 = (u32)((s32)w2c_i0 < (s32)w2c_i1);
-  if (w2c_i0) {goto w2c_B34;}
+  if (w2c_i0) {goto w2c_B35;}
   w2c_i0 = w2c_l15;
   w2c_i1 = 1u;
   w2c_i0 += w2c_i1;
@@ -1528,7 +1641,7 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_l30 = w2c_d0;
   w2c_d0 = w2c_l29;
   w2c_l31 = w2c_d0;
-  w2c_L35: 
+  w2c_L36: 
     w2c_j0 = w2c_p0;
     w2c_i1 = 4294967097u;
     w2c_i2 = 1u;
@@ -1593,7 +1706,41 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
     w2c_l17 = w2c_i0;
     w2c_i1 = 1u;
     w2c_i0 = w2c_i0 > w2c_i1;
-    if (w2c_i0) {goto w2c_L35;}
+    if (w2c_i0) {goto w2c_L36;}
+  w2c_i0 = 4u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1780u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 2083u;
+  w2c_d3 = 1000;
+  w2c_d4 = w2c_l26;
+  w2c_i5 = w2c_l15;
+  w2c_d5 = (f64)(s32)(w2c_i5);
+  w2c_l5 = w2c_d5;
+  w2c_d4 /= w2c_d5;
+  w2c_d3 /= w2c_d4;
+  w2c_l4 = w2c_d3;
+  w2c_d4 = 1000;
+  w2c_d5 = w2c_l27;
+  w2c_d4 /= w2c_d5;
+  w2c_l27 = w2c_d4;
+  w2c_d5 = 1000;
+  w2c_d6 = w2c_l28;
+  w2c_d5 /= w2c_d6;
+  w2c_l28 = w2c_d5;
+  w2c_d6 = w2c_l30;
+  w2c_d7 = w2c_l5;
+  w2c_d6 /= w2c_d7;
+  w2c_l5 = w2c_d6;
+  w2c_d7 = w2c_l29;
+  w2c_d8 = w2c_l31;
+  {
+    f64 w2c_va_0 = w2c_d3;
+    f64 w2c_va_1 = w2c_d4;
+    f64 w2c_va_2 = w2c_d5;
+    f64 w2c_va_3 = w2c_d6;
+    f64 w2c_va_4 = w2c_d7;
+    f64 w2c_va_5 = w2c_d8;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0, w2c_va_1, w2c_va_2, w2c_va_3, w2c_va_4, w2c_va_5);
+  }
   w2c_j0 = 0ull;
   w2c_d1 = w2c_l31;
   f64_store((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 2592u, w2c_d1);
@@ -1601,30 +1748,18 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_d1 = w2c_l29;
   f64_store((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 2584u, w2c_d1);
   w2c_j0 = 0ull;
-  w2c_d1 = 1000;
-  w2c_d2 = w2c_l28;
-  w2c_d1 /= w2c_d2;
-  f64_store((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 2608u, w2c_d1);
-  w2c_j0 = 0ull;
-  w2c_d1 = 1000;
-  w2c_d2 = w2c_l27;
-  w2c_d1 /= w2c_d2;
-  f64_store((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 2616u, w2c_d1);
-  w2c_j0 = 0ull;
-  w2c_d1 = w2c_l30;
-  w2c_i2 = w2c_l15;
-  w2c_d2 = (f64)(s32)(w2c_i2);
-  w2c_l5 = w2c_d2;
-  w2c_d1 /= w2c_d2;
+  w2c_d1 = w2c_l5;
   f64_store((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 2600u, w2c_d1);
   w2c_j0 = 0ull;
-  w2c_d1 = 1000;
-  w2c_d2 = w2c_l26;
-  w2c_d3 = w2c_l5;
-  w2c_d2 /= w2c_d3;
-  w2c_d1 /= w2c_d2;
+  w2c_d1 = w2c_l28;
+  f64_store((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 2608u, w2c_d1);
+  w2c_j0 = 0ull;
+  w2c_d1 = w2c_l27;
+  f64_store((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 2616u, w2c_d1);
+  w2c_j0 = 0ull;
+  w2c_d1 = w2c_l4;
   f64_store((u64)(w2c_j0) + (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Ebss) + 2624u, w2c_d1);
-  w2c_B34:;
+  w2c_B35:;
   w2c_j0 = w2c_p0;
   w2c_d1 = w2c_l23;
   f64_store((u64)(w2c_j0) + 8u, w2c_d1);
@@ -1637,7 +1772,7 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_l3 = w2c_i0;
   w2c_i0 = 0u;
   w2c_l17 = w2c_i0;
-  w2c_B32:;
+  w2c_B33:;
   w2c_j0 = w2c_p0;
   w2c_i1 = w2c_l17;
   w2c_i2 = w2c_l3;
@@ -1667,7 +1802,7 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_i0 = w2c_l3;
   w2c_i1 = 199u;
   w2c_i0 = (u32)((s32)w2c_i0 > (s32)w2c_i1);
-  if (w2c_i0) {goto w2c_B37;}
+  if (w2c_i0) {goto w2c_B38;}
   w2c_j0 = w2c_p0;
   w2c_j1 = 36ull;
   w2c_j0 += w2c_j1;
@@ -1675,8 +1810,8 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_i2 = 1u;
   w2c_i1 += w2c_i2;
   i32_store((u64)(w2c_j0), w2c_i1);
-  goto w2c_B36;
-  w2c_B37:;
+  goto w2c_B37;
+  w2c_B38:;
   w2c_j0 = w2c_p0;
   w2c_i1 = w2c_l17;
   w2c_i2 = 1u;
@@ -1685,13 +1820,13 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
   w2c_i0 = w2c_l17;
   w2c_i1 = 199u;
   w2c_i0 = (u32)((s32)w2c_i0 < (s32)w2c_i1);
-  if (w2c_i0) {goto w2c_B36;}
+  if (w2c_i0) {goto w2c_B37;}
   w2c_j0 = w2c_p0;
   w2c_i1 = w2c_l17;
   w2c_i2 = 4294967097u;
   w2c_i1 += w2c_i2;
   i32_store((u64)(w2c_j0) + 32u, w2c_i1);
-  w2c_B36:;
+  w2c_B37:;
   w2c_j0 = w2c_p0;
   w2c_d1 = w2c_l23;
   f64_store((u64)(w2c_j0) + 16u, w2c_d1);
@@ -1708,8 +1843,8 @@ static void w2c_0x24native0x2Dplasma_engine_draw_frame0x2E1(u64 w2c_p0) {
 static void w2c_0x24native0x2Dplasma_android_app_pre_exec_cmd0x2E1(u64 w2c_p0, u32 w2c_p1) {
   u64 w2c_l2 = 0, w2c_l3 = 0;
   FUNC_PROLOGUE;
-  u32 w2c_i0, w2c_i1, w2c_i2;
-  u64 w2c_j0, w2c_j1, w2c_j3, w2c_j4, w2c_j5;
+  u32 w2c_i0, w2c_i1, w2c_i2, w2c_i3;
+  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3, w2c_j4, w2c_j5;
   w2c_i0 = w2c_p1;
   switch (w2c_i0) {
     case 0: goto w2c_B6;
@@ -1731,6 +1866,12 @@ static void w2c_0x24native0x2Dplasma_android_app_pre_exec_cmd0x2E1(u64 w2c_p0, u
     default: goto w2c_B0;
   }
   w2c_B6:;
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1870u;
+  {
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2);
+  }
   w2c_j0 = w2c_p0;
   w2c_j1 = 104ull;
   w2c_j0 += w2c_j1;
@@ -1752,7 +1893,14 @@ static void w2c_0x24native0x2Dplasma_android_app_pre_exec_cmd0x2E1(u64 w2c_p0, u
   w2c_j0 = w2c_l3;
   w2c_i0 = !(w2c_j0);
   if (w2c_i0) {goto w2c_B8;}
-  w2c_j0 = w2c_l3;
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1133u;
+  {
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2);
+  }
+  w2c_j0 = w2c_p0;
+  w2c_j0 = i64_load((u64)(w2c_j0) + 64u);
   w2c_j1 = w2c_p0;
   w2c_j1 = i64_load((u64)(w2c_j1) + 56u);
   w2c_i2 = 2u;
@@ -1770,10 +1918,16 @@ static void w2c_0x24native0x2Dplasma_android_app_pre_exec_cmd0x2E1(u64 w2c_p0, u
   w2c_i0 = pthread_mutex_unlock(w2c_j0);
   goto w2c_Bfunc;
   w2c_B5:;
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1806u;
+  {
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2);
+  }
   w2c_j0 = w2c_p0;
   w2c_j1 = 104ull;
   w2c_j0 += w2c_j1;
-  w2c_l3 = w2c_j0;
+  w2c_l2 = w2c_j0;
   w2c_i0 = pthread_mutex_lock(w2c_j0);
   w2c_j0 = w2c_p0;
   w2c_j1 = w2c_p0;
@@ -1783,20 +1937,34 @@ static void w2c_0x24native0x2Dplasma_android_app_pre_exec_cmd0x2E1(u64 w2c_p0, u
   w2c_j1 = 144ull;
   w2c_j0 += w2c_j1;
   w2c_i0 = pthread_cond_broadcast(w2c_j0);
-  w2c_j0 = w2c_l3;
+  w2c_j0 = w2c_l2;
   w2c_i0 = pthread_mutex_unlock(w2c_j0);
   goto w2c_Bfunc;
   w2c_B4:;
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1826u;
+  {
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2);
+  }
   w2c_j0 = w2c_p0;
   w2c_j1 = 144ull;
   w2c_j0 += w2c_j1;
   w2c_i0 = pthread_cond_broadcast(w2c_j0);
   goto w2c_Bfunc;
   w2c_B3:;
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1669u;
+  w2c_i3 = w2c_p1;
+  {
+    u32 w2c_va_0 = w2c_i3;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0);
+  }
   w2c_j0 = w2c_p0;
   w2c_j1 = 104ull;
   w2c_j0 += w2c_j1;
-  w2c_l3 = w2c_j0;
+  w2c_l2 = w2c_j0;
   w2c_i0 = pthread_mutex_lock(w2c_j0);
   w2c_j0 = w2c_p0;
   w2c_i1 = w2c_p1;
@@ -1805,10 +1973,16 @@ static void w2c_0x24native0x2Dplasma_android_app_pre_exec_cmd0x2E1(u64 w2c_p0, u
   w2c_j1 = 144ull;
   w2c_j0 += w2c_j1;
   w2c_i0 = pthread_cond_broadcast(w2c_j0);
-  w2c_j0 = w2c_l3;
+  w2c_j0 = w2c_l2;
   w2c_i0 = pthread_mutex_unlock(w2c_j0);
   goto w2c_Bfunc;
   w2c_B2:;
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1892u;
+  {
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2);
+  }
   w2c_j0 = w2c_p0;
   w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
   w2c_j1 = w2c_p0;
@@ -1819,6 +1993,12 @@ static void w2c_0x24native0x2Dplasma_android_app_pre_exec_cmd0x2E1(u64 w2c_p0, u
   w2c_0x24native0x2Dplasma_print_cur_config0x2E1(w2c_j0);
   goto w2c_Bfunc;
   w2c_B1:;
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1790u;
+  {
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2);
+  }
   w2c_j0 = w2c_p0;
   w2c_i1 = 1u;
   i32_store((u64)(w2c_j0) + 100u, w2c_i1);
@@ -1830,8 +2010,12 @@ static void w2c_0x24native0x2Dplasma_android_app_pre_exec_cmd0x2E1(u64 w2c_p0, u
 static void w2c_0x24native0x2Dplasma_print_cur_config0x2E1(u64 w2c_p0) {
   u64 w2c_l1 = 0;
   FUNC_PROLOGUE;
-  u32 w2c_i0;
-  u64 w2c_j0, w2c_j1, w2c_j2;
+  u32 w2c_i0, w2c_i3, w2c_i4, w2c_i5, w2c_i6, w2c_i7, w2c_i8, w2c_i9, 
+      w2c_i10, w2c_i11, w2c_i12, w2c_i13, w2c_i14, w2c_i15, w2c_i16, w2c_i17, 
+      w2c_i18, w2c_i19, w2c_i20;
+  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3, w2c_j4, w2c_j5, w2c_j6, w2c_j7, 
+      w2c_j8, w2c_j9, w2c_j10, w2c_j11, w2c_j12, w2c_j13, w2c_j14, w2c_j15, 
+      w2c_j16, w2c_j17, w2c_j18, w2c_j19, w2c_j20;
   w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
   w2c_j1 = 16ull;
   w2c_j0 -= w2c_j1;
@@ -1851,48 +2035,80 @@ static void w2c_0x24native0x2Dplasma_print_cur_config0x2E1(u64 w2c_p0) {
   w2c_j2 = 12ull;
   w2c_j1 += w2c_j2;
   AConfiguration_getCountry(w2c_j0, w2c_j1);
-  w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
-  w2c_i0 = AConfiguration_getMcc(w2c_j0);
-  w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
-  w2c_i0 = AConfiguration_getMnc(w2c_j0);
-  w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
-  w2c_i0 = AConfiguration_getOrientation(w2c_j0);
-  w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
-  w2c_i0 = AConfiguration_getTouchscreen(w2c_j0);
-  w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
-  w2c_i0 = AConfiguration_getDensity(w2c_j0);
-  w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
-  w2c_i0 = AConfiguration_getKeyboard(w2c_j0);
-  w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
-  w2c_i0 = AConfiguration_getNavigation(w2c_j0);
-  w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
-  w2c_i0 = AConfiguration_getKeysHidden(w2c_j0);
-  w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
-  w2c_i0 = AConfiguration_getNavHidden(w2c_j0);
-  w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
-  w2c_i0 = AConfiguration_getSdkVersion(w2c_j0);
-  w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
-  w2c_i0 = AConfiguration_getScreenSize(w2c_j0);
-  w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
-  w2c_i0 = AConfiguration_getScreenLong(w2c_j0);
-  w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
-  w2c_i0 = AConfiguration_getUiModeType(w2c_j0);
-  w2c_j0 = w2c_p0;
-  w2c_j0 = i64_load((u64)(w2c_j0) + 32u);
-  w2c_i0 = AConfiguration_getUiModeNight(w2c_j0);
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1518u;
+  w2c_j3 = w2c_p0;
+  w2c_j3 = i64_load((u64)(w2c_j3) + 32u);
+  w2c_i3 = AConfiguration_getMcc(w2c_j3);
+  w2c_j4 = w2c_p0;
+  w2c_j4 = i64_load((u64)(w2c_j4) + 32u);
+  w2c_i4 = AConfiguration_getMnc(w2c_j4);
+  w2c_j5 = w2c_l1;
+  w2c_i5 = i32_load8_s((u64)(w2c_j5) + 14u);
+  w2c_j6 = w2c_l1;
+  w2c_i6 = i32_load8_s((u64)(w2c_j6) + 15u);
+  w2c_j7 = w2c_l1;
+  w2c_i7 = i32_load8_s((u64)(w2c_j7) + 12u);
+  w2c_j8 = w2c_l1;
+  w2c_i8 = i32_load8_s((u64)(w2c_j8) + 13u);
+  w2c_j9 = w2c_p0;
+  w2c_j9 = i64_load((u64)(w2c_j9) + 32u);
+  w2c_i9 = AConfiguration_getOrientation(w2c_j9);
+  w2c_j10 = w2c_p0;
+  w2c_j10 = i64_load((u64)(w2c_j10) + 32u);
+  w2c_i10 = AConfiguration_getTouchscreen(w2c_j10);
+  w2c_j11 = w2c_p0;
+  w2c_j11 = i64_load((u64)(w2c_j11) + 32u);
+  w2c_i11 = AConfiguration_getDensity(w2c_j11);
+  w2c_j12 = w2c_p0;
+  w2c_j12 = i64_load((u64)(w2c_j12) + 32u);
+  w2c_i12 = AConfiguration_getKeyboard(w2c_j12);
+  w2c_j13 = w2c_p0;
+  w2c_j13 = i64_load((u64)(w2c_j13) + 32u);
+  w2c_i13 = AConfiguration_getNavigation(w2c_j13);
+  w2c_j14 = w2c_p0;
+  w2c_j14 = i64_load((u64)(w2c_j14) + 32u);
+  w2c_i14 = AConfiguration_getKeysHidden(w2c_j14);
+  w2c_j15 = w2c_p0;
+  w2c_j15 = i64_load((u64)(w2c_j15) + 32u);
+  w2c_i15 = AConfiguration_getNavHidden(w2c_j15);
+  w2c_j16 = w2c_p0;
+  w2c_j16 = i64_load((u64)(w2c_j16) + 32u);
+  w2c_i16 = AConfiguration_getSdkVersion(w2c_j16);
+  w2c_j17 = w2c_p0;
+  w2c_j17 = i64_load((u64)(w2c_j17) + 32u);
+  w2c_i17 = AConfiguration_getScreenSize(w2c_j17);
+  w2c_j18 = w2c_p0;
+  w2c_j18 = i64_load((u64)(w2c_j18) + 32u);
+  w2c_i18 = AConfiguration_getScreenLong(w2c_j18);
+  w2c_j19 = w2c_p0;
+  w2c_j19 = i64_load((u64)(w2c_j19) + 32u);
+  w2c_i19 = AConfiguration_getUiModeType(w2c_j19);
+  w2c_j20 = w2c_p0;
+  w2c_j20 = i64_load((u64)(w2c_j20) + 32u);
+  w2c_i20 = AConfiguration_getUiModeNight(w2c_j20);
+  {
+    u32 w2c_va_0 = w2c_i3;
+    u32 w2c_va_1 = w2c_i4;
+    u32 w2c_va_2 = w2c_i5;
+    u32 w2c_va_3 = w2c_i6;
+    u32 w2c_va_4 = w2c_i7;
+    u32 w2c_va_5 = w2c_i8;
+    u32 w2c_va_6 = w2c_i9;
+    u32 w2c_va_7 = w2c_i10;
+    u32 w2c_va_8 = w2c_i11;
+    u32 w2c_va_9 = w2c_i12;
+    u32 w2c_va_10 = w2c_i13;
+    u32 w2c_va_11 = w2c_i14;
+    u32 w2c_va_12 = w2c_i15;
+    u32 w2c_va_13 = w2c_i16;
+    u32 w2c_va_14 = w2c_i17;
+    u32 w2c_va_15 = w2c_i18;
+    u32 w2c_va_16 = w2c_i19;
+    u32 w2c_va_17 = w2c_i20;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0, w2c_va_1, w2c_va_2, w2c_va_3, w2c_va_4, w2c_va_5, w2c_va_6, w2c_va_7, w2c_va_8, w2c_va_9, w2c_va_10, w2c_va_11, w2c_va_12, w2c_va_13, w2c_va_14, w2c_va_15, w2c_va_16, w2c_va_17);
+  }
   w2c_j0 = w2c_l1;
   w2c_j1 = 16ull;
   w2c_j0 += w2c_j1;
@@ -1906,7 +2122,7 @@ static void w2c_0x24native0x2Dplasma_android_app_post_exec_cmd0x2E1(u64 w2c_p0, 
   u64 w2c_l2 = 0, w2c_l3 = 0;
   FUNC_PROLOGUE;
   u32 w2c_i0, w2c_i1;
-  u64 w2c_j0, w2c_j1;
+  u64 w2c_j0, w2c_j1, w2c_j2;
   w2c_i0 = w2c_p1;
   w2c_i1 = 4294967294u;
   w2c_i0 += w2c_i1;
@@ -1925,6 +2141,12 @@ static void w2c_0x24native0x2Dplasma_android_app_post_exec_cmd0x2E1(u64 w2c_p0, 
     default: goto w2c_B0;
   }
   w2c_B4:;
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1826u;
+  {
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2);
+  }
   w2c_j0 = w2c_p0;
   w2c_j1 = 104ull;
   w2c_j0 += w2c_j1;
@@ -1939,6 +2161,12 @@ static void w2c_0x24native0x2Dplasma_android_app_post_exec_cmd0x2E1(u64 w2c_p0, 
   w2c_i0 = pthread_cond_broadcast(w2c_j0);
   goto w2c_B1;
   w2c_B3:;
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1851u;
+  {
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2);
+  }
   w2c_j0 = w2c_p0;
   w2c_j1 = 104ull;
   w2c_j0 += w2c_j1;
@@ -1986,7 +2214,7 @@ static void w2c_0x24native0x2Dplasma_android_app_post_exec_cmd0x2E1(u64 w2c_p0, 
 static void w2c_0x24native0x2Dplasma_ANativeActivity_onCreate0x2E1(u64 w2c_p0, u64 w2c_p1, u64 w2c_p2) {
   u64 w2c_l3 = 0, w2c_l4 = 0, w2c_l5 = 0, w2c_l6 = 0, w2c_l7 = 0;
   FUNC_PROLOGUE;
-  u32 w2c_i0, w2c_i1;
+  u32 w2c_i0, w2c_i1, w2c_i3;
   u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3;
   w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
   w2c_j1 = 64ull;
@@ -1995,6 +2223,14 @@ static void w2c_0x24native0x2Dplasma_ANativeActivity_onCreate0x2E1(u64 w2c_p0, u
   if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
   if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
   g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1252u;
+  w2c_j3 = w2c_p0;
+  {
+    u64 w2c_va_0 = w2c_j3;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0);
+  }
   w2c_j0 = w2c_p0;
   w2c_j0 = i64_load((u64)(w2c_j0));
   w2c_l4 = w2c_j0;
@@ -2086,9 +2322,16 @@ static void w2c_0x24native0x2Dplasma_ANativeActivity_onCreate0x2E1(u64 w2c_p0, u
   w2c_i0 = pipe(w2c_j0);
   w2c_i0 = !(w2c_i0);
   if (w2c_i0) {goto w2c_B2;}
-  w2c_j0 = __errno();
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_j0 = strerror(w2c_i0);
+  w2c_i0 = 6u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1071u;
+  w2c_j3 = __errno();
+  w2c_i3 = i32_load((u64)(w2c_j3));
+  w2c_j3 = strerror(w2c_i3);
+  {
+    u64 w2c_va_0 = w2c_j3;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0);
+  }
   w2c_j0 = 0ull;
   w2c_l4 = w2c_j0;
   goto w2c_B1;
@@ -2142,8 +2385,8 @@ static void w2c_0x24native0x2Dplasma_onConfigurationChanged0x2E1(u64 w2c_p0) {
   u32 w2c_l2 = 0;
   u64 w2c_l1 = 0;
   FUNC_PROLOGUE;
-  u32 w2c_i0, w2c_i1;
-  u64 w2c_j0, w2c_j1, w2c_j2;
+  u32 w2c_i0, w2c_i1, w2c_i3;
+  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3;
   w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
   w2c_j1 = 16ull;
   w2c_j0 -= w2c_j1;
@@ -2151,6 +2394,14 @@ static void w2c_0x24native0x2Dplasma_onConfigurationChanged0x2E1(u64 w2c_p0) {
   if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
   if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
   g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1308u;
+  w2c_j3 = w2c_p0;
+  {
+    u64 w2c_va_0 = w2c_j3;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0);
+  }
   w2c_j0 = w2c_p0;
   w2c_j1 = 56ull;
   w2c_j0 += w2c_j1;
@@ -2171,9 +2422,16 @@ static void w2c_0x24native0x2Dplasma_onConfigurationChanged0x2E1(u64 w2c_p0) {
   w2c_j1 = 1ull;
   w2c_i0 = w2c_j0 == w2c_j1;
   if (w2c_i0) {goto w2c_B0;}
-  w2c_j0 = __errno();
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_j0 = strerror(w2c_i0);
+  w2c_i0 = 6u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1097u;
+  w2c_j3 = __errno();
+  w2c_i3 = i32_load((u64)(w2c_j3));
+  w2c_j3 = strerror(w2c_i3);
+  {
+    u64 w2c_va_0 = w2c_j3;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0);
+  }
   w2c_B0:;
   w2c_j0 = w2c_l1;
   w2c_j1 = 16ull;
@@ -2185,11 +2443,11 @@ static void w2c_0x24native0x2Dplasma_onConfigurationChanged0x2E1(u64 w2c_p0) {
 }
 
 static void w2c_0x24native0x2Dplasma_onContentRectChanged0x2E1(u64 w2c_p0, u64 w2c_p1) {
-  u32 w2c_l5 = 0;
-  u64 w2c_l2 = 0, w2c_l3 = 0, w2c_l4 = 0;
+  u32 w2c_l6 = 0;
+  u64 w2c_l2 = 0, w2c_l3 = 0, w2c_l4 = 0, w2c_l5 = 0;
   FUNC_PROLOGUE;
-  u32 w2c_i0, w2c_i1;
-  u64 w2c_j0, w2c_j1, w2c_j2;
+  u32 w2c_i0, w2c_i1, w2c_i3, w2c_i4, w2c_i5, w2c_i6;
+  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3, w2c_j4, w2c_j5, w2c_j6;
   w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
   w2c_j1 = 16ull;
   w2c_j0 -= w2c_j1;
@@ -2197,40 +2455,59 @@ static void w2c_0x24native0x2Dplasma_onContentRectChanged0x2E1(u64 w2c_p0, u64 w
   if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
   if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
   g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1711u;
+  w2c_j3 = w2c_p1;
+  w2c_i3 = i32_load((u64)(w2c_j3));
+  w2c_j4 = w2c_p1;
+  w2c_i4 = i32_load((u64)(w2c_j4) + 4u);
+  w2c_j5 = w2c_p1;
+  w2c_j6 = 8ull;
+  w2c_j5 += w2c_j6;
+  w2c_l3 = w2c_j5;
+  w2c_i5 = i32_load((u64)(w2c_j5));
+  w2c_j6 = w2c_p1;
+  w2c_i6 = i32_load((u64)(w2c_j6) + 12u);
+  {
+    u32 w2c_va_0 = w2c_i3;
+    u32 w2c_va_1 = w2c_i4;
+    u32 w2c_va_2 = w2c_i5;
+    u32 w2c_va_3 = w2c_i6;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0, w2c_va_1, w2c_va_2, w2c_va_3);
+  }
   w2c_j0 = w2c_p0;
   w2c_j1 = 56ull;
   w2c_j0 += w2c_j1;
-  w2c_l3 = w2c_j0;
+  w2c_l4 = w2c_j0;
   w2c_j0 = i64_load((u64)(w2c_j0));
   w2c_p0 = w2c_j0;
   w2c_j1 = 104ull;
   w2c_j0 += w2c_j1;
-  w2c_l4 = w2c_j0;
+  w2c_l5 = w2c_j0;
   w2c_i0 = pthread_mutex_lock(w2c_j0);
   w2c_j0 = w2c_p0;
   w2c_j1 = 88ull;
   w2c_j0 += w2c_j1;
-  w2c_j1 = w2c_p1;
-  w2c_j2 = 8ull;
-  w2c_j1 += w2c_j2;
+  w2c_j1 = w2c_l3;
   w2c_j1 = i64_load((u64)(w2c_j1));
   i64_store((u64)(w2c_j0), w2c_j1);
   w2c_j0 = w2c_p0;
   w2c_j1 = w2c_p1;
   w2c_j1 = i64_load((u64)(w2c_j1));
   i64_store((u64)(w2c_j0) + 80u, w2c_j1);
-  w2c_j0 = w2c_l4;
+  w2c_j0 = w2c_l5;
   w2c_i0 = pthread_mutex_unlock(w2c_j0);
-  w2c_j0 = w2c_l3;
+  w2c_j0 = w2c_l4;
   w2c_j0 = i64_load((u64)(w2c_j0));
   w2c_j1 = 196ull;
   w2c_j0 += w2c_j1;
   w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_l5 = w2c_i0;
+  w2c_l6 = w2c_i0;
   w2c_j0 = w2c_l2;
   w2c_i1 = 5u;
   i32_store8((u64)(w2c_j0) + 15u, w2c_i1);
-  w2c_i0 = w2c_l5;
+  w2c_i0 = w2c_l6;
   w2c_j1 = w2c_l2;
   w2c_j2 = 15ull;
   w2c_j1 += w2c_j2;
@@ -2239,9 +2516,16 @@ static void w2c_0x24native0x2Dplasma_onContentRectChanged0x2E1(u64 w2c_p0, u64 w
   w2c_j1 = 1ull;
   w2c_i0 = w2c_j0 == w2c_j1;
   if (w2c_i0) {goto w2c_B0;}
-  w2c_j0 = __errno();
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_j0 = strerror(w2c_i0);
+  w2c_i0 = 6u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1097u;
+  w2c_j3 = __errno();
+  w2c_i3 = i32_load((u64)(w2c_j3));
+  w2c_j3 = strerror(w2c_i3);
+  {
+    u64 w2c_va_0 = w2c_j3;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0);
+  }
   w2c_B0:;
   w2c_j0 = w2c_l2;
   w2c_j1 = 16ull;
@@ -2256,8 +2540,8 @@ static void w2c_0x24native0x2Dplasma_onLowMemory0x2E1(u64 w2c_p0) {
   u32 w2c_l2 = 0;
   u64 w2c_l1 = 0;
   FUNC_PROLOGUE;
-  u32 w2c_i0, w2c_i1;
-  u64 w2c_j0, w2c_j1, w2c_j2;
+  u32 w2c_i0, w2c_i1, w2c_i3;
+  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3;
   w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
   w2c_j1 = 16ull;
   w2c_j0 -= w2c_j1;
@@ -2265,6 +2549,14 @@ static void w2c_0x24native0x2Dplasma_onLowMemory0x2E1(u64 w2c_p0) {
   if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
   if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
   g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1207u;
+  w2c_j3 = w2c_p0;
+  {
+    u64 w2c_va_0 = w2c_j3;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0);
+  }
   w2c_j0 = w2c_p0;
   w2c_j1 = 56ull;
   w2c_j0 += w2c_j1;
@@ -2285,9 +2577,16 @@ static void w2c_0x24native0x2Dplasma_onLowMemory0x2E1(u64 w2c_p0) {
   w2c_j1 = 1ull;
   w2c_i0 = w2c_j0 == w2c_j1;
   if (w2c_i0) {goto w2c_B0;}
-  w2c_j0 = __errno();
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_j0 = strerror(w2c_i0);
+  w2c_i0 = 6u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1097u;
+  w2c_j3 = __errno();
+  w2c_i3 = i32_load((u64)(w2c_j3));
+  w2c_j3 = strerror(w2c_i3);
+  {
+    u64 w2c_va_0 = w2c_j3;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0);
+  }
   w2c_B0:;
   w2c_j0 = w2c_l1;
   w2c_j1 = 16ull;
@@ -2300,7 +2599,18 @@ static void w2c_0x24native0x2Dplasma_onLowMemory0x2E1(u64 w2c_p0) {
 
 static void w2c_0x24native0x2Dplasma_onInputQueueDestroyed0x2E1(u64 w2c_p0, u64 w2c_p1) {
   FUNC_PROLOGUE;
-  u64 w2c_j0, w2c_j1;
+  u32 w2c_i0;
+  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3, w2c_j4;
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1395u;
+  w2c_j3 = w2c_p0;
+  w2c_j4 = w2c_p1;
+  {
+    u64 w2c_va_0 = w2c_j3;
+    u64 w2c_va_1 = w2c_j4;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0, w2c_va_1);
+  }
   w2c_j0 = w2c_p0;
   w2c_j1 = 56ull;
   w2c_j0 += w2c_j1;
@@ -2312,7 +2622,18 @@ static void w2c_0x24native0x2Dplasma_onInputQueueDestroyed0x2E1(u64 w2c_p0, u64 
 
 static void w2c_0x24native0x2Dplasma_onInputQueueCreated0x2E1(u64 w2c_p0, u64 w2c_p1) {
   FUNC_PROLOGUE;
-  u64 w2c_j0, w2c_j1;
+  u32 w2c_i0;
+  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3, w2c_j4;
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1455u;
+  w2c_j3 = w2c_p0;
+  w2c_j4 = w2c_p1;
+  {
+    u64 w2c_va_0 = w2c_j3;
+    u64 w2c_va_1 = w2c_j4;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0, w2c_va_1);
+  }
   w2c_j0 = w2c_p0;
   w2c_j1 = 56ull;
   w2c_j0 += w2c_j1;
@@ -2326,8 +2647,8 @@ static void w2c_0x24native0x2Dplasma_onDestroy0x2E1(u64 w2c_p0) {
   u32 w2c_l3 = 0;
   u64 w2c_l1 = 0, w2c_l2 = 0, w2c_l4 = 0;
   FUNC_PROLOGUE;
-  u32 w2c_i0, w2c_i1;
-  u64 w2c_j0, w2c_j1, w2c_j2;
+  u32 w2c_i0, w2c_i1, w2c_i3;
+  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3;
   w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
   w2c_j1 = 16ull;
   w2c_j0 -= w2c_j1;
@@ -2335,6 +2656,14 @@ static void w2c_0x24native0x2Dplasma_onDestroy0x2E1(u64 w2c_p0) {
   if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
   if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
   g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1221u;
+  w2c_j3 = w2c_p0;
+  {
+    u64 w2c_va_0 = w2c_j3;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0);
+  }
   w2c_j0 = w2c_p0;
   w2c_j1 = 56ull;
   w2c_j0 += w2c_j1;
@@ -2361,9 +2690,16 @@ static void w2c_0x24native0x2Dplasma_onDestroy0x2E1(u64 w2c_p0) {
   w2c_j1 = 1ull;
   w2c_i0 = w2c_j0 == w2c_j1;
   if (w2c_i0) {goto w2c_B0;}
-  w2c_j0 = __errno();
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_j0 = strerror(w2c_i0);
+  w2c_i0 = 6u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1097u;
+  w2c_j3 = __errno();
+  w2c_i3 = i32_load((u64)(w2c_j3));
+  w2c_j3 = strerror(w2c_i3);
+  {
+    u64 w2c_va_0 = w2c_j3;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0);
+  }
   w2c_B0:;
   w2c_j0 = w2c_p0;
   w2c_i0 = i32_load((u64)(w2c_j0) + 264u);
@@ -2410,7 +2746,18 @@ static void w2c_0x24native0x2Dplasma_onDestroy0x2E1(u64 w2c_p0) {
 
 static void w2c_0x24native0x2Dplasma_onNativeWindowDestroyed0x2E1(u64 w2c_p0, u64 w2c_p1) {
   FUNC_PROLOGUE;
-  u64 w2c_j0, w2c_j1;
+  u32 w2c_i0;
+  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3, w2c_j4;
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1363u;
+  w2c_j3 = w2c_p0;
+  w2c_j4 = w2c_p1;
+  {
+    u64 w2c_va_0 = w2c_j3;
+    u64 w2c_va_1 = w2c_j4;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0, w2c_va_1);
+  }
   w2c_j0 = w2c_p0;
   w2c_j1 = 56ull;
   w2c_j0 += w2c_j1;
@@ -2422,7 +2769,18 @@ static void w2c_0x24native0x2Dplasma_onNativeWindowDestroyed0x2E1(u64 w2c_p0, u6
 
 static void w2c_0x24native0x2Dplasma_onNativeWindowCreated0x2E1(u64 w2c_p0, u64 w2c_p1) {
   FUNC_PROLOGUE;
-  u64 w2c_j0, w2c_j1;
+  u32 w2c_i0;
+  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3, w2c_j4;
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1425u;
+  w2c_j3 = w2c_p0;
+  w2c_j4 = w2c_p1;
+  {
+    u64 w2c_va_0 = w2c_j3;
+    u64 w2c_va_1 = w2c_j4;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0, w2c_va_1);
+  }
   w2c_j0 = w2c_p0;
   w2c_j1 = 56ull;
   w2c_j0 += w2c_j1;
@@ -2436,8 +2794,8 @@ static void w2c_0x24native0x2Dplasma_onNativeWindowRedrawNeeded0x2E1(u64 w2c_p0,
   u32 w2c_l3 = 0;
   u64 w2c_l2 = 0;
   FUNC_PROLOGUE;
-  u32 w2c_i0, w2c_i1;
-  u64 w2c_j0, w2c_j1, w2c_j2;
+  u32 w2c_i0, w2c_i1, w2c_i3;
+  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3, w2c_j4;
   w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
   w2c_j1 = 16ull;
   w2c_j0 -= w2c_j1;
@@ -2445,6 +2803,16 @@ static void w2c_0x24native0x2Dplasma_onNativeWindowRedrawNeeded0x2E1(u64 w2c_p0,
   if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
   if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
   g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1483u;
+  w2c_j3 = w2c_p0;
+  w2c_j4 = w2c_p1;
+  {
+    u64 w2c_va_0 = w2c_j3;
+    u64 w2c_va_1 = w2c_j4;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0, w2c_va_1);
+  }
   w2c_j0 = w2c_p0;
   w2c_j1 = 56ull;
   w2c_j0 += w2c_j1;
@@ -2465,9 +2833,16 @@ static void w2c_0x24native0x2Dplasma_onNativeWindowRedrawNeeded0x2E1(u64 w2c_p0,
   w2c_j1 = 1ull;
   w2c_i0 = w2c_j0 == w2c_j1;
   if (w2c_i0) {goto w2c_B0;}
-  w2c_j0 = __errno();
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_j0 = strerror(w2c_i0);
+  w2c_i0 = 6u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1097u;
+  w2c_j3 = __errno();
+  w2c_i3 = i32_load((u64)(w2c_j3));
+  w2c_j3 = strerror(w2c_i3);
+  {
+    u64 w2c_va_0 = w2c_j3;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0);
+  }
   w2c_B0:;
   w2c_j0 = w2c_l2;
   w2c_j1 = 16ull;
@@ -2482,8 +2857,8 @@ static void w2c_0x24native0x2Dplasma_onNativeWindowResized0x2E1(u64 w2c_p0, u64 
   u32 w2c_l3 = 0;
   u64 w2c_l2 = 0;
   FUNC_PROLOGUE;
-  u32 w2c_i0, w2c_i1;
-  u64 w2c_j0, w2c_j1, w2c_j2;
+  u32 w2c_i0, w2c_i1, w2c_i3;
+  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3, w2c_j4;
   w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
   w2c_j1 = 16ull;
   w2c_j0 -= w2c_j1;
@@ -2491,6 +2866,16 @@ static void w2c_0x24native0x2Dplasma_onNativeWindowResized0x2E1(u64 w2c_p0, u64 
   if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
   if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
   g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1333u;
+  w2c_j3 = w2c_p0;
+  w2c_j4 = w2c_p1;
+  {
+    u64 w2c_va_0 = w2c_j3;
+    u64 w2c_va_1 = w2c_j4;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0, w2c_va_1);
+  }
   w2c_j0 = w2c_p0;
   w2c_j1 = 56ull;
   w2c_j0 += w2c_j1;
@@ -2511,9 +2896,16 @@ static void w2c_0x24native0x2Dplasma_onNativeWindowResized0x2E1(u64 w2c_p0, u64 
   w2c_j1 = 1ull;
   w2c_i0 = w2c_j0 == w2c_j1;
   if (w2c_i0) {goto w2c_B0;}
-  w2c_j0 = __errno();
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_j0 = strerror(w2c_i0);
+  w2c_i0 = 6u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1097u;
+  w2c_j3 = __errno();
+  w2c_i3 = i32_load((u64)(w2c_j3));
+  w2c_j3 = strerror(w2c_i3);
+  {
+    u64 w2c_va_0 = w2c_j3;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0);
+  }
   w2c_B0:;
   w2c_j0 = w2c_l2;
   w2c_j1 = 16ull;
@@ -2525,75 +2917,23 @@ static void w2c_0x24native0x2Dplasma_onNativeWindowResized0x2E1(u64 w2c_p0, u64 
 }
 
 static void w2c_0x24native0x2Dplasma_onPause0x2E1(u64 w2c_p0) {
-  u32 w2c_l3 = 0;
-  u64 w2c_l1 = 0, w2c_l2 = 0, w2c_l4 = 0;
   FUNC_PROLOGUE;
   u32 w2c_i0, w2c_i1;
-  u64 w2c_j0, w2c_j1, w2c_j2;
-  w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
-  w2c_j1 = 16ull;
-  w2c_j0 -= w2c_j1;
-  w2c_l1 = w2c_j0;
-  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3;
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1287u;
+  w2c_j3 = w2c_p0;
+  {
+    u64 w2c_va_0 = w2c_j3;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0);
+  }
   w2c_j0 = w2c_p0;
   w2c_j1 = 56ull;
   w2c_j0 += w2c_j1;
   w2c_j0 = i64_load((u64)(w2c_j0));
-  w2c_p0 = w2c_j0;
-  w2c_j1 = 104ull;
-  w2c_j0 += w2c_j1;
-  w2c_l2 = w2c_j0;
-  w2c_i0 = pthread_mutex_lock(w2c_j0);
-  w2c_j0 = w2c_p0;
-  w2c_j1 = 196ull;
-  w2c_j0 += w2c_j1;
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_l3 = w2c_i0;
-  w2c_j0 = w2c_l1;
   w2c_i1 = 13u;
-  i32_store8((u64)(w2c_j0) + 15u, w2c_i1);
-  w2c_i0 = w2c_l3;
-  w2c_j1 = w2c_l1;
-  w2c_j2 = 15ull;
-  w2c_j1 += w2c_j2;
-  w2c_j2 = 1ull;
-  w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
-  w2c_j1 = 1ull;
-  w2c_i0 = w2c_j0 == w2c_j1;
-  if (w2c_i0) {goto w2c_B0;}
-  w2c_j0 = __errno();
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_j0 = strerror(w2c_i0);
-  w2c_B0:;
-  w2c_j0 = w2c_p0;
-  w2c_i0 = i32_load((u64)(w2c_j0) + 96u);
-  w2c_i1 = 13u;
-  w2c_i0 = w2c_i0 == w2c_i1;
-  if (w2c_i0) {goto w2c_B1;}
-  w2c_j0 = w2c_p0;
-  w2c_j1 = 144ull;
-  w2c_j0 += w2c_j1;
-  w2c_l4 = w2c_j0;
-  w2c_L2: 
-    w2c_j0 = w2c_l4;
-    w2c_j1 = w2c_l2;
-    w2c_i0 = pthread_cond_wait(w2c_j0, w2c_j1);
-    w2c_j0 = w2c_p0;
-    w2c_i0 = i32_load((u64)(w2c_j0) + 96u);
-    w2c_i1 = 13u;
-    w2c_i0 = w2c_i0 != w2c_i1;
-    if (w2c_i0) {goto w2c_L2;}
-  w2c_B1:;
-  w2c_j0 = w2c_l2;
-  w2c_i0 = pthread_mutex_unlock(w2c_j0);
-  w2c_j0 = w2c_l1;
-  w2c_j1 = 16ull;
-  w2c_j0 += w2c_j1;
-  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  w2c_0x24native0x2Dplasma_android_app_set_activity_state0x2E1(w2c_j0, w2c_i1);
   FUNC_EPILOGUE;
 }
 
@@ -2601,8 +2941,8 @@ static u64 w2c_0x24native0x2Dplasma_onSaveInstanceState0x2E1(u64 w2c_p0, u64 w2c
   u32 w2c_l4 = 0;
   u64 w2c_l2 = 0, w2c_l3 = 0, w2c_l5 = 0;
   FUNC_PROLOGUE;
-  u32 w2c_i0, w2c_i1;
-  u64 w2c_j0, w2c_j1, w2c_j2;
+  u32 w2c_i0, w2c_i1, w2c_i3;
+  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3;
   w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
   w2c_j1 = 16ull;
   w2c_j0 -= w2c_j1;
@@ -2610,6 +2950,14 @@ static u64 w2c_0x24native0x2Dplasma_onSaveInstanceState0x2E1(u64 w2c_p0, u64 w2c
   if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
   if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
   g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1265u;
+  w2c_j3 = w2c_p0;
+  {
+    u64 w2c_va_0 = w2c_j3;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0);
+  }
   w2c_j0 = w2c_p0;
   w2c_j1 = 56ull;
   w2c_j0 += w2c_j1;
@@ -2639,9 +2987,16 @@ static u64 w2c_0x24native0x2Dplasma_onSaveInstanceState0x2E1(u64 w2c_p0, u64 w2c
   w2c_j1 = 1ull;
   w2c_i0 = w2c_j0 == w2c_j1;
   if (w2c_i0) {goto w2c_B0;}
-  w2c_j0 = __errno();
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_j0 = strerror(w2c_i0);
+  w2c_i0 = 6u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1097u;
+  w2c_j3 = __errno();
+  w2c_i3 = i32_load((u64)(w2c_j3));
+  w2c_j3 = strerror(w2c_i3);
+  {
+    u64 w2c_va_0 = w2c_j3;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0);
+  }
   w2c_B0:;
   w2c_j0 = w2c_p0;
   w2c_i0 = i32_load((u64)(w2c_j0) + 260u);
@@ -2694,75 +3049,23 @@ static u64 w2c_0x24native0x2Dplasma_onSaveInstanceState0x2E1(u64 w2c_p0, u64 w2c
 }
 
 static void w2c_0x24native0x2Dplasma_onResume0x2E1(u64 w2c_p0) {
-  u32 w2c_l3 = 0;
-  u64 w2c_l1 = 0, w2c_l2 = 0, w2c_l4 = 0;
   FUNC_PROLOGUE;
   u32 w2c_i0, w2c_i1;
-  u64 w2c_j0, w2c_j1, w2c_j2;
-  w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
-  w2c_j1 = 16ull;
-  w2c_j0 -= w2c_j1;
-  w2c_l1 = w2c_j0;
-  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3;
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1297u;
+  w2c_j3 = w2c_p0;
+  {
+    u64 w2c_va_0 = w2c_j3;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0);
+  }
   w2c_j0 = w2c_p0;
   w2c_j1 = 56ull;
   w2c_j0 += w2c_j1;
   w2c_j0 = i64_load((u64)(w2c_j0));
-  w2c_p0 = w2c_j0;
-  w2c_j1 = 104ull;
-  w2c_j0 += w2c_j1;
-  w2c_l2 = w2c_j0;
-  w2c_i0 = pthread_mutex_lock(w2c_j0);
-  w2c_j0 = w2c_p0;
-  w2c_j1 = 196ull;
-  w2c_j0 += w2c_j1;
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_l3 = w2c_i0;
-  w2c_j0 = w2c_l1;
   w2c_i1 = 11u;
-  i32_store8((u64)(w2c_j0) + 15u, w2c_i1);
-  w2c_i0 = w2c_l3;
-  w2c_j1 = w2c_l1;
-  w2c_j2 = 15ull;
-  w2c_j1 += w2c_j2;
-  w2c_j2 = 1ull;
-  w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
-  w2c_j1 = 1ull;
-  w2c_i0 = w2c_j0 == w2c_j1;
-  if (w2c_i0) {goto w2c_B0;}
-  w2c_j0 = __errno();
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_j0 = strerror(w2c_i0);
-  w2c_B0:;
-  w2c_j0 = w2c_p0;
-  w2c_i0 = i32_load((u64)(w2c_j0) + 96u);
-  w2c_i1 = 11u;
-  w2c_i0 = w2c_i0 == w2c_i1;
-  if (w2c_i0) {goto w2c_B1;}
-  w2c_j0 = w2c_p0;
-  w2c_j1 = 144ull;
-  w2c_j0 += w2c_j1;
-  w2c_l4 = w2c_j0;
-  w2c_L2: 
-    w2c_j0 = w2c_l4;
-    w2c_j1 = w2c_l2;
-    w2c_i0 = pthread_cond_wait(w2c_j0, w2c_j1);
-    w2c_j0 = w2c_p0;
-    w2c_i0 = i32_load((u64)(w2c_j0) + 96u);
-    w2c_i1 = 11u;
-    w2c_i0 = w2c_i0 != w2c_i1;
-    if (w2c_i0) {goto w2c_L2;}
-  w2c_B1:;
-  w2c_j0 = w2c_l2;
-  w2c_i0 = pthread_mutex_unlock(w2c_j0);
-  w2c_j0 = w2c_l1;
-  w2c_j1 = 16ull;
-  w2c_j0 += w2c_j1;
-  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  w2c_0x24native0x2Dplasma_android_app_set_activity_state0x2E1(w2c_j0, w2c_i1);
   FUNC_EPILOGUE;
 }
 
@@ -2770,8 +3073,8 @@ static void w2c_0x24native0x2Dplasma_onWindowFocusChanged0x2E1(u64 w2c_p0, u32 w
   u32 w2c_l3 = 0;
   u64 w2c_l2 = 0;
   FUNC_PROLOGUE;
-  u32 w2c_i0, w2c_i1, w2c_i2, w2c_i3;
-  u64 w2c_j0, w2c_j1, w2c_j2;
+  u32 w2c_i0, w2c_i1, w2c_i2, w2c_i3, w2c_i4;
+  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3;
   w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
   w2c_j1 = 16ull;
   w2c_j0 -= w2c_j1;
@@ -2779,6 +3082,16 @@ static void w2c_0x24native0x2Dplasma_onWindowFocusChanged0x2E1(u64 w2c_p0, u32 w
   if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
   if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
   g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1751u;
+  w2c_j3 = w2c_p0;
+  w2c_i4 = w2c_p1;
+  {
+    u64 w2c_va_0 = w2c_j3;
+    u32 w2c_va_1 = w2c_i4;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0, w2c_va_1);
+  }
   w2c_j0 = w2c_p0;
   w2c_j1 = 56ull;
   w2c_j0 += w2c_j1;
@@ -2802,9 +3115,16 @@ static void w2c_0x24native0x2Dplasma_onWindowFocusChanged0x2E1(u64 w2c_p0, u32 w
   w2c_j1 = 1ull;
   w2c_i0 = w2c_j0 == w2c_j1;
   if (w2c_i0) {goto w2c_B0;}
-  w2c_j0 = __errno();
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_j0 = strerror(w2c_i0);
+  w2c_i0 = 6u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1097u;
+  w2c_j3 = __errno();
+  w2c_i3 = i32_load((u64)(w2c_j3));
+  w2c_j3 = strerror(w2c_i3);
+  {
+    u64 w2c_va_0 = w2c_j3;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0);
+  }
   w2c_B0:;
   w2c_j0 = w2c_l2;
   w2c_j1 = 16ull;
@@ -2816,148 +3136,44 @@ static void w2c_0x24native0x2Dplasma_onWindowFocusChanged0x2E1(u64 w2c_p0, u32 w
 }
 
 static void w2c_0x24native0x2Dplasma_onStop0x2E1(u64 w2c_p0) {
-  u32 w2c_l3 = 0;
-  u64 w2c_l1 = 0, w2c_l2 = 0, w2c_l4 = 0;
   FUNC_PROLOGUE;
   u32 w2c_i0, w2c_i1;
-  u64 w2c_j0, w2c_j1, w2c_j2;
-  w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
-  w2c_j1 = 16ull;
-  w2c_j0 -= w2c_j1;
-  w2c_l1 = w2c_j0;
-  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3;
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1243u;
+  w2c_j3 = w2c_p0;
+  {
+    u64 w2c_va_0 = w2c_j3;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0);
+  }
   w2c_j0 = w2c_p0;
   w2c_j1 = 56ull;
   w2c_j0 += w2c_j1;
   w2c_j0 = i64_load((u64)(w2c_j0));
-  w2c_p0 = w2c_j0;
-  w2c_j1 = 104ull;
-  w2c_j0 += w2c_j1;
-  w2c_l2 = w2c_j0;
-  w2c_i0 = pthread_mutex_lock(w2c_j0);
-  w2c_j0 = w2c_p0;
-  w2c_j1 = 196ull;
-  w2c_j0 += w2c_j1;
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_l3 = w2c_i0;
-  w2c_j0 = w2c_l1;
   w2c_i1 = 14u;
-  i32_store8((u64)(w2c_j0) + 15u, w2c_i1);
-  w2c_i0 = w2c_l3;
-  w2c_j1 = w2c_l1;
-  w2c_j2 = 15ull;
-  w2c_j1 += w2c_j2;
-  w2c_j2 = 1ull;
-  w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
-  w2c_j1 = 1ull;
-  w2c_i0 = w2c_j0 == w2c_j1;
-  if (w2c_i0) {goto w2c_B0;}
-  w2c_j0 = __errno();
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_j0 = strerror(w2c_i0);
-  w2c_B0:;
-  w2c_j0 = w2c_p0;
-  w2c_i0 = i32_load((u64)(w2c_j0) + 96u);
-  w2c_i1 = 14u;
-  w2c_i0 = w2c_i0 == w2c_i1;
-  if (w2c_i0) {goto w2c_B1;}
-  w2c_j0 = w2c_p0;
-  w2c_j1 = 144ull;
-  w2c_j0 += w2c_j1;
-  w2c_l4 = w2c_j0;
-  w2c_L2: 
-    w2c_j0 = w2c_l4;
-    w2c_j1 = w2c_l2;
-    w2c_i0 = pthread_cond_wait(w2c_j0, w2c_j1);
-    w2c_j0 = w2c_p0;
-    w2c_i0 = i32_load((u64)(w2c_j0) + 96u);
-    w2c_i1 = 14u;
-    w2c_i0 = w2c_i0 != w2c_i1;
-    if (w2c_i0) {goto w2c_L2;}
-  w2c_B1:;
-  w2c_j0 = w2c_l2;
-  w2c_i0 = pthread_mutex_unlock(w2c_j0);
-  w2c_j0 = w2c_l1;
-  w2c_j1 = 16ull;
-  w2c_j0 += w2c_j1;
-  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  w2c_0x24native0x2Dplasma_android_app_set_activity_state0x2E1(w2c_j0, w2c_i1);
   FUNC_EPILOGUE;
 }
 
 static void w2c_0x24native0x2Dplasma_onStart0x2E1(u64 w2c_p0) {
-  u32 w2c_l3 = 0;
-  u64 w2c_l1 = 0, w2c_l2 = 0, w2c_l4 = 0;
   FUNC_PROLOGUE;
   u32 w2c_i0, w2c_i1;
-  u64 w2c_j0, w2c_j1, w2c_j2;
-  w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
-  w2c_j1 = 16ull;
-  w2c_j0 -= w2c_j1;
-  w2c_l1 = w2c_j0;
-  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3;
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1233u;
+  w2c_j3 = w2c_p0;
+  {
+    u64 w2c_va_0 = w2c_j3;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0);
+  }
   w2c_j0 = w2c_p0;
   w2c_j1 = 56ull;
   w2c_j0 += w2c_j1;
   w2c_j0 = i64_load((u64)(w2c_j0));
-  w2c_p0 = w2c_j0;
-  w2c_j1 = 104ull;
-  w2c_j0 += w2c_j1;
-  w2c_l2 = w2c_j0;
-  w2c_i0 = pthread_mutex_lock(w2c_j0);
-  w2c_j0 = w2c_p0;
-  w2c_j1 = 196ull;
-  w2c_j0 += w2c_j1;
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_l3 = w2c_i0;
-  w2c_j0 = w2c_l1;
   w2c_i1 = 10u;
-  i32_store8((u64)(w2c_j0) + 15u, w2c_i1);
-  w2c_i0 = w2c_l3;
-  w2c_j1 = w2c_l1;
-  w2c_j2 = 15ull;
-  w2c_j1 += w2c_j2;
-  w2c_j2 = 1ull;
-  w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
-  w2c_j1 = 1ull;
-  w2c_i0 = w2c_j0 == w2c_j1;
-  if (w2c_i0) {goto w2c_B0;}
-  w2c_j0 = __errno();
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_j0 = strerror(w2c_i0);
-  w2c_B0:;
-  w2c_j0 = w2c_p0;
-  w2c_i0 = i32_load((u64)(w2c_j0) + 96u);
-  w2c_i1 = 10u;
-  w2c_i0 = w2c_i0 == w2c_i1;
-  if (w2c_i0) {goto w2c_B1;}
-  w2c_j0 = w2c_p0;
-  w2c_j1 = 144ull;
-  w2c_j0 += w2c_j1;
-  w2c_l4 = w2c_j0;
-  w2c_L2: 
-    w2c_j0 = w2c_l4;
-    w2c_j1 = w2c_l2;
-    w2c_i0 = pthread_cond_wait(w2c_j0, w2c_j1);
-    w2c_j0 = w2c_p0;
-    w2c_i0 = i32_load((u64)(w2c_j0) + 96u);
-    w2c_i1 = 10u;
-    w2c_i0 = w2c_i0 != w2c_i1;
-    if (w2c_i0) {goto w2c_L2;}
-  w2c_B1:;
-  w2c_j0 = w2c_l2;
-  w2c_i0 = pthread_mutex_unlock(w2c_j0);
-  w2c_j0 = w2c_l1;
-  w2c_j1 = 16ull;
-  w2c_j0 += w2c_j1;
-  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
-  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  w2c_0x24native0x2Dplasma_android_app_set_activity_state0x2E1(w2c_j0, w2c_i1);
   FUNC_EPILOGUE;
 }
 
@@ -2965,7 +3181,7 @@ static u64 w2c_0x24native0x2Dplasma_android_app_entry0x2E1(u64 w2c_p0) {
   u64 w2c_l1 = 0, w2c_l2 = 0, w2c_l3 = 0;
   FUNC_PROLOGUE;
   u32 w2c_i0, w2c_i1, w2c_i2, w2c_i3;
-  u64 w2c_j0, w2c_j1, w2c_j4, w2c_j5, w2c_j6;
+  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j4, w2c_j5, w2c_j6;
   w2c_j0 = w2c_p0;
   w2c_j1 = AConfiguration_new();
   w2c_l1 = w2c_j1;
@@ -3035,6 +3251,12 @@ static u64 w2c_0x24native0x2Dplasma_android_app_entry0x2E1(u64 w2c_p0) {
   w2c_i0 = pthread_mutex_unlock(w2c_j0);
   w2c_j0 = w2c_p0;
   w2c_0x24native0x2Dplasma_android_main0x2E1(w2c_j0);
+  w2c_i0 = 2u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 2004u;
+  {
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2);
+  }
   w2c_j0 = w2c_l1;
   w2c_i0 = pthread_mutex_lock(w2c_j0);
   w2c_j0 = w2c_p0;
@@ -3087,8 +3309,8 @@ static void w2c_0x24native0x2Dplasma_android_app_set_input0x2E1(u64 w2c_p0, u64 
   u32 w2c_l4 = 0;
   u64 w2c_l2 = 0, w2c_l3 = 0;
   FUNC_PROLOGUE;
-  u32 w2c_i0, w2c_i1;
-  u64 w2c_j0, w2c_j1, w2c_j2;
+  u32 w2c_i0, w2c_i1, w2c_i3;
+  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3;
   w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
   w2c_j1 = 16ull;
   w2c_j0 -= w2c_j1;
@@ -3121,9 +3343,16 @@ static void w2c_0x24native0x2Dplasma_android_app_set_input0x2E1(u64 w2c_p0, u64 
   w2c_j1 = 1ull;
   w2c_i0 = w2c_j0 == w2c_j1;
   if (w2c_i0) {goto w2c_B0;}
-  w2c_j0 = __errno();
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_j0 = strerror(w2c_i0);
+  w2c_i0 = 6u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1097u;
+  w2c_j3 = __errno();
+  w2c_i3 = i32_load((u64)(w2c_j3));
+  w2c_j3 = strerror(w2c_i3);
+  {
+    u64 w2c_va_0 = w2c_j3;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0);
+  }
   w2c_B0:;
   w2c_j0 = w2c_p0;
   w2c_j0 = i64_load((u64)(w2c_j0) + 64u);
@@ -3161,8 +3390,8 @@ static void w2c_0x24native0x2Dplasma_android_app_set_window0x2E1(u64 w2c_p0, u64
   u32 w2c_l4 = 0;
   u64 w2c_l2 = 0, w2c_l3 = 0;
   FUNC_PROLOGUE;
-  u32 w2c_i0, w2c_i1;
-  u64 w2c_j0, w2c_j1, w2c_j2;
+  u32 w2c_i0, w2c_i1, w2c_i3;
+  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3;
   w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
   w2c_j1 = 16ull;
   w2c_j0 -= w2c_j1;
@@ -3196,9 +3425,16 @@ static void w2c_0x24native0x2Dplasma_android_app_set_window0x2E1(u64 w2c_p0, u64
   w2c_j1 = 1ull;
   w2c_i0 = w2c_j0 == w2c_j1;
   if (w2c_i0) {goto w2c_B0;}
-  w2c_j0 = __errno();
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_j0 = strerror(w2c_i0);
+  w2c_i0 = 6u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1097u;
+  w2c_j3 = __errno();
+  w2c_i3 = i32_load((u64)(w2c_j3));
+  w2c_j3 = strerror(w2c_i3);
+  {
+    u64 w2c_va_0 = w2c_j3;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0);
+  }
   w2c_B0:;
   w2c_j0 = w2c_p0;
   w2c_j1 = w2c_p1;
@@ -3228,9 +3464,16 @@ static void w2c_0x24native0x2Dplasma_android_app_set_window0x2E1(u64 w2c_p0, u64
   w2c_j1 = 1ull;
   w2c_i0 = w2c_j0 == w2c_j1;
   if (w2c_i0) {goto w2c_B3;}
-  w2c_j0 = __errno();
-  w2c_i0 = i32_load((u64)(w2c_j0));
-  w2c_j0 = strerror(w2c_i0);
+  w2c_i0 = 6u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1097u;
+  w2c_j3 = __errno();
+  w2c_i3 = i32_load((u64)(w2c_j3));
+  w2c_j3 = strerror(w2c_i3);
+  {
+    u64 w2c_va_0 = w2c_j3;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0);
+  }
   w2c_B3:;
   w2c_j0 = w2c_p0;
   w2c_j0 = i64_load((u64)(w2c_j0) + 280u);
@@ -3267,12 +3510,91 @@ static void w2c_0x24native0x2Dplasma_android_app_set_window0x2E1(u64 w2c_p0, u64
   FUNC_EPILOGUE;
 }
 
+static void w2c_0x24native0x2Dplasma_android_app_set_activity_state0x2E1(u64 w2c_p0, u32 w2c_p1) {
+  u32 w2c_l4 = 0;
+  u64 w2c_l2 = 0, w2c_l3 = 0, w2c_l5 = 0;
+  FUNC_PROLOGUE;
+  u32 w2c_i0, w2c_i1, w2c_i2, w2c_i3;
+  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3;
+  w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
+  w2c_j1 = 16ull;
+  w2c_j0 -= w2c_j1;
+  w2c_l2 = w2c_j0;
+  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
+  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
+  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  w2c_j0 = w2c_p0;
+  w2c_j1 = 104ull;
+  w2c_j0 += w2c_j1;
+  w2c_l3 = w2c_j0;
+  w2c_i0 = pthread_mutex_lock(w2c_j0);
+  w2c_j0 = w2c_p0;
+  w2c_j1 = 196ull;
+  w2c_j0 += w2c_j1;
+  w2c_i0 = i32_load((u64)(w2c_j0));
+  w2c_l4 = w2c_i0;
+  w2c_j0 = w2c_l2;
+  w2c_i1 = w2c_p1;
+  i32_store8((u64)(w2c_j0) + 15u, w2c_i1);
+  w2c_i0 = w2c_l4;
+  w2c_j1 = w2c_l2;
+  w2c_j2 = 15ull;
+  w2c_j1 += w2c_j2;
+  w2c_j2 = 1ull;
+  w2c_j0 = write(w2c_i0, w2c_j1, w2c_j2);
+  w2c_j1 = 1ull;
+  w2c_i0 = w2c_j0 == w2c_j1;
+  if (w2c_i0) {goto w2c_B0;}
+  w2c_i0 = 6u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1097u;
+  w2c_j3 = __errno();
+  w2c_i3 = i32_load((u64)(w2c_j3));
+  w2c_j3 = strerror(w2c_i3);
+  {
+    u64 w2c_va_0 = w2c_j3;
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0);
+  }
+  w2c_B0:;
+  w2c_j0 = w2c_p0;
+  w2c_i0 = i32_load((u64)(w2c_j0) + 96u);
+  w2c_i1 = w2c_p1;
+  w2c_i2 = 255u;
+  w2c_i1 &= w2c_i2;
+  w2c_p1 = w2c_i1;
+  w2c_i0 = w2c_i0 == w2c_i1;
+  if (w2c_i0) {goto w2c_B1;}
+  w2c_j0 = w2c_p0;
+  w2c_j1 = 144ull;
+  w2c_j0 += w2c_j1;
+  w2c_l5 = w2c_j0;
+  w2c_L2: 
+    w2c_j0 = w2c_l5;
+    w2c_j1 = w2c_l3;
+    w2c_i0 = pthread_cond_wait(w2c_j0, w2c_j1);
+    w2c_j0 = w2c_p0;
+    w2c_i0 = i32_load((u64)(w2c_j0) + 96u);
+    w2c_i1 = w2c_p1;
+    w2c_i0 = w2c_i0 != w2c_i1;
+    if (w2c_i0) {goto w2c_L2;}
+  w2c_B1:;
+  w2c_j0 = w2c_l3;
+  w2c_i0 = pthread_mutex_unlock(w2c_j0);
+  w2c_j0 = w2c_l2;
+  w2c_j1 = 16ull;
+  w2c_j0 += w2c_j1;
+  if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
+  if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
+  g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
+  FUNC_EPILOGUE;
+}
+
 static void w2c_0x24native0x2Dplasma_process_input0x2E1(u64 w2c_p0, u64 w2c_p1) {
   u32 w2c_l4 = 0;
   u64 w2c_l2 = 0, w2c_l3 = 0;
   FUNC_PROLOGUE;
-  u32 w2c_i0, w2c_i1, w2c_i2;
-  u64 w2c_j0, w2c_j1, w2c_j2;
+  u32 w2c_i0, w2c_i1, w2c_i2, w2c_i3;
+  u64 w2c_j0, w2c_j1, w2c_j2, w2c_j3;
   w2c_j0 = ((uintptr_t)&g_w2c_stack_array[0]) + g_w2c_stack_offset;
   w2c_j1 = 16ull;
   w2c_j0 -= w2c_j1;
@@ -3293,9 +3615,16 @@ static void w2c_0x24native0x2Dplasma_process_input0x2E1(u64 w2c_p0, u64 w2c_p1) 
   w2c_i0 = (u32)((s32)w2c_i0 < (s32)w2c_i1);
   if (w2c_i0) {goto w2c_B0;}
   w2c_L1: 
-    w2c_j0 = w2c_l2;
-    w2c_j0 = i64_load((u64)(w2c_j0) + 8u);
-    w2c_i0 = AInputEvent_getType(w2c_j0);
+    w2c_i0 = 2u;
+    w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+    w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1686u;
+    w2c_j3 = w2c_l2;
+    w2c_j3 = i64_load((u64)(w2c_j3) + 8u);
+    w2c_i3 = AInputEvent_getType(w2c_j3);
+    {
+      u32 w2c_va_0 = w2c_i3;
+      w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2, w2c_va_0);
+    }
     w2c_j0 = w2c_p0;
     w2c_j0 = i64_load((u64)(w2c_j0) + 64u);
     w2c_j1 = w2c_l2;
@@ -3358,8 +3687,6 @@ static void w2c_0x24native0x2Dplasma_process_cmd0x2E1(u64 w2c_p0, u64 w2c_p1) {
   if (UNLIKELY(w2c_j0 < 4096 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
   if (UNLIKELY(w2c_j0 > 69632 + (uintptr_t)g_w2c_stack_array)) TRAP(OOB);
   g_w2c_stack_offset = w2c_j0 - ((uintptr_t)&g_w2c_stack_array[0]);
-  w2c_i0 = 255u;
-  w2c_l3 = w2c_i0;
   w2c_j0 = w2c_p0;
   w2c_i0 = i32_load((u64)(w2c_j0) + 192u);
   w2c_j1 = w2c_l2;
@@ -3368,8 +3695,18 @@ static void w2c_0x24native0x2Dplasma_process_cmd0x2E1(u64 w2c_p0, u64 w2c_p1) {
   w2c_j2 = 1ull;
   w2c_j0 = read(w2c_i0, w2c_j1, w2c_j2);
   w2c_j1 = 1ull;
-  w2c_i0 = w2c_j0 != w2c_j1;
-  if (w2c_i0) {goto w2c_B0;}
+  w2c_i0 = w2c_j0 == w2c_j1;
+  if (w2c_i0) {goto w2c_B1;}
+  w2c_i0 = 6u;
+  w2c_j1 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 1194u;
+  w2c_j2 = (u64)(&data_segment_data_w2c_0x24native0x2Dplasma_0x2Erodata) + 2025u;
+  {
+    w2c_i0 = __android_log_print(w2c_i0, w2c_j1, w2c_j2);
+  }
+  w2c_i0 = 255u;
+  w2c_l3 = w2c_i0;
+  goto w2c_B0;
+  w2c_B1:;
   w2c_j0 = w2c_l2;
   w2c_i0 = i32_load8_u((u64)(w2c_j0) + 15u);
   w2c_l3 = w2c_i0;
@@ -3385,7 +3722,7 @@ static void w2c_0x24native0x2Dplasma_process_cmd0x2E1(u64 w2c_p0, u64 w2c_p1) {
   w2c_j0 = i64_load((u64)(w2c_j0) + 40u);
   w2c_l5 = w2c_j0;
   w2c_i0 = !(w2c_j0);
-  if (w2c_i0) {goto w2c_B1;}
+  if (w2c_i0) {goto w2c_B2;}
   w2c_j0 = w2c_l5;
   free(w2c_j0);
   w2c_j0 = w2c_p0;
@@ -3399,7 +3736,7 @@ static void w2c_0x24native0x2Dplasma_process_cmd0x2E1(u64 w2c_p0, u64 w2c_p1) {
   w2c_j0 = w2c_l5;
   w2c_j1 = 0ull;
   i64_store((u64)(w2c_j0), w2c_j1);
-  w2c_B1:;
+  w2c_B2:;
   w2c_j0 = w2c_l4;
   w2c_i0 = pthread_mutex_unlock(w2c_j0);
   w2c_i0 = 12u;
@@ -3414,12 +3751,12 @@ static void w2c_0x24native0x2Dplasma_process_cmd0x2E1(u64 w2c_p0, u64 w2c_p1) {
   w2c_j0 = i64_load((u64)(w2c_j0) + 8u);
   w2c_l4 = w2c_j0;
   w2c_i0 = !(w2c_j0);
-  if (w2c_i0) {goto w2c_B2;}
+  if (w2c_i0) {goto w2c_B3;}
   w2c_j0 = w2c_p0;
   w2c_i1 = w2c_l3;
   w2c_j2 = w2c_l4;
   ((void (*)(u64, u32))w2c_j2)(w2c_j0, w2c_i1);
-  w2c_B2:;
+  w2c_B3:;
   w2c_j0 = w2c_p0;
   w2c_i1 = w2c_l3;
   w2c_0x24native0x2Dplasma_android_app_post_exec_cmd0x2E1(w2c_j0, w2c_i1);
