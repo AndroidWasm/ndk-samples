@@ -14,15 +14,55 @@
 # limitations under the License.
 #
 
-cmake_minimum_required(VERSION 3.4.1)
+cmake_minimum_required(VERSION 3.5)
 project(TeapotNativeActivity LANGUAGES C CXX)
 
 # set up common compile options
 set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -Wall -Werror -fno-exceptions -fno-rtti")
 
-# build the ndk-helper library
 get_filename_component(commonDir ${CMAKE_CURRENT_SOURCE_DIR}/../../../../common ABSOLUTE)
 get_filename_component(ndkHelperSrc ${commonDir}/ndk_helper ABSOLUTE)
+
+if (ANDROID_WASM)
+
+add_compile_options(-O3)
+add_compile_options(-fno-unroll-loops)
+
+# Workaround
+add_compile_options(-Wno-unused-command-line-argument)
+add_link_options(-Wno-unused-command-line-argument)
+
+# For wasm-ld only
+# Export ANativeActivity_onCreate()
+add_link_options(-Wl,--export=ANativeActivity_onCreate)
+add_link_options(-Wl,--strip-debug)
+
+# For wasm we add everything to one project
+add_executable(${PROJECT_NAME}
+        TeapotNativeActivity.cpp
+        TeapotRenderer.cpp
+        ${ndkHelperSrc}/gestureDetector.cpp
+        ${ndkHelperSrc}/gl3stub.cpp
+        ${ndkHelperSrc}/GLContext.cpp
+        ${ndkHelperSrc}/interpolator.cpp
+        ${ndkHelperSrc}/JNIHelper.cpp
+        ${ndkHelperSrc}/perfMonitor.cpp
+        ${ndkHelperSrc}/sensorManager.cpp
+        ${ndkHelperSrc}/shader.cpp
+        ${ndkHelperSrc}/tapCamera.cpp
+        ${ndkHelperSrc}/vecmath.cpp
+        ${ANDROID_NDK}/sources/android/native_app_glue/android_native_app_glue.c
+)
+
+target_include_directories(${PROJECT_NAME} PRIVATE
+        ${ANDROID_NDK}/sources/android/native_app_glue
+        ${ndkHelperSrc}
+)
+
+
+else()
+
+# build the ndk-helper library
 add_subdirectory(${ndkHelperSrc}
         ${commonDir}/ndkHelperBin/${CMAKE_BUILD_TYPE}/${ANDROID_ABI})
 
@@ -49,3 +89,5 @@ target_link_libraries(${PROJECT_NAME}
   PRIVATE
     NdkHelper
 )
+
+endif()
