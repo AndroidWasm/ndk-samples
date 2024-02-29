@@ -83,9 +83,50 @@ class JNIHelper {
   /*
    * Call method in JNIHelper class
    */
+  template <typename... Args>
   jobject CallObjectMethod(const char* strMethodName, const char* strSignature,
-                           ...);
-  void CallVoidMethod(const char* strMethodName, const char* strSignature, ...);
+                           Args... args) {
+    if (activity_ == NULL) {
+      LOGI(
+          "JNIHelper has not been initialized. Call init() to initialize the "
+          "helper");
+      return NULL;
+    }
+
+    JNIEnv* env = AttachCurrentThread();
+    jmethodID mid =
+        env->GetMethodID(jni_helper_java_class_, strMethodName, strSignature);
+    if (mid == NULL) {
+      LOGI("method ID %s, '%s' not found", strMethodName, strSignature);
+      return NULL;
+    }
+
+    jobject obj = env->CallObjectMethod(jni_helper_java_ref_, mid, args...);
+
+    return obj;
+  }
+
+  template <typename... Args>
+  void CallVoidMethod(const char* strMethodName, const char* strSignature,
+                      Args... args) {
+    if (activity_ == NULL) {
+      LOGI(
+          "JNIHelper has not been initialized. Call init() to initialize the "
+          "helper");
+      return;
+    }
+
+    JNIEnv* env = AttachCurrentThread();
+    jmethodID mid =
+        env->GetMethodID(jni_helper_java_class_, strMethodName, strSignature);
+    if (mid == NULL) {
+      LOGI("method ID %s, '%s' not found", strMethodName, strSignature);
+      return;
+    }
+    env->CallVoidMethod(jni_helper_java_ref_, mid, args...);
+
+    return;
+  }
 
   /*
    * Unregister this thread from the VM
@@ -320,16 +361,127 @@ class JNIHelper {
    * Helper methods to call a method in given object
    */
   jobject CreateObject(const char* class_name);
+
+  template <typename... Args>
   jobject CallObjectMethod(jobject object, const char* strMethodName,
-                           const char* strSignature, ...);
+                           const char* strSignature, Args... args) {
+    if (activity_ == NULL) {
+      LOGI(
+          "JNIHelper has not been initialized. Call init() to initialize the "
+          "helper");
+      return NULL;
+    }
+
+    JNIEnv* env = AttachCurrentThread();
+    jclass cls = env->GetObjectClass(object);
+    jmethodID mid = env->GetMethodID(cls, strMethodName, strSignature);
+    if (mid == NULL) {
+      LOGI("method ID %s, '%s' not found", strMethodName, strSignature);
+      return NULL;
+    }
+
+    jobject obj = env->CallObjectMethod(object, mid, args...);
+
+    env->DeleteLocalRef(cls);
+    return obj;
+  }
+
+  template <typename... Args>
   void CallVoidMethod(jobject object, const char* strMethodName,
-                      const char* strSignature, ...);
+                      const char* strSignature, Args... args) {
+    if (activity_ == NULL) {
+      LOGI(
+          "JNIHelper has not been initialized. Call init() to initialize the "
+          "helper");
+      return;
+    }
+
+    JNIEnv* env = AttachCurrentThread();
+    jclass cls = env->GetObjectClass(object);
+    jmethodID mid = env->GetMethodID(cls, strMethodName, strSignature);
+    if (mid == NULL) {
+      LOGI("method ID %s, '%s' not found", strMethodName, strSignature);
+      return;
+    }
+
+    env->CallVoidMethod(object, mid, args...);
+
+    env->DeleteLocalRef(cls);
+    return;
+  }
+
+  template <typename... Args>
   float CallFloatMethod(jobject object, const char* strMethodName,
-                        const char* strSignature, ...);
+                        const char* strSignature, Args... args) {
+    float f = 0.f;
+    if (activity_ == NULL) {
+      LOGI(
+          "JNIHelper has not been initialized. Call init() to initialize the "
+          "helper");
+      return f;
+    }
+
+    JNIEnv* env = AttachCurrentThread();
+    jclass cls = env->GetObjectClass(object);
+    jmethodID mid = env->GetMethodID(cls, strMethodName, strSignature);
+    if (mid == NULL) {
+      LOGI("method ID %s, '%s' not found", strMethodName, strSignature);
+      return f;
+    }
+
+    f = env->CallFloatMethod(object, mid, args...);
+
+    env->DeleteLocalRef(cls);
+    return f;
+  }
+
+  template <typename... Args>
   int32_t CallIntMethod(jobject object, const char* strMethodName,
-                        const char* strSignature, ...);
+                        const char* strSignature, Args... args) {
+    int32_t i = 0;
+    if (activity_ == NULL) {
+      LOGI(
+          "JNIHelper has not been initialized. Call init() to initialize the "
+          "helper");
+      return i;
+    }
+
+    JNIEnv* env = AttachCurrentThread();
+    jclass cls = env->GetObjectClass(object);
+    jmethodID mid = env->GetMethodID(cls, strMethodName, strSignature);
+    if (mid == NULL) {
+      LOGI("method ID %s, '%s' not found", strMethodName, strSignature);
+      return i;
+    }
+    i = env->CallIntMethod(object, mid, args...);
+
+    env->DeleteLocalRef(cls);
+    return i;
+  }
+
+  template <typename... Args>
   bool CallBooleanMethod(jobject object, const char* strMethodName,
-                         const char* strSignature, ...);
+                         const char* strSignature, Args... args) {
+    bool b;
+    if (activity_ == NULL) {
+      LOGI(
+          "JNIHelper has not been initialized. Call init() to initialize the "
+          "helper");
+      return false;
+    }
+
+    JNIEnv* env = AttachCurrentThread();
+    jclass cls = env->GetObjectClass(object);
+    jmethodID mid = env->GetMethodID(cls, strMethodName, strSignature);
+    if (mid == NULL) {
+      LOGI("method ID %s, '%s' not found", strMethodName, strSignature);
+      return false;
+    }
+    b = env->CallBooleanMethod(object, mid, args...);
+
+    env->DeleteLocalRef(cls);
+    return b;
+  }
 };
 
 }  // namespace ndk_helper
