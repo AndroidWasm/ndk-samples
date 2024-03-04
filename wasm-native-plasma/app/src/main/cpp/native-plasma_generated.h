@@ -119,6 +119,8 @@ u32 ANativeWindow_lock(u64, u64, u64);
 u32 ANativeWindow_setBuffersGeometry(u64, u32, u32, u32);
 /* import: 'env' 'ANativeWindow_unlockAndPost' */
 u32 ANativeWindow_unlockAndPost(u64);
+/* import: 'env' '__android_log_print' */
+u32 __android_log_print(u32, u64, u64, ...);
 /* import: 'env' '__errno' */
 u64 __errno();
 /* import: 'env' 'calloc' */

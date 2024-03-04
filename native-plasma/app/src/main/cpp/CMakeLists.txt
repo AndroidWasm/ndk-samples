@@ -20,23 +20,11 @@ if (ANDROID_WASM)
 
 add_compile_options(-O3)
 add_compile_options(-fno-unroll-loops)
+add_compile_options(-fvisibility=default)
 
 # For wasm-ld only
-# Export ANativeActivity_onCreate(), 
-add_link_options(-Wl,--export=ANativeActivity_onCreate)
 add_link_options(-Wl,--strip-debug)
-
-add_executable(native-plasma
-    plasma.c
-    ${ANDROID_NDK}/sources/android/native_app_glue/android_native_app_glue.c)
-
-target_include_directories(native-plasma PRIVATE
-    ${ANDROID_NDK}/sources/android/native_app_glue)
-
-target_link_libraries(native-plasma
-    android
-    log
-    m)
+add_link_options(-Wl,--export=ANativeActivity_onCreate)
 
 else()
 
@@ -45,13 +33,25 @@ else()
 set(CMAKE_SHARED_LINKER_FLAGS
     "${CMAKE_SHARED_LINKER_FLAGS} -u ANativeActivity_onCreate")
 
+endif()
+
 # build native_app_glue as a static lib
 add_library(native_app_glue STATIC
     ${ANDROID_NDK}/sources/android/native_app_glue/android_native_app_glue.c)
 
+if (ANDROID_WASM)
+
+# For WASM, the app needs to be built as an executable.
+add_executable(native-plasma
+    plasma.c)
+
+else()
+
 # now build app's shared lib
 add_library(native-plasma SHARED
     plasma.c)
+
+endif()
 
 target_include_directories(native-plasma PRIVATE
     ${ANDROID_NDK}/sources/android/native_app_glue)
@@ -62,5 +62,3 @@ target_link_libraries(native-plasma
     native_app_glue
     log
     m)
-
-endif()
