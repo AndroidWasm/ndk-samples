@@ -18,20 +18,16 @@ cmake_minimum_required(VERSION 3.4.1)
 
 if (ANDROID_WASM)
 
-add_compile_options(-O3)
-add_compile_options(-fno-unroll-loops)
-add_compile_options(-fvisibility=default)
-
-# For wasm-ld only
-add_link_options(-Wl,--strip-debug)
-add_link_options(-Wl,--export=ANativeActivity_onCreate)
+  add_compile_options(-O3)
+  add_link_options(-Wl,--strip-debug)
+  add_link_options(-Wl,--export=ANativeActivity_onCreate)
 
 else()
 
-# Export ANativeActivity_onCreate(), 
-# Refer to: https://github.com/android-ndk/ndk/issues/381.
-set(CMAKE_SHARED_LINKER_FLAGS
-    "${CMAKE_SHARED_LINKER_FLAGS} -u ANativeActivity_onCreate")
+  # Export ANativeActivity_onCreate(),<U+2028>
+  # Refer to: https://github.com/android-ndk/ndk/issues/381.
+  set(CMAKE_SHARED_LINKER_FLAGS
+      "${CMAKE_SHARED_LINKER_FLAGS} -u ANativeActivity_onCreate")
 
 endif()
 
@@ -41,15 +37,15 @@ add_library(native_app_glue STATIC
 
 if (ANDROID_WASM)
 
-# For WASM, the app needs to be built as an executable.
-add_executable(native-plasma
-    plasma.c)
+  # For WASM, the app needs to be built as an executable.
+  add_executable(native-plasma
+      plasma.c)
 
 else()
 
-# now build app's shared lib
-add_library(native-plasma SHARED
-    plasma.c)
+  # now build app's shared lib
+  add_library(native-plasma SHARED
+      plasma.c)
 
 endif()
 
