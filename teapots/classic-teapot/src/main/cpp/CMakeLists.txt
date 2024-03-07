@@ -59,6 +59,15 @@ target_include_directories(${PROJECT_NAME} PRIVATE
         ${ndkHelperSrc}
 )
 
+target_link_libraries(${PROJECT_NAME}
+    android
+    GLESv2
+    EGL
+    log
+    c++
+    m
+    dl
+)
 
 else()
 
