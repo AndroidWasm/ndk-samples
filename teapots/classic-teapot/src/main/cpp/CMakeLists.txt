@@ -71,6 +71,33 @@ target_link_libraries(${PROJECT_NAME}
 
 else()
 
+// Set this to 0 to get the original native build.
+set(GENERATED_BUILD 1)
+
+if (GENERATED_BUILD)
+
+add_library(${PROJECT_NAME}
+  SHARED
+    build_wasm/${PROJECT_NAME}_generated.c)
+
+target_include_directories(${PROJECT_NAME}
+  PRIVATE
+    $ENV{WABT_HOME}/wasm2c)
+
+target_link_libraries(${PROJECT_NAME}
+    android
+    GLESv2
+    EGL
+    log
+    c++
+    m
+    dl)
+
+set_target_properties(${PROJECT_NAME}
+  PROPERTIES  LINK_FLAGS "-u ANativeActivity_onCreate")
+
+else()
+
 # build the ndk-helper library
 add_subdirectory(${ndkHelperSrc}
         ${commonDir}/ndkHelperBin/${CMAKE_BUILD_TYPE}/${ANDROID_ABI})
@@ -98,5 +125,7 @@ target_link_libraries(${PROJECT_NAME}
   PRIVATE
     NdkHelper
 )
+
+endif()
 
 endif()

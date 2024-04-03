@@ -23,6 +23,90 @@ set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -Wall -Werror -fno-exceptions -fno-rtti
 # build the ndk-helper library
 get_filename_component(commonDir ${CMAKE_CURRENT_SOURCE_DIR}/../../../../common ABSOLUTE)
 get_filename_component(ndkHelperSrc ${commonDir}/ndk_helper ABSOLUTE)
+
+if (ANDROID_WASM)
+
+add_compile_options(-O3)
+add_compile_options(-fno-unroll-loops)
+
+# Workaround
+add_compile_options(-Wno-unused-command-line-argument)
+add_compile_options(-Wno-vla-cxx-extension)
+add_link_options(-Wno-unused-command-line-argument)
+
+# For wasm-ld only
+# Export ANativeActivity_onCreate()
+add_link_options(-Wl,--export=ANativeActivity_onCreate)
+add_link_options(-Wl,--strip-debug)
+
+# For wasm we add everything to one project
+add_executable(${PROJECT_NAME}
+        MoreTeapotsNativeActivity.cpp
+    	MoreTeapotsRenderer.cpp
+        ${ndkHelperSrc}/gestureDetector.cpp
+        ${ndkHelperSrc}/gl3stub.cpp
+        ${ndkHelperSrc}/GLContext.cpp
+        ${ndkHelperSrc}/interpolator.cpp
+        ${ndkHelperSrc}/JNIHelper.cpp
+        ${ndkHelperSrc}/perfMonitor.cpp
+        ${ndkHelperSrc}/sensorManager.cpp
+        ${ndkHelperSrc}/shader.cpp
+        ${ndkHelperSrc}/tapCamera.cpp
+        ${ndkHelperSrc}/vecmath.cpp
+        ${ANDROID_NDK}/sources/android/native_app_glue/android_native_app_glue.c
+)
+
+target_include_directories(${PROJECT_NAME} PRIVATE
+        ${ANDROID_NDK}/sources/android/native_app_glue
+        ${ndkHelperSrc}
+)
+
+set_target_properties(${PROJECT_NAME}
+  PROPERTIES
+    CXX_STANDARD 11
+    CXX_STANDARD_REQUIRED YES
+    CXX_EXTENSIONS YES
+)
+
+target_link_libraries(${PROJECT_NAME}
+    android
+    GLESv2
+    EGL
+    log
+    c++
+    m
+    dl
+)
+
+else()
+
+// Set this to 0 to get the original native build.
+set(GENERATED_BUILD 1)
+
+if (GENERATED_BUILD)
+
+add_library(${PROJECT_NAME}
+  SHARED
+    build_wasm/${PROJECT_NAME}_generated.c)
+
+target_include_directories(${PROJECT_NAME}
+  PRIVATE
+    $ENV{WABT_HOME}/wasm2c)
+
+target_link_libraries(${PROJECT_NAME}
+    android
+    GLESv2
+    EGL
+    log
+    c++
+    m
+    dl)
+
+set_target_properties(${PROJECT_NAME}
+  PROPERTIES  LINK_FLAGS "-u ANativeActivity_onCreate")
+
+else()
+
 add_subdirectory(${ndkHelperSrc}
         ${commonDir}/ndkHelperBin/${CMAKE_BUILD_TYPE}/${ANDROID_ABI})
 
@@ -50,3 +134,7 @@ target_link_libraries(${PROJECT_NAME}
   PRIVATE
     NdkHelper
 )
+
+endif()
+
+endif()
