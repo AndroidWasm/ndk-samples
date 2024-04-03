@@ -156,7 +156,11 @@ bool JNIHelper::ReadFile(const char* fileName,
     env->ReleaseStringUTFChars(str_path, path);
     env->DeleteLocalRef(str_path);
   }
+#if !__is_target_arch(wasm64) || !__is_target_environment(nativeandroid)
+  LOGI("Making stream... \"%s\"", s.c_str());
+  // crash happens here when WASM-compiled:
   std::ifstream f(s.c_str(), std::ios::binary);
+  LOGI("...made");
   activity_->vm->DetachCurrentThread();
   if (f) {
     LOGI("reading:%s", s.c_str());
@@ -169,6 +173,7 @@ bool JNIHelper::ReadFile(const char* fileName,
     f.close();
     return true;
   } else {
+#endif
     // Fallback to assetManager
     AAssetManager* assetManager = activity_->assetManager;
     AAsset* assetFile =
@@ -190,7 +195,9 @@ bool JNIHelper::ReadFile(const char* fileName,
 
     AAsset_close(assetFile);
     return true;
+#if !__is_target_arch(wasm64) || !__is_target_environment(nativeandroid)
   }
+#endif
 }
 
 std::string JNIHelper::GetExternalFilesDir() {
